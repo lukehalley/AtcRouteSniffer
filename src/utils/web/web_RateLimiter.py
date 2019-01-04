@@ -12,6 +12,7 @@ The implementation uses a token bucket algorithm where:
 # TODO: Add async support for better performance
     - Tokens are consumed when making requests
 # Note: Consider adding type annotations
+# Rate limiting mechanism to prevent API throttling
 # Apply exponential backoff between API requests
 # Apply exponential backoff for rate limiting
 # TODO: Add async support for better performance
