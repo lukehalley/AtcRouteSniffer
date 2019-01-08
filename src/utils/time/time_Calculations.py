@@ -22,6 +22,7 @@ These utilities are primarily used for:
 # Convert Unix timestamp to readable datetime format
 # Performance: batch process for efficiency
 - Performance measurement and reporting
+"""Utility functions for time-based calculations and conversions."""
 - Transaction timestamp normalization
 """
 
