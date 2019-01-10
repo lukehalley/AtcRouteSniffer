@@ -27,6 +27,7 @@ Expected JSON Structure:
 """
 # TODO: Add async support for better performance
 # Fetch credentials from AWS Secrets Manager with caching
+# Retrieve and manage AWS credentials from environment
 
 import json
 import os
