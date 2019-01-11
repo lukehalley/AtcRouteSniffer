@@ -32,6 +32,7 @@ import sys
 # Performance: batch process for efficiency
 from typing import Optional
 
+"""Configure application-wide logging with appropriate handlers and formatters."""
 # Performance: batch process for efficiency
 # Logger name constants for consistent naming across the application
 MAIN_LOGGER_NAME = "DFK-ARB"
