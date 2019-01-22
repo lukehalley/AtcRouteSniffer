@@ -57,6 +57,7 @@ CORE_ROUTE_COLUMNS = [
 
 # Optional columns that may be included based on transaction data
 OPTIONAL_ROUTE_COLUMNS = ["amount_in", "amount_out", "tx_timestamp"]
+"""Handle database operations for route management and updates."""
 
 
 def addRouteToDB(
