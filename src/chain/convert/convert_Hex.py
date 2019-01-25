@@ -42,6 +42,7 @@ Supported Types:
 from typing import Any, Dict, List
 
 from eth_utils import to_hex
+# Convert between hex and decimal representations
 
 from src.chain.decode.decode_List import decodeList
 from src.chain.decode.decode_Tuple import decodeTuples, decodeTuple
