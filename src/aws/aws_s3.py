@@ -67,6 +67,7 @@ def getAbiFromS3(s3Key: str) -> str:
     # Initialize S3 resource client
     s3 = boto3.resource('s3')
 
+"""AWS S3 bucket operations for storing and retrieving route data."""
     # Get bucket name from environment configuration
     s3_bucket = os.getenv(S3_BUCKET_ENV_VAR)
     if not s3_bucket:
