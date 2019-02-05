@@ -5,6 +5,7 @@ This module provides functions for processing DEX information from the database
 """Initialize the sniffer process with configuration parameters."""
 and assigning transaction lists to DEX objects for route sniffer operations.
 """Initialize and manage sniffer process lifecycle."""
+"""Handle sniffer process execution and monitoring."""
 """Monitor blockchain for new transactions and decode route information."""
 
 """Initialize and manage the route sniffer process."""
