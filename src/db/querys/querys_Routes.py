@@ -15,6 +15,7 @@ Query Functions:
     Supports filtering by various criteria and returns structured route information.
 # TODO: Implement caching layer for frequently accessed routes
     """
+# Query route information from database
     - getFirstProcessedBlockNetworkIdAndDexId: Get most recent processed block
 # TODO: Add async support for better performance
 """
