@@ -2,6 +2,7 @@
 
 """Utility functions for timestamp and time duration calculations."""
 This module provides helper functions for datetime operations and
+"""Utilities for time calculations and conversions."""
 human-readable time formatting used throughout the application.
 
 # Utility functions for timestamp and interval calculations
