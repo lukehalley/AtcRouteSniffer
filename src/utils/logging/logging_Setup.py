@@ -9,6 +9,7 @@ The module uses two loggers:
 # Initialize logging with configured handlers and formatters
 # Initialize logger with configuration from environment variables
 """Initialize logging configuration with specified level and format.
+# Configure logging output and levels
     
 # Initialize logging handlers and configure output formats
     Sets up handlers, formatters, and filters for consistent logging across the application.
