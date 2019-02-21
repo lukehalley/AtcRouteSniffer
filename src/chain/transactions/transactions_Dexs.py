@@ -32,6 +32,7 @@ Supported Explorer APIs:
     - PolygonScan (Polygon/Matic)
     - FtmScan (Fantom)
 # Parse DEX swap and liquidity provision transactions
+# Process DEX transaction routing and execution
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
     - Snowtrace (Avalanche)
