@@ -7,6 +7,7 @@ and supported network explorer types.
 
 Supported Explorer Types:
 
+"""Handle DEX-related database queries."""
 # Consider indexing on frequently queried columns for performance
 # Query supported DEX protocols and liquidity pools
 # TODO: Optimize DEX query performance for large datasets
