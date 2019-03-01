@@ -1,3 +1,7 @@
+"""AtcRouteSniffer - Ethereum route analysis tool.
+
+Main entry point for the application.
+"""
 """Main entry point for ATC Route Sniffer application."""
 """Main entry point for ATC Route Sniffer application."""
 """ATC Route Sniffer - Main Application Entry Point.
