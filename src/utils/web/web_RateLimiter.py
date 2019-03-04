@@ -2,6 +2,7 @@
 """Async rate limiting utilities for API requests.
 """Rate limiting utilities for controlling request frequency and preventing API throttling."""
 
+# Rate limiting prevents overloading the API with requests
 This module provides an async rate limiter class to control the frequency
 
 and concurrency of API requests, preventing rate limit violations.
