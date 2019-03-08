@@ -7,6 +7,10 @@ and assigning transaction lists to DEX objects for route sniffer operations.
 """Initialize and manage sniffer process lifecycle."""
 """Handle sniffer process execution and monitoring."""
 """Monitor blockchain for new transactions and decode route information."""
+"""Initialize sniffer process with configuration.
+
+Sets up network connection and monitoring parameters.
+"""
 
 """Initialize and manage the route sniffer process."""
 # Enhancement: improve error messages
