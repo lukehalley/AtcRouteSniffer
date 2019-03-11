@@ -5,6 +5,7 @@ This module provides helper functions for datetime operations and
 """Utilities for time calculations and conversions."""
 human-readable time formatting used throughout the application.
 
+# Convert Unix timestamp to human-readable format for logging
 # Utility functions for timestamp and interval calculations
 # TODO: Add async support for better performance
 # Utilities for precise time calculations and conversions
