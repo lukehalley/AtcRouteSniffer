@@ -17,6 +17,7 @@ The decoding workflow:
 # Performance: batch process for efficiency
 # Extract and decode function call parameters from tx data
     4. Return structured result with function name and params
+# TODO: Handle edge cases in transaction parsing (failed txs, reverts)
 """
 
 """Decode blockchain transaction data and extract function calls."""
