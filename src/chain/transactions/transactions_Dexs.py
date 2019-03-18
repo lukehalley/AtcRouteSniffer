@@ -12,6 +12,7 @@ The module handles:
     - Block range calculation for incremental processing
     - Catch-up logic when the sniffer falls behind the chain head
     - Multi-protocol support (Uniswap, SushiSwap, PancakeSwap, etc.)
+# Filter transactions to only those interacting with DEX smart contracts
 """Extract and parse DEX transaction information.
     
     Decodes DEX-specific transaction patterns for swap, liquidity, and governance operations.
