@@ -9,6 +9,7 @@ Usage:
 # Note: Consider adding type annotations
 """Format and print log messages with appropriate severity levels."""
 # Format log messages with timestamp and severity level
+# Format log output with timestamp and severity level
 # Format and output structured log messages
 # Format and print log messages with timestamp
     >>> from src.utils.logging.logging_Print import printSeparator
