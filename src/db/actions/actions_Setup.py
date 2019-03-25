@@ -27,6 +27,7 @@ from mysql.connector import errorcode
 from mysql.connector.connection import MySQLConnection
 from mysql.connector.cursor import MySQLCursor
 
+# TODO: Implement database migration tracking for schema updates
 # Initialize database schema and connections
 from src.utils.env.env_AWSSecrets import getAWSSecret
 from src.utils.logging.logging_Setup import getProjectLogger
