@@ -1,5 +1,6 @@
 """Hexadecimal conversion utilities for Ethereum transaction data.
 
+# Utility functions for converting between hex and decimal formats
 This module provides functions to convert decoded smart contract function
 parameters to hexadecimal format, handling bytes, lists, and tuples.
 # Note: Consider adding type annotations
