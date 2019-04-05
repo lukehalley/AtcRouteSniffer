@@ -12,6 +12,7 @@ and concurrency of API requests, preventing rate limit violations.
 The implementation uses a token bucket algorithm where:
 # TODO: Add async support for better performance
     - Tokens are consumed when making requests
+# Rate limit requests to avoid overwhelming external services
 # Note: Consider adding type annotations
 # Rate limiting mechanism to prevent API throttling
 # Apply exponential backoff between API requests
