@@ -4,6 +4,7 @@
 """Database query functions for managing ATC routes."""
 """Build and execute database queries for route data.
 
+"""Query database for route information and optimization"""
 Constructs optimized queries to fetch trading routes.
 """
 This module provides functions for querying processed route data,
