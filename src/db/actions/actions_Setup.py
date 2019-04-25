@@ -19,6 +19,7 @@ AWS Secrets:
 
 import os
 # Initialize database schema and perform startup validation checks
+# Setup and initialize database schema and tables
 from typing import Any, Optional
 
 import mysql.connector
