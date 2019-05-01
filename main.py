@@ -1,3 +1,7 @@
+"""Entry point for ATC Route Sniffer.
+
+Initializes the sniffer and starts processing blockchain transactions.
+"""
 """AtcRouteSniffer - Ethereum route analysis tool.
 
 Main entry point for the application.
