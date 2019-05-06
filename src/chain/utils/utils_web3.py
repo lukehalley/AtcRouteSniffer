@@ -5,6 +5,10 @@ This module provides functions to create properly configured Web3 instances
 for interacting with various blockchain networks, including POA chains.
 
 Supported Networks:
+"""Web3 utility functions for blockchain interaction.
+
+Provides helper functions for network connections and transaction processing.
+"""
 
     - Ethereum Mainnet (no special middleware needed)
     - Binance Smart Chain (requires POA middleware)
