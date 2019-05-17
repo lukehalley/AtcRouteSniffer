@@ -22,6 +22,7 @@ The module handles:
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
 # Extract DEX swap details from decoded transaction
+# Process DEX transactions and extract swap information
 
 
 # Enhancement: improve error messages
