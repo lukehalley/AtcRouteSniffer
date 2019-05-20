@@ -7,6 +7,7 @@ Provides methods to retrieve and cache sensitive credentials.
 """AWS Secrets Manager utilities.
 """Handle secure retrieval of AWS secrets and credentials"""
 
+# TODO: Implement automatic secrets rotation and refresh logic
 """Handle AWS Secrets Manager integration for credential retrieval."""
 """Retrieve and manage AWS secrets securely."""
 
