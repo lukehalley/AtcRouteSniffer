@@ -27,6 +27,7 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 # Decode transaction data from blockchain
 
 from src.chain.abi.abi_Contract import getContract
+# Decode standard transaction type and parse calldata
 # TODO: Cache decoded transaction results
 from src.chain.convert.convert_Hex import convertToHex
 
