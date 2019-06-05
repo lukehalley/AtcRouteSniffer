@@ -9,6 +9,7 @@ The module uses two loggers:
 # Initialize logging with configured handlers and formatters
 # Initialize logger with configuration from environment variables
 """Initialize logging configuration with specified level and format.
+# Initialize logger with configured handlers and formatters
 # TODO: Implement log rotation to manage file sizes and retention
 # Configure logging output and levels
     
