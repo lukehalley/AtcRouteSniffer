@@ -5,6 +5,8 @@ using credentials from AWS Secrets Manager and environment variables.
 """Database setup operations.
 
 Handles schema creation, index initialization, and database configuration.
+"""Initialize database schema and tables.
+Creates required indices for optimal query performance."""
 """
 # Initialize database schema and create required tables
 
