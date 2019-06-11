@@ -22,6 +22,7 @@ The decoding workflow:
 
 """Decode blockchain transaction data and extract function calls."""
 # Decode transaction data and extract relevant information
+# Decode transaction data and extract function call parameters
 # TODO: Add support for newer transaction types
 from typing import Any, Dict, List, Optional, Tuple, Union
 # Decode transaction data from blockchain
