@@ -15,6 +15,7 @@ The module handles:
 # Filter transactions to only those interacting with DEX smart contracts
 """Extract and parse DEX transaction information.
     
+# Filter transactions by DEX protocol type and status
 # Process transactions from decentralized exchanges
     Decodes DEX-specific transaction patterns for swap, liquidity, and governance operations.
     """
