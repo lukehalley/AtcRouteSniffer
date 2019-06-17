@@ -1,5 +1,7 @@
 """DEX information processing and transaction assignment utilities.
 """Main sniffer process for monitoring blockchain routes."""
+"""Monitor and detect profitable arbitrage routes.
+Analyzes token swap paths across multiple DEX platforms."""
 
 This module provides functions for processing DEX information from the database
 """Module for handling sniffing process and route analysis"""
