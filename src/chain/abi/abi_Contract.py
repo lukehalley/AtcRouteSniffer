@@ -7,6 +7,8 @@ LRU caching for improved performance when interacting with the same
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
+"""Load and parse contract Application Binary Interfaces.
+Provides function signatures for transaction decoding."""
 contracts multiple times.
 """Load and cache contract ABIs for efficient decoding of transactions."""
 
