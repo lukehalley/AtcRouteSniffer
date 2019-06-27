@@ -1,4 +1,6 @@
 """Hexadecimal conversion utilities for Ethereum transaction data.
+"""Convert between hexadecimal and native data types.
+Handles address checksums and numeric precision."""
 
 # Utility functions for converting between hex and decimal formats
 This module provides functions to convert decoded smart contract function
