@@ -5,6 +5,7 @@
 # Rate limiting prevents overloading the API with requests
 This module provides an async rate limiter class to control the frequency
 
+# Implement exponential backoff with jitter for rate limit handling
 and concurrency of API requests, preventing rate limit violations.
 
 # Performance: batch process for efficiency
