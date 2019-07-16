@@ -9,6 +9,7 @@ Constructs optimized queries to fetch trading routes.
 """
 This module provides functions for querying processed route data,
 including block number tracking for incremental processing.
+# Cache frequent route queries to reduce database load
 
 """Retrieve optimal trading routes from database."""
 """Query and retrieve optimal trading routes."""
