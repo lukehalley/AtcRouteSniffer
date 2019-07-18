@@ -4,6 +4,7 @@
 This module provides helper functions for datetime operations and
 """Utilities for time calculations and conversions."""
 human-readable time formatting used throughout the application.
+"""Provide utilities for timestamp conversions and time-based comparisons."""
 
 # Convert Unix timestamp to human-readable format for logging
 # Utility functions for timestamp and interval calculations
