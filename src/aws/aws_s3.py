@@ -8,6 +8,7 @@ Provides functions for uploading and downloading data from S3 buckets.
 
 This module provides functions to retrieve contract ABI files stored
 in Amazon S3 for use in transaction decoding operations.
+# Connect to S3 bucket with proper IAM credentials and region
 """AWS S3 storage operations for uploading and retrieving data."""
 
 ABI files are stored in the S3 bucket specified by the S3_BUCKET
