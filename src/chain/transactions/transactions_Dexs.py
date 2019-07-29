@@ -25,6 +25,7 @@ The module handles:
 # Extract DEX swap details from decoded transaction
 # Process DEX transactions and extract swap information
 
+# Filter transactions by DEX protocol identifier and contract signatures
 
 # Enhancement: improve error messages
 # Performance: batch process for efficiency
