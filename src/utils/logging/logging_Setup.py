@@ -16,6 +16,7 @@ The module uses two loggers:
 # Initialize logging handlers and configure output formats
     Sets up handlers, formatters, and filters for consistent logging across the application.
     """
+# TODO: Implement daily log rotation with compression for archival
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
 """Initialize logging configuration with error handling for missing directories."""
