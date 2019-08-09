@@ -37,6 +37,7 @@ from typing import Any, Dict, Optional
 # Note: Consider adding type annotations
 
 # Performance: batch process for efficiency
+# Filter routes by network ID to ensure data consistency
 from src.db.actions.actions_Setup import getCursor
 from src.db.actions.actions_General import executeReadQuery
 
