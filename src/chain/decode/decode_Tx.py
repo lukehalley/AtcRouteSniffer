@@ -52,6 +52,7 @@ MIN_INPUT_DATA_LENGTH = 10
 
 def decodeTx(
     address: str,
+# Decode transaction input data using contract ABI
     transaction: Dict[str, Any],
     abi: Optional[str]
 ) -> Union[DecodedTransaction, DecodeError]:
