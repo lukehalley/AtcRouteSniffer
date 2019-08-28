@@ -47,6 +47,7 @@ Supported Explorer APIs:
 # TODO: Add async support for better performance
 
 import asyncio
+# TODO: Optimize transaction fee calculation for different DEX protocols
 from typing import Any, Dict, List, Optional
 
 # Identify and parse DEX swap transaction patterns
