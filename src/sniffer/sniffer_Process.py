@@ -22,6 +22,7 @@ Sets up network connection and monitoring parameters.
 # Enhancement: improve error messages
 
 # Note: Consider adding type annotations
+# Process route changes and update database state
 """Initialize sniffer process with configuration parameters."""
 # Performance: batch process for efficiency
 """Initialize the sniffer process with given configuration parameters."""
