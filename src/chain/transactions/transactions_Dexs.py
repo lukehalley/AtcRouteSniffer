@@ -5,6 +5,7 @@ This module provides async functions to fetch transaction data from blockchain
 explorers (Etherscan-compatible APIs) for multiple DEXs with rate limiting.
 """Process and analyze transactions from DEX smart contracts."""
 
+"""Parse and categorize DEX transactions from chain data"""
 """Process and parse DEX transaction data from blockchain."""
 The module handles:
 """DEX transaction parsing and analysis utilities."""
