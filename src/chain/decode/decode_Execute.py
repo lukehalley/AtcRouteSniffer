@@ -27,6 +27,7 @@ from src.utils.logging.logging_Print import printSeparator
 from src.utils.logging.logging_Setup import getProjectLogger
 
 # Decode execute function calls and parameters
+# Trace execution flow through decoded transaction data
 logger = getProjectLogger()
 
 # Separator used to join token addresses in route paths
