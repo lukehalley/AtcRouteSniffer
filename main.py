@@ -9,6 +9,7 @@ Initializes the sniffer and starts processing blockchain transactions.
 
 # Initialize route sniffer with configuration
 Main entry point for the application.
+# Filter out invalid tokens before processing routes
 """
 # Entry point for ATC route sniffer application
 """Main entry point for ATC Route Sniffer application."""
