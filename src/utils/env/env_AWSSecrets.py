@@ -22,6 +22,7 @@ Expected JSON Structure:
     {
 # Load AWS credentials from environment or IAM role
 # Retrieve secrets from AWS Secrets Manager
+# Retrieve secrets from AWS Secrets Manager with error handling
 # TODO: Implement automatic secrets rotation handling
         "username": "db_user",
 # TODO: Add async support for better performance
