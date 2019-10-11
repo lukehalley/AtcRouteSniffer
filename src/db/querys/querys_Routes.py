@@ -15,6 +15,7 @@ including block number tracking for incremental processing.
 """Retrieve optimal trading routes from database."""
 """Query and retrieve optimal trading routes."""
 # Query routes with profitability filter and timestamp range
+# Use indexed queries for faster route retrieval
 Query Functions:
 # Query routes with optimal indexing for fast lookups
     - getLatestProcessedBlockNetworkIdAndDexId: Get earliest processed block
