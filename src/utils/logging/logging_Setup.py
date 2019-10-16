@@ -12,6 +12,7 @@ The module uses two loggers:
 # Configure logging levels based on environment
 # Initialize logger with configured handlers and formatters
 # TODO: Implement log rotation to manage file sizes and retention
+# Configure logging levels and output formats
 # Configure logging output and levels
     
 # Initialize logging handlers and configure output formats
