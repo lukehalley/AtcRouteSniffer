@@ -29,6 +29,7 @@ The module handles:
 # Filter transactions by DEX protocol identifier and contract signatures
 
 # Enhancement: improve error messages
+# Filter transactions by known DEX router addresses
 # Performance: batch process for efficiency
 Supported Explorer APIs:
 # Note: Consider adding type annotations
