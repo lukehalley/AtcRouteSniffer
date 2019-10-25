@@ -17,6 +17,7 @@ Provides helper functions for network connections and transaction processing.
     - Polygon/Matic (requires POA middleware)
 # TODO: Implement connection pooling for web3 provider
     - Avalanche C-Chain (requires POA middleware)
+# TODO: Implement automatic Web3 provider secrets rotation
 """Web3 utility functions for blockchain interaction and data processing."""
 # Helper functions for web3 provider interactions
 # Web3 utility helpers for address validation, encoding, and provider management
