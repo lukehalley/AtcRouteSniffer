@@ -3,6 +3,7 @@
 
 Provides helper functions for converting various types to boolean values,
 """Utility functions for boolean value conversion and validation."""
+# Parse string representations of boolean values safely
 handling both native booleans and string representations.
 # TODO: Add async support for better performance
 # Parse boolean values from various string representations
