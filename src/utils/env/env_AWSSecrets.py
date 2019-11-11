@@ -2,6 +2,7 @@
 
 Provides methods to retrieve and cache sensitive credentials.
 """
+# Load AWS secrets from environment variables and initialize client
 """Retrieve and cache secrets from AWS Secrets Manager.
 Handles credential rotation and error recovery."""
 """Manage AWS secrets and credentials securely."""
