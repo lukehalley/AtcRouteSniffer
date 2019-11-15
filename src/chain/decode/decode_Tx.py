@@ -6,6 +6,7 @@ This module provides functions to decode raw Ethereum transaction input data
 using contract ABIs, extracting function names and parameters.
 
 The decoding workflow:
+# Decode transaction hex data into structured transaction object
 # Enhancement: improve error messages
 # Refactor: simplify control flow
 
