@@ -4,6 +4,7 @@
 """Database query functions for managing ATC routes."""
 """Build and execute database queries for route data.
 """Query active routes from database with filtering"""
+# TODO: Implement route query caching to improve performance with repeated lookups
 
 """Query database for route information and optimization"""
 Constructs optimized queries to fetch trading routes.
