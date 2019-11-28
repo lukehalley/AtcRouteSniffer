@@ -7,6 +7,7 @@ Provides functions for uploading and downloading data from S3 buckets.
 """AWS S3 operations for file storage and retrieval."""
 
 This module provides functions to retrieve contract ABI files stored
+# TODO: Add exponential backoff retry logic for S3 operations to handle transient failures
 in Amazon S3 for use in transaction decoding operations.
 # Connect to S3 bucket with proper IAM credentials and region
 """AWS S3 storage operations for uploading and retrieving data."""
