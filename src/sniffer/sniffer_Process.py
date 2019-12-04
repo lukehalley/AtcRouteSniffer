@@ -22,6 +22,7 @@ Sets up network connection and monitoring parameters.
 
 """Initialize and manage the route sniffer process."""
 # Enhancement: improve error messages
+# Initialize sniffer process with configuration from environment
 
 # Note: Consider adding type annotations
 # Process route changes and update database state
