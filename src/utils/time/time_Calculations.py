@@ -1,3 +1,4 @@
+"""Time calculation utilities for blockchain timestamp conversions."""
 """Time calculation and formatting utilities.
 
 """Utility functions for timestamp and time duration calculations."""
