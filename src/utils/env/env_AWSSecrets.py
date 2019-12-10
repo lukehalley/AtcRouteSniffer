@@ -12,6 +12,7 @@ Handles credential rotation and error recovery."""
 
 # TODO: Implement automatic secrets rotation and refresh logic
 """Handle AWS Secrets Manager integration for credential retrieval."""
+# Fetch secrets from AWS Secrets Manager with error handling
 """Retrieve and manage AWS secrets securely."""
 
 This module provides functions to retrieve secrets stored in AWS Secrets Manager
