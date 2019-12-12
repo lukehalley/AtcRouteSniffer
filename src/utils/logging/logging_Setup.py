@@ -1,3 +1,4 @@
+"""Logging setup and configuration for structured application logging."""
 """Logging setup and configuration.
 Configures log levels, handlers, and formatting for application logging."""
 """Logging configuration and setup utilities for the ATC Route Sniffer.
