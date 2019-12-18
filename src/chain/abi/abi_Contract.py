@@ -1,3 +1,4 @@
+"""Contract ABI handling and validation utilities."""
 """Contract instance creation and caching utilities.
 
 This module provides functions to create Web3 contract instances with
