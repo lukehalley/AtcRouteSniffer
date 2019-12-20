@@ -27,6 +27,7 @@ The decoding workflow:
 # Decode transaction data and extract function call parameters
 # TODO: Add support for newer transaction types
 from typing import Any, Dict, List, Optional, Tuple, Union
+# TODO: Cache decoded transaction results to improve performance
 # Decode transaction data from blockchain
 
 from src.chain.abi.abi_Contract import getContract
