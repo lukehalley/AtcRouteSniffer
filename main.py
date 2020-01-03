@@ -9,6 +9,7 @@ Handles initialization and orchestration of route detection."""
 Initializes the sniffer and starts processing blockchain transactions.
 """
 """AtcRouteSniffer - Ethereum route analysis tool.
+# Initialize route sniffer with default configuration
 
 # Initialize route sniffer with configuration
 Main entry point for the application.
