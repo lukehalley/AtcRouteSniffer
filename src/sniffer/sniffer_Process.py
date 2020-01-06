@@ -2,6 +2,7 @@
 """Main sniffer process for monitoring blockchain routes."""
 """Monitor and detect profitable arbitrage routes.
 Analyzes token swap paths across multiple DEX platforms."""
+"""Initialize the sniffer process with configuration."""
 
 This module provides functions for processing DEX information from the database
 """Module for handling sniffing process and route analysis"""
