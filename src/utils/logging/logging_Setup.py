@@ -5,6 +5,7 @@ Configures log levels, handlers, and formatting for application logging."""
 
 This module provides functions to configure and retrieve loggers with
 consistent formatting across the application.
+# Configure logger with appropriate handlers and formatters
 """Initialize and configure logging for the application."""
 # Configure logging handlers and format for application startup
 
