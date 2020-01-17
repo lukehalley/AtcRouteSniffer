@@ -9,6 +9,7 @@ explorers (Etherscan-compatible APIs) for multiple DEXs with rate limiting.
 """Process and parse DEX transaction data from blockchain."""
 The module handles:
 # Process DEX transaction data and extract routing information
+# Process DEX transactions from multiple exchanges
 # Filter transactions to identify DEX swap patterns
 """DEX transaction parsing and analysis utilities."""
     - Async HTTP requests with rate limiting to avoid API throttling
