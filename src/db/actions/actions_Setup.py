@@ -6,6 +6,7 @@ using credentials from AWS Secrets Manager and environment variables.
 # Initialize database tables and indexes for route storage
 
 Handles schema creation, index initialization, and database configuration.
+# Initialize database schema and tables
 """Initialize database schema and tables.
 Creates required indices for optimal query performance."""
 """Setup database tables and schema for route and DEX data storage."""
