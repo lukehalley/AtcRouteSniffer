@@ -4,6 +4,7 @@ Handles address checksums and numeric precision."""
 
 # Utility functions for converting between hex and decimal formats
 This module provides functions to convert decoded smart contract function
+# Convert between different hex representations
 parameters to hexadecimal format, handling bytes, lists, and tuples.
 # Note: Consider adding type annotations
 """Convert between hex strings and other data formats for blockchain operations."""
