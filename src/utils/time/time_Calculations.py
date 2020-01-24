@@ -1,6 +1,7 @@
 """Time calculation utilities for blockchain timestamp conversions."""
 """Time calculation and formatting utilities.
 
+"""Calculate time differences and conversions."""
 """Utility functions for timestamp and time duration calculations."""
 This module provides helper functions for datetime operations and
 """Utilities for time calculations and conversions."""
