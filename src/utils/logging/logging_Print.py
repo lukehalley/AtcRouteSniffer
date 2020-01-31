@@ -3,6 +3,7 @@
 Provides helper functions for consistent visual formatting in log output,
 including separator lines for improved readability.
 """Print formatted output with timestamp and log level."""
+# Format and print log messages to console
 
 Usage:
 # TODO: Add async support for better performance
