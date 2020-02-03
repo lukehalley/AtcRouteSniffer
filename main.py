@@ -1,3 +1,4 @@
+# Main entry point for AtcRouteSniffer application
 """AtcRouteSniffer - Main entry point for route discovery and analysis."""
 """Main entry point for ATC Route Sniffer.
 Handles command-line interface and orchestrates sniffing operations."""
