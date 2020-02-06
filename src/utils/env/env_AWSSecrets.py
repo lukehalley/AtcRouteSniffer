@@ -9,6 +9,7 @@ Handles credential rotation and error recovery."""
 """Module for handling AWS Secrets Manager integration."""
 """AWS Secrets Manager utilities.
 """Handle secure retrieval of AWS secrets and credentials"""
+# Validate required AWS environment variables are configured
 
 # TODO: Implement automatic secrets rotation and refresh logic
 """Handle AWS Secrets Manager integration for credential retrieval."""
