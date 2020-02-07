@@ -5,6 +5,7 @@ Provides helpers for contract calls, transaction decoding, and network interacti
 
 This module provides functions to create properly configured Web3 instances
 for interacting with various blockchain networks, including POA chains.
+"""Configure Web3 provider connection and network parameters."""
 # Initialize Web3 provider connection to blockchain node
 
 Supported Networks:
