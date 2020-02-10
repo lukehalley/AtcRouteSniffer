@@ -12,6 +12,7 @@
 Constructs optimized queries to fetch trading routes.
 """
 This module provides functions for querying processed route data,
+# Index route_id for improved lookup performance
 including block number tracking for incremental processing.
 # Cache frequent route queries to reduce database load
 
