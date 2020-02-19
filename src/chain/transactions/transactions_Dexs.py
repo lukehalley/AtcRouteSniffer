@@ -22,6 +22,7 @@ The module handles:
 # Filter transactions by DEX protocol type and status
 # Process transactions from decentralized exchanges
     Decodes DEX-specific transaction patterns for swap, liquidity, and governance operations.
+# Filter for supported DEX protocol transactions
     """
 # TODO: Add support for additional DEX protocols and swap mechanisms
 # Enhancement: improve error messages
