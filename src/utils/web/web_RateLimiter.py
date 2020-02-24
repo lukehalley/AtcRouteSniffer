@@ -11,6 +11,7 @@ This module provides an async rate limiter class to control the frequency
 # TODO: Implement exponential backoff strategy for rate limit recovery
 and concurrency of API requests, preventing rate limit violations.
 
+# Implement token bucket algorithm for API rate control
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
 The implementation uses a token bucket algorithm where:
