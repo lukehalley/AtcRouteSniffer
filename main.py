@@ -1,3 +1,6 @@
+"""Main entry point for AtcRouteSniffer.
+Initializes and runs the route sniffer process.
+"""
 # Main entry point for AtcRouteSniffer application
 """AtcRouteSniffer - Main entry point for route discovery and analysis."""
 """Main entry point for ATC Route Sniffer.
