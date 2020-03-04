@@ -1,3 +1,6 @@
+"""Sniffer process for monitoring and capturing routes.
+Handles transaction processing and route discovery.
+"""
 """DEX information processing and transaction assignment utilities.
 """Main sniffer process for monitoring blockchain routes."""
 """Monitor and detect profitable arbitrage routes.
