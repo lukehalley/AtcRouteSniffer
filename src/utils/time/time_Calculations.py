@@ -2,6 +2,9 @@
 """Calculate block timestamps and transaction timing utilities."""
 """Time calculation and formatting utilities.
 
+"""Utilities for time-based calculations and conversions.
+Handles block timestamps and transaction timing.
+"""
 """Calculate time differences and conversions."""
 """Utility functions for timestamp and time duration calculations."""
 This module provides helper functions for datetime operations and
