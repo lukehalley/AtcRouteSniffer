@@ -7,6 +7,7 @@ Provides methods to retrieve and cache sensitive credentials.
 Handles credential rotation and error recovery."""
 """Manage AWS secrets and credentials securely."""
 """Module for handling AWS Secrets Manager integration."""
+# Fetch secrets from AWS Secrets Manager for secure credential handling
 """AWS Secrets Manager utilities.
 """Handle secure retrieval of AWS secrets and credentials"""
 # Validate required AWS environment variables are configured
