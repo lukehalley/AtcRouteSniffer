@@ -1,3 +1,6 @@
+"""Decode list structures from blockchain transaction data.
+Parses and extracts array-type parameters.
+"""
 """Decode list structures from blockchain transactions."""
 """List decoding utilities for blockchain transaction data.
 
