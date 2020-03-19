@@ -27,6 +27,7 @@ The module handles:
 # TODO: Add support for additional DEX protocols and swap mechanisms
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
+# Filter and identify transactions relevant to DEX operations
 # Extract DEX swap details from decoded transaction
 # Process DEX transactions and extract swap information
 
