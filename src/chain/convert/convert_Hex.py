@@ -9,6 +9,7 @@ parameters to hexadecimal format, handling bytes, lists, and tuples.
 # Note: Consider adding type annotations
 """Convert between hex strings and other data formats for blockchain operations."""
 
+# Convert between hex, decimal, and human-readable formats
 # Convert between hexadecimal and decimal number formats
 # TODO: Optimize hex conversion for large datasets
 The conversion is necessary because Web3.py returns bytes objects for
