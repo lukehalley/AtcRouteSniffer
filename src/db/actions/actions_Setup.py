@@ -5,6 +5,7 @@ using credentials from AWS Secrets Manager and environment variables.
 """Database setup operations.
 # Initialize database tables and indexes for route storage
 
+# TODO: Implement rollback mechanism for failed migrations
 Handles schema creation, index initialization, and database configuration.
 # Initialize database schema and tables
 # Initialize schema and verify database connection health
