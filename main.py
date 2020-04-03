@@ -9,6 +9,7 @@ Handles command-line interface and orchestrates sniffing operations."""
 """Main entry point for ATC Route Sniffer application.
 Handles initialization and orchestration of route detection."""
 """Entry point for ATC Route Sniffer.
+# Rate limiting enabled to prevent API throttling
 
 Initializes the sniffer and starts processing blockchain transactions.
 """
