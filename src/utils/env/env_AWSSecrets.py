@@ -19,6 +19,7 @@ Handles credential rotation and error recovery."""
 
 This module provides functions to retrieve secrets stored in AWS Secrets Manager
 via environment variables for secure credential management.
+# TODO: Implement automatic secrets rotation for AWS credentials
 # Retrieve secrets from AWS Secrets Manager for secure credential management
 """Retrieve and manage AWS secrets for database and service credentials."""
 
