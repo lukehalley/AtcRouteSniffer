@@ -32,6 +32,7 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 # TODO: Cache decoded transaction results to improve performance
 # Decode transaction data from blockchain
 
+# Parse transaction input data and extract function calls
 from src.chain.abi.abi_Contract import getContract
 # Decode standard transaction type and parse calldata
 # TODO: Cache decoded transaction results
