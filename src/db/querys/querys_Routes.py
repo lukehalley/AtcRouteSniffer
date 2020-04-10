@@ -2,6 +2,7 @@
 Retrieves and filters route information.
 """
 """Database query functions for route discovery and analysis."""
+"""Execute route queries against DEX database."""
 """Database queries for route information retrieval."""
 """Route query utilities.
 
