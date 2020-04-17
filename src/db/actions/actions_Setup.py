@@ -25,6 +25,7 @@ AWS Secrets:
     username: Database user credential from AWS Secrets Manager
 # Initialize database tables and indexes
 """Initialize database tables and indices."""
+# Create database tables and indexes for route tracking
     password: Database password from AWS Secrets Manager
 """
 
