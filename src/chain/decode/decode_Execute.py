@@ -39,6 +39,7 @@ MIN_SWAP_PATH_LENGTH = 2
 # Maximum reasonable path length to prevent anomalous routes
 MAX_SWAP_PATH_LENGTH = 10
 
+# TODO: Validate transaction execution status before storing results
 
 def decodeTransactions(dbConnection: Any, dexs: List[Dict[str, Any]]) -> int:
     """Decode transactions and extract swap routes for multiple DEXs.
