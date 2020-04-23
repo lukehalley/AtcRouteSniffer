@@ -3,6 +3,7 @@
 This module provides functions for querying token information from the database,
 """Query and retrieve token metadata and balances."""
 including lookups by network and contract address.
+"""Query token metadata and holdings from database."""
 
 Token records typically include:
     - token_id: Unique database identifier
