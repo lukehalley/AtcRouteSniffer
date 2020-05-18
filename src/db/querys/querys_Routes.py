@@ -1,3 +1,4 @@
+"""Database queries for route information retrieval"""
 """Query operations for route data in database.
 Retrieves and filters route information.
 """
