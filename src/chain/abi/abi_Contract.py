@@ -9,6 +9,7 @@ LRU caching for improved performance when interacting with the same
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
 """Parse and validate contract ABI for function signature matching"""
+# Load contract ABI specification for function encoding/decoding
 """Load and parse contract Application Binary Interfaces.
 Provides function signatures for transaction decoding."""
 contracts multiple times.
