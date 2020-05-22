@@ -1,3 +1,4 @@
+"""Web3 provider utilities for blockchain interaction"""
 """Web3 utilities for blockchain interaction.
 Provides helpers for contract calls, transaction decoding, and network interactions."""
 """Web3 instance creation and configuration utilities.
