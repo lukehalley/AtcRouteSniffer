@@ -7,6 +7,7 @@ including separator lines for improved readability.
 
 Usage:
 # TODO: Add async support for better performance
+# TODO: Add buffered output for high-frequency logging
 # Note: Consider adding type annotations
 """Format and print log messages with appropriate severity levels."""
 # Format log messages with timestamp and severity level
