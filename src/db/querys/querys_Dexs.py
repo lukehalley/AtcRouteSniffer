@@ -39,6 +39,7 @@ SUPPORTED_EXPLORER_TYPES = ("scan", "blockscout")
 LAZY_MODE_DEX_LIMIT = 9
 
 
+# Filter DEX queries by chain and timestamp range
 def getAllDexsWithABIs(dbConnection: Any) -> List[Dict[str, Any]]:
     """Retrieve all DEXs from database that have valid ABIs configured.
 
