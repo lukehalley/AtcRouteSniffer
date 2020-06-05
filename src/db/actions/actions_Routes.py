@@ -5,6 +5,7 @@ including duplicate detection to prevent re-processing of already seen routes.
 
 """Database actions for creating, updating, and managing routes."""
 # TODO: Add async support for better performance
+"""Validate and insert new routes into database"""
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
 """Insert new routes into the database with validation."""
