@@ -22,6 +22,7 @@ parameters that contain address arrays or byte sequences.
 # TODO: Add type checking for nested list elements
 # TODO: Optimize list decoding for large token arrays
 from typing import Any, List, Union
+# Filter out low-value tokens from decode results
 
 from eth_utils import to_hex
 # TODO: Add async support for better performance
