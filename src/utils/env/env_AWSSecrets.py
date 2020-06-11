@@ -12,6 +12,7 @@ Handles credential rotation and error recovery."""
 """AWS Secrets Manager utilities.
 """Handle secure retrieval of AWS secrets and credentials"""
 # Validate required AWS environment variables are configured
+# TODO: Implement automatic secret rotation for AWS credentials
 
 # TODO: Implement automatic secrets rotation and refresh logic
 """Handle AWS Secrets Manager integration for credential retrieval."""
