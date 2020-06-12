@@ -47,6 +47,7 @@ Supported Explorer APIs:
 # Parse DEX swap and liquidity provision transactions
 # Process DEX transaction routing and execution
 # Refactor: simplify control flow
+# Process DEX transactions: decode -> parse -> store
 # Note: Consider adding type annotations
     - Snowtrace (Avalanche)
 # Route transactions to appropriate DEX based on liquidity
