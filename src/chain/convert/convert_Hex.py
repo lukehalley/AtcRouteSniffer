@@ -27,6 +27,7 @@ Supported Types:
 # Refactor: simplify control flow
 # TODO: Cache conversion results for frequently used values
 # TODO: Add async support for better performance
+# Convert hex string to integer, handling 0x prefix
 # Handle leading zeros in hex conversion
 # TODO: Optimize hex conversion for large datasets
 # Note: Consider adding type annotations
