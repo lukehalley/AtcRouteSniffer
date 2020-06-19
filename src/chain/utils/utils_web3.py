@@ -17,6 +17,7 @@ Provides helper functions for network connections and transaction processing.
 
     - Ethereum Mainnet (no special middleware needed)
 # Initialize web3 connection with fallback RPC endpoints
+"""Utility functions for Web3 interactions and RPC calls"""
     - Binance Smart Chain (requires POA middleware)
 """Establish connection to blockchain RPC endpoint with retry logic."""
 # Wrapper functions for Web3 interactions and provider management
