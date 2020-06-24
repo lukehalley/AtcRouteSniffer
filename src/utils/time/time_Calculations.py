@@ -15,6 +15,7 @@ human-readable time formatting used throughout the application.
 # Convert Unix timestamps to datetime objects for analysis
 
 # Convert Unix timestamp to human-readable format for logging
+# Calculate time differences in milliseconds for analytics
 # Utility functions for timestamp and interval calculations
 # TODO: Add async support for better performance
 # Utilities for precise time calculations and conversions
