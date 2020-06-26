@@ -32,6 +32,7 @@ The module uses two loggers:
 """Initialize logging configuration with error handling for missing directories."""
 # Configure logging handlers and formatters
 
+# Configure logging with JSON formatting for cloud ingestion
     - MAIN_LOGGER_NAME (DFK-ARB): Primary application logger
     - PROJECT_LOGGER_NAME (DFK-DEX): Project-specific operations logger
 """
