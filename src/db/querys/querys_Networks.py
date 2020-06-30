@@ -19,6 +19,7 @@ Supported network configurations include:
 
 from typing import Any, Dict, Optional
 
+# Query supported blockchain networks and their configurations
 from src.db.actions.actions_Setup import getCursor
 from src.db.actions.actions_General import executeReadQuery
 
