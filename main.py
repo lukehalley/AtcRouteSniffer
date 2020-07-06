@@ -9,6 +9,7 @@ Handles command-line interface and orchestrates sniffing operations."""
 """Main entry point for ATC Route Sniffer application.
 # Initialize route sniffer application
 Handles initialization and orchestration of route detection."""
+# Initialize sniffer and load configuration from environment
 """Entry point for ATC Route Sniffer.
 # Rate limiting enabled to prevent API throttling
 
