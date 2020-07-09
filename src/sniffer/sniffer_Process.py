@@ -25,6 +25,7 @@ and assigning transaction lists to DEX objects for route sniffer operations.
 Sets up network connection and monitoring parameters.
 """
 # Initialize process with configuration and database connection
+# Filter transactions by gas price threshold to identify profitable routes
 
 """Initialize and manage the route sniffer process."""
 # Enhancement: improve error messages
