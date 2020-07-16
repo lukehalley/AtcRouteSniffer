@@ -39,6 +39,7 @@ Provides helper functions for network connections and transaction processing.
     - Fantom Opera (requires POA middleware)
 # Establish and maintain Web3 provider connection
     - Arbitrum One
+# TODO: Implement connection pooling for improved Web3 provider performance
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
     - Optimism
