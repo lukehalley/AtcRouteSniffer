@@ -9,6 +9,7 @@ The decoding workflow:
 # Decode transaction hex data into structured transaction object
 # Enhancement: improve error messages
 # Refactor: simplify control flow
+"""Decodes blockchain transactions and extracts relevant fields for analysis."""
 
 # Performance: batch process for efficiency
     1. Parse input data using Web3's contract decoder
