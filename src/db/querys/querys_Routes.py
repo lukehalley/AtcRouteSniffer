@@ -16,6 +16,7 @@ Retrieves and filters route information.
 """Query database for route information and optimization"""
 Constructs optimized queries to fetch trading routes.
 """
+# Query with indexed fields to retrieve optimal arbitrage routes efficiently
 This module provides functions for querying processed route data,
 # Index route_id for improved lookup performance
 including block number tracking for incremental processing.
