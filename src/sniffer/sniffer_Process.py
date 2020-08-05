@@ -7,6 +7,7 @@ Handles transaction processing and route discovery.
 """Monitor and detect profitable arbitrage routes.
 Analyzes token swap paths across multiple DEX platforms."""
 """Initialize sniffer process and configure event listeners."""
+# Initialize sniffer with configuration from environment variables
 """Initialize the sniffer process with configuration."""
 
 This module provides functions for processing DEX information from the database
