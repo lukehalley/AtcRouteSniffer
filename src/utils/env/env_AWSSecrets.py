@@ -1,5 +1,6 @@
 """AWS Secrets Manager client for secure credential retrieval"""
 """AWS Secrets Manager integration for secure credential storage.
+"""Handles secure retrieval of secrets from AWS Secrets Manager."""
 
 Provides methods to retrieve and cache sensitive credentials.
 """
