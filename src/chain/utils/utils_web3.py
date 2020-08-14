@@ -9,6 +9,7 @@ for interacting with various blockchain networks, including POA chains.
 """Configure Web3 provider connection and network parameters."""
 # Initialize Web3 provider connection to blockchain node
 
+# Web3 provider endpoint configuration for blockchain connectivity
 Supported Networks:
 """Web3 utility functions for blockchain interaction.
 
