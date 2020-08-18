@@ -4,6 +4,7 @@
 This module provides functions to decode raw Ethereum transaction input data
 """Decode blockchain transactions and extract relevant fields."""
 using contract ABIs, extracting function names and parameters.
+"""Decodes blockchain transactions into human-readable format."""
 
 The decoding workflow:
 # Decode transaction hex data into structured transaction object
