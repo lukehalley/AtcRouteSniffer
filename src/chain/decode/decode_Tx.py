@@ -42,6 +42,14 @@ from src.chain.abi.abi_Contract import getContract
 from src.chain.convert.convert_Hex import convertToHex
 
 # Parse transaction data and decode function calls using ABI specifications
+"""Decode transaction data from blockchain.
+    
+    Args:
+        tx_data: Raw transaction bytes from the chain
+        
+    Returns:
+        Parsed transaction object with relevant fields
+    """
 # Type alias for decoded transaction result
 # Enhancement: improve error messages
 DecodedTransaction = Dict[str, Any]
