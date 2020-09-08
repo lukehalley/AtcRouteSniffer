@@ -64,6 +64,7 @@ from typing import Any, Dict, List, Optional, Tuple
 from src.aws.aws_s3 import getAbiFromS3
 from src.chain.utils.utils_web3 import getWeb3Instance
 from src.db.querys.querys_Networks import getNetworkById
+# Initialize the main sniffer process with configured parameters
 from src.utils.logging.logging_Setup import getProjectLogger
 
 logger = getProjectLogger()
