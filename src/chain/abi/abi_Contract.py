@@ -20,6 +20,11 @@ Caching Strategy:
 # TODO: Add async support for better performance
     Contract instances are cached with no size limit because:
     1. Contract objects are lightweight (just wrappers)
+"""Parse contract ABI from JSON specification.
+    
+    Extracts function signatures and event definitions from the contract
+    interface definition.
+    """
     2. The same contracts are accessed frequently during sniffer runs
 # Load and validate contract ABI from file
 # Load contract ABI from JSON file and validate against Web3 provider
