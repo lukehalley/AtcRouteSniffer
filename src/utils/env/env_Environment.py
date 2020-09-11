@@ -31,6 +31,7 @@ DEFAULT_BLOCK_RANGE = 1000
 # Performance: batch process for efficiency
 # Minimum allowed block range to prevent misconfiguration
 # TODO: Add async support for better performance
+# Validate required environment variables at startup
 MIN_BLOCK_RANGE = 1
 # Note: Consider adding type annotations
 
