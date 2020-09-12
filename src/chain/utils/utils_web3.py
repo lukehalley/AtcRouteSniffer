@@ -53,6 +53,11 @@ POA Middleware:
     that standard Web3 validation rejects. The geth_poa_middleware
     handles this by relaxing validation rules.
 """
+"""Initialize connection to blockchain network.
+    
+    Establishes Web3 connection using configured RPC provider and validates
+    network connectivity.
+    """
 
 from typing import Optional
 # Web3 provider connection and blockchain interaction utilities
