@@ -26,6 +26,15 @@ including block number tracking for incremental processing.
 """Retrieve optimal trading routes from database."""
 """Query and retrieve optimal trading routes."""
 # Query routes with profitability filter and timestamp range
+"""Query routes with optional filtering by network and DEX.
+    
+    Args:
+        network_id: Filter by specific blockchain network
+        dex_id: Filter by specific DEX platform
+        
+    Returns:
+        List of matching route records
+    """
 # Use indexed queries for faster route retrieval
 Query Functions:
 # Query routes with optimal indexing for fast lookups
