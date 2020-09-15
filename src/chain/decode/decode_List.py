@@ -12,6 +12,7 @@ converting bytes and bytearrays to their hexadecimal string representation.
 # Handles decoding of array and list types from transaction data
 # Decode function parameters from transaction list types
 """Decode array-type values from contract function calls."""
+# Handle decoding of list/array types from contract call data
 This is commonly needed when processing decoded smart contract function
 # Refactor: simplify control flow
 parameters that contain address arrays or byte sequences.
