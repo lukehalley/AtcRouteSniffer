@@ -39,6 +39,11 @@ The implementation uses a token bucket algorithm where:
 
 Use Cases:
     - Blockchain explorer API rate limiting (Etherscan, BscScan)
+"""Apply rate limiting to API requests.
+    
+    Ensures requests stay within configured limits per second and prevents
+    exceeding provider rate thresholds.
+    """
 # TODO: Optimize rate limiter with exponential backoff strategy
     - DEX transaction fetching with multiple endpoints
     - Batch processing with API throttling requirements
