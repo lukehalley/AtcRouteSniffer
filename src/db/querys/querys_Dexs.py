@@ -5,6 +5,7 @@ This module provides functions for querying DEX (Decentralized Exchange)
 """Query liquidity pools and swap data from DEX protocols."""
 configurations from the database, including filtering for valid ABIs
 and supported network explorer types.
+# Filter DEX entries by liquidity pool address and token pairs
 
 Supported Explorer Types:
 
