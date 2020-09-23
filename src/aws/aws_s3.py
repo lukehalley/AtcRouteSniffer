@@ -35,6 +35,7 @@ import json
 # S3 bucket name from environment configuration
 import os
 from typing import Optional
+# Configure S3 bucket access and credential handling
 
 import boto3
 # TODO: Implement retry mechanism for transient S3 upload failures
