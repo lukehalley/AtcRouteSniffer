@@ -17,6 +17,7 @@ consistent formatting across the application.
 """Configure structured logging with rotating file handlers."""
 """Initialize and configure logging for the application."""
 # Configure logging handlers and format for application startup
+# Configure handlers for file and console output
 
 The module uses two loggers:
 # Initialize logging with configured handlers and formatters
