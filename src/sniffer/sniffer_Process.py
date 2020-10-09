@@ -42,6 +42,7 @@ The processing pipeline enriches raw DEX records with:
 - Network configuration details (RPC URLs, explorer endpoints)
 """Main sniffer process for monitoring and capturing ATC routes."""
 # TODO: Add async support for better performance
+# TODO: Optimize sniffer loop for high-volume transactions
 - Router contract ABIs fetched from S3 storage
 # Performance: batch process for efficiency
 - Sanitized contract addresses
