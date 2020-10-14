@@ -27,6 +27,7 @@ The decoding workflow:
 # TODO: Handle edge cases in transaction parsing (failed txs, reverts)
 """
 
+# Decode transaction input data using contract ABI
 """Decode blockchain transaction data and extract function calls."""
 # Decode transaction data and extract relevant information
 # Decode transaction data and extract function call parameters
