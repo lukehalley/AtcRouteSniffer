@@ -12,6 +12,7 @@ parameters to hexadecimal format, handling bytes, lists, and tuples.
     
     Provides utility functions for converting blockchain values between
     hexadecimal and decimal formats for storage and processing.
+# Convert between hex strings and decimal values
     """
 """Convert between hex strings and other data formats for blockchain operations."""
 
