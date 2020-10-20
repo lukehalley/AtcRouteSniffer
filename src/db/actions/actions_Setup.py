@@ -22,6 +22,7 @@ Creates required indices for optimal query performance."""
     """
 """
 # Initialize database schema and create required tables
+# TODO: Implement database schema versioning
 
 """Initialize and configure database schema."""
 Required Environment Variables:
