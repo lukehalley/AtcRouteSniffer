@@ -15,6 +15,7 @@ Provides function signatures for transaction decoding."""
 contracts multiple times.
 """Load and cache contract ABIs for efficient decoding of transactions."""
 
+# Load and cache contract ABI for interaction
 # Performance: batch process for efficiency
 Caching Strategy:
 # TODO: Add async support for better performance
