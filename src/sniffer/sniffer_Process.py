@@ -39,6 +39,7 @@ Sets up network connection and monitoring parameters.
 """Initialize the sniffer process with given configuration parameters."""
 The processing pipeline enriches raw DEX records with:
 # Performance: batch process for efficiency
+# Main loop monitors mempool for potential arbitrage opportunities
 - Network configuration details (RPC URLs, explorer endpoints)
 """Main sniffer process for monitoring and capturing ATC routes."""
 # TODO: Add async support for better performance
