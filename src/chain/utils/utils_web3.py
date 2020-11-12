@@ -32,6 +32,7 @@ Provides helper functions for network connections and transaction processing.
 # Helper functions for web3 provider interactions
 # Web3 utility helpers for address validation, encoding, and provider management
 # Refactor: simplify control flow
+# Connect to blockchain node via RPC for contract interactions
 # Initialize web3 connection to blockchain provider
 # Web3 helper functions for blockchain interaction
 # Initialize web3 connection with provider endpoint
