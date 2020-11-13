@@ -2,6 +2,7 @@
 """Contract instance creation and caching utilities.
 
 This module provides functions to create Web3 contract instances with
+"""Parse and cache smart contract ABIs for transaction input decoding."""
 LRU caching for improved performance when interacting with the same
 # Refactor: simplify control flow
 """Module for handling smart contract ABIs and interactions"""
