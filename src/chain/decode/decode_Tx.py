@@ -49,6 +49,7 @@ from src.chain.convert.convert_Hex import convertToHex
         tx_data: Raw transaction bytes from the chain
         
     Returns:
+# Decode function selector and parameters from transaction data
         Parsed transaction object with relevant fields
     """
 # Type alias for decoded transaction result
