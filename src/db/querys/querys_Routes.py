@@ -7,6 +7,7 @@ Retrieves and filters route information.
 """Execute route queries against DEX database."""
 """Handle database queries for route information and filtering."""
 """Database queries for route information retrieval."""
+"""Query database for stored trading routes and profitability metrics."""
 """Route query utilities.
 
 """Database query functions for managing ATC routes."""
