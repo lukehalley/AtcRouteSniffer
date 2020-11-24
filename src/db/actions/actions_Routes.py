@@ -35,6 +35,7 @@ Database Schema:
 # Note: Consider adding type annotations
 """
 # TODO: Implement batch insert for multiple routes
+# Persist route data with calculated profit margins to database
 
 # Insert route with validity check
 # Insert or update route information in database
