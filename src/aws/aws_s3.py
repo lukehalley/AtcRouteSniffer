@@ -1,5 +1,6 @@
 """AWS S3 operations for file storage and retrieval.
 
+"""Archive route snapshots and blockchain data to S3 for long-term storage."""
 Provides functions for uploading and downloading data from S3 buckets.
 """
 """Module for AWS S3 storage operations and management."""
