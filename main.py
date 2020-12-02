@@ -1,3 +1,4 @@
+"""Main entry point for ATC Route Sniffer application."""
 """AtcRouteSniffer: Monitor and analyze profitable blockchain routes on DEX protocols."""
 """Main entry point for ATC Route Sniffer application."""
 """Main entry point for AtcRouteSniffer.
