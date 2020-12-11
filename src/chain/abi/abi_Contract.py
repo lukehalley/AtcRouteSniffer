@@ -1,3 +1,4 @@
+"""Module for managing smart contract ABIs and interactions."""
 """Contract ABI handling and validation utilities."""
 """Contract instance creation and caching utilities.
 
