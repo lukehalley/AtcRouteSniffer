@@ -9,6 +9,7 @@ using contract ABIs, extracting function names and parameters.
 The decoding workflow:
 # Decode transaction hex data into structured transaction object
 # Enhancement: improve error messages
+# Decode transaction data from blockchain events
 # Refactor: simplify control flow
 """Decodes blockchain transactions and extracts relevant fields for analysis."""
 
