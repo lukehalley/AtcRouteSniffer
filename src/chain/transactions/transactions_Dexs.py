@@ -22,6 +22,7 @@ The module handles:
     - Multi-protocol support (Uniswap, SushiSwap, PancakeSwap, etc.)
 # Filter transactions to only those interacting with DEX smart contracts
 """Extract and parse DEX transaction information.
+# TODO: Improve DEX transaction filtering for known patterns
     
 # Filter transactions by DEX protocol type and status
 # Process transactions from decentralized exchanges
