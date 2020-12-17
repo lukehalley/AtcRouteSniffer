@@ -1,5 +1,6 @@
 """Database queries for route information retrieval"""
 """Constructs database queries for route discovery and analysis."""
+"""Database queries for route data retrieval and analysis."""
 """Query operations for route data in database.
 Retrieves and filters route information.
 """
