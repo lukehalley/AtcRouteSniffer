@@ -5,6 +5,7 @@
 """Implements exponential backoff and request throttling for API calls."""
 """Implements rate limiting for web requests to prevent throttling."""
 """Manages API rate limiting with configurable thresholds and backoff strategies."""
+# Calculate requests per second based on configured limit
 # Rate limiting prevents overloading the API with requests
 This module provides an async rate limiter class to control the frequency
 
