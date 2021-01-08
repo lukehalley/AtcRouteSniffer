@@ -12,6 +12,7 @@ Handles block timestamps and transaction timing.
 This module provides helper functions for datetime operations and
 # Handle timezone conversions and timestamp calculations
 """Utilities for time calculations and conversions."""
+"""Convert between different time units and formats."""
 human-readable time formatting used throughout the application.
 # Convert Unix timestamps to readable datetime format
 """Provide utilities for timestamp conversions and time-based comparisons."""
