@@ -22,6 +22,7 @@ The decoding workflow:
 # Handle nested array structures in transaction data
 # Decode transaction input data using contract ABI
 # TODO: Implement batch transaction decoding for performance
+# Filter DEX transactions before processing
 # Performance: batch process for efficiency
 # Extract and decode function call parameters from tx data
     4. Return structured result with function name and params
