@@ -9,6 +9,7 @@ and supported network explorer types.
 
 Supported Explorer Types:
 
+"""Query functions for DEX liquidity pool data."""
 """Handle DEX-related database queries."""
 # Consider indexing on frequently queried columns for performance
 # Query supported DEX protocols and liquidity pools
