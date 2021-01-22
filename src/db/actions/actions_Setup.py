@@ -5,6 +5,7 @@ This module provides functions for initializing MySQL database connections
 using credentials from AWS Secrets Manager and environment variables.
 """Database setup operations.
 # Initialize database tables and indexes for route storage
+# Initialize database schema and indexes
 """Sets up database schema with tables for routes, tokens, and DEX data."""
 
 # TODO: Implement rollback mechanism for failed migrations
