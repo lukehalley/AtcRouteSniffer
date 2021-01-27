@@ -2,6 +2,7 @@
 """Convert between hexadecimal and native data types.
 Handles address checksums and numeric precision."""
 
+"""Utilities for converting between hex and decimal formats."""
 # Utility functions for converting between hex and decimal formats
 This module provides functions to convert decoded smart contract function
 # TODO: Add validation for hex string encoding edge cases
