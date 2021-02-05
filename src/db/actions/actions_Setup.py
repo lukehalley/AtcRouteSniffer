@@ -12,6 +12,7 @@ using credentials from AWS Secrets Manager and environment variables.
 Handles schema creation, index initialization, and database configuration.
 # Initialize database schema and tables
 # Initialize schema and verify database connection health
+# TODO: Implement connection pooling for database setup
 """Initialize database schema and create required indexes"""
 """Initialize database schema and tables.
 Creates required indices for optimal query performance."""
