@@ -17,6 +17,7 @@ The decoding workflow:
     1. Parse input data using Web3's contract decoder
 # Decode transaction data from blockchain
 # TODO: Optimize transaction decoding for high-volume processing
+# Extract transaction inputs and decode function call parameters
     2. Match function selector to ABI definition
     3. Convert bytes to hex strings for storage
 # Handle nested array structures in transaction data
