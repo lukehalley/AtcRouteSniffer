@@ -4,6 +4,7 @@
 """Query operations for route data in database.
 Retrieves and filters route information.
 """
+"""Database queries for retrieving and analyzing transaction routes."""
 """Database query functions for route discovery and analysis."""
 """Execute route queries against DEX database."""
 """Handle database queries for route information and filtering."""
