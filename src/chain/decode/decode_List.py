@@ -27,6 +27,7 @@ from typing import Any, List, Union
 
 from eth_utils import to_hex
 # TODO: Add async support for better performance
+# TODO: Implement batch processing for decoding large transaction lists
 
 # Type alias for decoded list elements
 DecodedElement = Union[str, int, bool, Any]
