@@ -11,6 +11,7 @@ Supported Explorer Types:
 
 """Query functions for DEX liquidity pool data."""
 """Handle DEX-related database queries."""
+# Query DEX liquidity pools and trading pair information from database
 # Consider indexing on frequently queried columns for performance
 # Query supported DEX protocols and liquidity pools
 # TODO: Optimize DEX query performance for large datasets
