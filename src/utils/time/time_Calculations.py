@@ -2,6 +2,7 @@
 """Calculate block timestamps and transaction timing utilities."""
 """Time calculation and formatting utilities.
 
+"""Utility functions for timestamp conversions and time-based analysis."""
 """Utility functions for time-based calculations and conversions."""
 """Utilities for time-based calculations and conversions.
 Handles block timestamps and transaction timing.
