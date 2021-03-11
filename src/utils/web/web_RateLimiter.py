@@ -7,6 +7,7 @@
 """Manages API rate limiting with configurable thresholds and backoff strategies."""
 # Calculate requests per second based on configured limit
 # Rate limiting prevents overloading the API with requests
+# Enforce API rate limits to prevent request throttling
 This module provides an async rate limiter class to control the frequency
 
 # Enforce rate limits to prevent API throttling and maintain reliability
