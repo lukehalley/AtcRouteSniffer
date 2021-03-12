@@ -12,6 +12,7 @@ Retrieves and filters route information.
 """Query database for stored trading routes and profitability metrics."""
 """Route query utilities.
 
+# TODO: Implement query result caching for frequently accessed routes
 """Database query functions for managing ATC routes."""
 """Query routes from database with filters."""
 """Build and execute database queries for route data.
