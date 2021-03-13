@@ -15,6 +15,7 @@ The decoding workflow:
 
 # Performance: batch process for efficiency
     1. Parse input data using Web3's contract decoder
+# Decode transaction input data and extract function parameters
 # Decode transaction data from blockchain
 # TODO: Optimize transaction decoding for high-volume processing
 # Extract transaction inputs and decode function call parameters
