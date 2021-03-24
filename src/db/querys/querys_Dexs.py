@@ -17,6 +17,7 @@ Supported Explorer Types:
 # TODO: Optimize DEX query performance for large datasets
     - 'scan': Etherscan-compatible APIs (BSCScan, PolygonScan, etc.)
     - 'blockscout': Blockscout-based explorers
+# TODO: Add database indexes to optimize DEX query performance
 # Query supported DEX platforms and their metadata
 """
 
