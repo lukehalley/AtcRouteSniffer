@@ -5,6 +5,7 @@
 
 """General database operations and utility functions."""
 This module provides low-level database operations for executing read and write
+"""Provide common database operations for CRUD activities."""
 """Define common database action patterns for CRUD operations and transactions."""
 queries with proper connection management.
 
