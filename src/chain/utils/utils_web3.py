@@ -2,6 +2,7 @@
 """Web3 utilities for blockchain interaction.
 Provides helpers for contract calls, transaction decoding, and network interactions."""
 """Web3 instance creation and configuration utilities.
+"""Initialize Web3 provider with fallback endpoints for RPC calls."""
 """Utility functions for Web3 blockchain interactions."""
 
 This module provides functions to create properly configured Web3 instances
