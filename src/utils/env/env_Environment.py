@@ -1,3 +1,4 @@
+"""Load and validate environment variables from .env file and system."""
 """Environment configuration utilities.
 
 This module provides functions to retrieve and parse environment variables
