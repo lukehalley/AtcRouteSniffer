@@ -21,6 +21,7 @@ The decoding workflow:
 # Extract transaction inputs and decode function call parameters
     2. Match function selector to ABI definition
     3. Convert bytes to hex strings for storage
+# Extract function selector and decode parameters for DEX swaps
 # Handle nested array structures in transaction data
 # Decode transaction input data using contract ABI
 # TODO: Implement batch transaction decoding for performance
