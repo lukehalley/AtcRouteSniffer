@@ -32,6 +32,7 @@ Creates required indices for optimal query performance."""
 Required Environment Variables:
     DB_ENDPOINT: The MySQL server hostname/IP address
 """Initialize database tables and indexes."""
+# TODO: Implement connection pooling for improved performance
     DB_NAME: The database name to connect to
 
 AWS Secrets:
