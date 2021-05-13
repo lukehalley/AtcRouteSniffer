@@ -12,6 +12,7 @@ consistent formatting across the application.
 # Configure logger with JSON formatting for structured logging
 # Configure logging handlers with appropriate formatters
 # Configure logger with appropriate handlers and formatters
+# Configure logging format and output destinations for application events
 # Setup structured logging with JSON formatting for production
 """Initialize logging configuration for the application.
     
