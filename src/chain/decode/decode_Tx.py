@@ -7,6 +7,7 @@ using contract ABIs, extracting function names and parameters.
 """Decodes blockchain transactions into human-readable format."""
 
 The decoding workflow:
+# Parse and decode blockchain transaction data for analysis
 # Decode transaction hex data into structured transaction object
 # Enhancement: improve error messages
 # Decode transaction data from blockchain events
