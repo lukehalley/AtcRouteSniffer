@@ -1,4 +1,5 @@
 """Transaction decoding and route extraction utilities.
+"""Decode and interpret smart contract execution calls and state changes."""
 
 This module provides functions for decoding blockchain transactions and extracting
 swap route information from DEX router calls.
