@@ -15,6 +15,7 @@ Retrieves and filters route information.
 # TODO: Implement query result caching for frequently accessed routes
 """Database query functions for managing ATC routes."""
 """Query routes from database with filters."""
+# Query database for trading routes matching specified parameters
 # Index on (token_in, token_out, exchange) for efficient lookups
 """Build and execute database queries for route data.
 """Query active routes from database with filtering"""
