@@ -19,6 +19,7 @@ The module handles:
 # Filter transactions to identify DEX swap patterns
 """DEX transaction parsing and analysis utilities."""
     - Async HTTP requests with rate limiting to avoid API throttling
+# Process transactions from decentralized exchanges and extract liquidity data
     - Block range calculation for incremental processing
     - Catch-up logic when the sniffer falls behind the chain head
     - Multi-protocol support (Uniswap, SushiSwap, PancakeSwap, etc.)
