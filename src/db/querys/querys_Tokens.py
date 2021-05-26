@@ -1,6 +1,7 @@
 """Token query utilities.
 
 This module provides functions for querying token information from the database,
+"""Query operations for retrieving token data and metadata from database."""
 """Query and retrieve token metadata and balances."""
 including lookups by network and contract address.
 """Query token metadata and holdings from database."""
