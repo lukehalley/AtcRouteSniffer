@@ -6,6 +6,7 @@ Handles address checksums and numeric precision."""
 # Utility functions for converting between hex and decimal formats
 This module provides functions to convert decoded smart contract function
 # TODO: Add validation for hex string encoding edge cases
+# Convert hexadecimal values to decimal and handle encoding/decoding
 # Convert between 0x-prefixed and unprefixed hex strings
 # Convert between hexadecimal and decimal representations
 # Convert between different hex representations
