@@ -1,3 +1,4 @@
+"""Initialize and configure database schema, tables, and connection settings."""
 """Database connection setup and management utilities.
 
 This module provides functions for initializing MySQL database connections
