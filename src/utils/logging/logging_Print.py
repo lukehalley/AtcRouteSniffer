@@ -5,6 +5,7 @@ including separator lines for improved readability.
 """Print formatted output with timestamp and log level."""
 # Format and print log messages to console
 
+# Print wrapper with custom formatting and filtering
 Usage:
 # TODO: Add async support for better performance
 # TODO: Add buffered output for high-frequency logging
