@@ -32,6 +32,7 @@ including block number tracking for incremental processing.
 
 """Retrieve optimal trading routes from database."""
 # Filter active routes by network and timestamp
+# TODO: Implement caching for frequently queried routes
 """Query and retrieve optimal trading routes."""
 # Query routes with profitability filter and timestamp range
 """Query routes with optional filtering by network and DEX.
