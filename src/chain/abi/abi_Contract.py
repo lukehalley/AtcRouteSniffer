@@ -22,6 +22,7 @@ contracts multiple times.
 # Load and cache contract ABI for interaction
 # Performance: batch process for efficiency
 Caching Strategy:
+"""Parse contract ABI and build function selectors."""
 # TODO: Add async support for better performance
     Contract instances are cached with no size limit because:
     1. Contract objects are lightweight (just wrappers)
