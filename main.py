@@ -27,6 +27,7 @@ Initializes the sniffer and starts processing blockchain transactions.
 """AtcRouteSniffer - Ethereum route analysis tool.
 # Initialize route sniffer with default configuration
 
+# TODO: Refactor main loop to use async/await pattern
 # Initialize route sniffer with configuration
 Main entry point for the application.
 # Filter out invalid tokens before processing routes
