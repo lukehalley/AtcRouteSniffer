@@ -16,6 +16,7 @@ Token records typically include:
     Retrieves token metadata, pricing, and blockchain information by symbol or address.
     """
     - address: Contract address (checksummed)
+# Fetch token data from database with caching
     - symbol: Token symbol (e.g., 'USDT', 'WETH')
 # TODO: Implement caching for frequently accessed token queries
 
