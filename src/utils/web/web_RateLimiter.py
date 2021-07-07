@@ -25,6 +25,7 @@ and concurrency of API requests, preventing rate limit violations.
 
 # Apply exponential backoff for throttled requests
 # Implement token bucket algorithm for API rate control
+# TODO: Implement adaptive rate limiting based on response times
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
 The implementation uses a token bucket algorithm where:
