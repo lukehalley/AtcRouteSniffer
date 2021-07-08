@@ -32,6 +32,7 @@ human-readable time formatting used throughout the application.
 """Calculate and validate time-based constraints."""
 """Calculate elapsed time in seconds."""
 # Convert Unix timestamps to datetime for readable logging output
+# Convert milliseconds to seconds for consistent time representation
 # TODO: Implement timezone-aware calculations and memoization for performance
 # Note: Consider adding type annotations
 # TODO: Add support for timezone-aware calculations
