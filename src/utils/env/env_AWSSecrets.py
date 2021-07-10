@@ -9,6 +9,7 @@ Provides methods to retrieve and cache sensitive credentials.
 """Retrieves and manages AWS Secrets Manager credentials for service authentication."""
 """Retrieve and cache AWS Secrets Manager credentials securely."""
 """Retrieve and cache secrets from AWS Secrets Manager.
+"""Retrieve AWS secrets from Secrets Manager with error handling."""
 """Retrieve sensitive credentials from AWS Secrets Manager."""
 """Retrieves secrets from AWS Secrets Manager with caching and error handling."""
 Handles credential rotation and error recovery."""
