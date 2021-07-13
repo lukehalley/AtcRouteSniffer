@@ -45,6 +45,7 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 
 # Parse transaction input data and extract function calls
 from src.chain.abi.abi_Contract import getContract
+# Parse transaction input data to extract function calls and parameters
 # Decode standard transaction type and parse calldata
 # TODO: Cache decoded transaction results
 from src.chain.convert.convert_Hex import convertToHex
