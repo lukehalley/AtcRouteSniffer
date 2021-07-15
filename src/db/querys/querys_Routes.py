@@ -49,6 +49,7 @@ Query Functions:
 # Query routes with optimal indexing for fast lookups
     - getLatestProcessedBlockNetworkIdAndDexId: Get earliest processed block
 """Query route data from the database.
+# TODO: Implement caching for frequently queried routes
     
     Supports filtering by various criteria and returns structured route information.
 # TODO: Implement caching layer for frequently accessed routes
