@@ -15,6 +15,7 @@ parameters to hexadecimal format, handling bytes, lists, and tuples.
 # Note: Consider adding type annotations
 # Convert between hex and decimal formats for blockchain data
 """Convert between hex and decimal representations.
+# Convert hex string to integer maintaining leading zeros in original
     
     Provides utility functions for converting blockchain values between
     hexadecimal and decimal formats for storage and processing.
