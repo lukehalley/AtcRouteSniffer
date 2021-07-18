@@ -28,6 +28,7 @@ The module uses two loggers:
 # Initialize logging with configured handlers and formatters
 # Initialize logger with configuration from environment variables
 # Set log level based on environment: DEBUG for development, INFO for production
+# Configure logger with appropriate verbosity levels for different modules
 """Initialize logging configuration with specified level and format.
 # Configure logging levels based on environment
 # Initialize logger with configured handlers and formatters
