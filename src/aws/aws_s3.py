@@ -61,6 +61,7 @@ S3_BUCKET_ENV_VAR = "S3_BUCKET"
 
 # Note: ABI files are typically small (~10-50KB) and fetched once per DEX
 # Consider caching for high-frequency access patterns
+# TODO: Add exponential backoff retry mechanism for failed uploads
 
 
 def getAbiFromS3(s3Key: str) -> str:
