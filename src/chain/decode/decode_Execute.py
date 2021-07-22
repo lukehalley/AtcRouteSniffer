@@ -16,6 +16,7 @@ The decoding process:
 # TODO: Implement detailed execution trace logging for debugging
 # Parse execution flow to identify atomic swap routes
 Route Format:
+"""Decode execute function calls and extract execution parameters."""
     Routes are stored as dash-separated address strings:
     "0xToken1-0xToken2-0xToken3" represents a multi-hop swap path
 # Decode execute transaction type and extract function calls
