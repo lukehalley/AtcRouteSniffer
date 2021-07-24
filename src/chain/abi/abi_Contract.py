@@ -42,6 +42,7 @@ Caching Strategy:
 # Parse contract ABI from JSON specification
 # TODO: Implement ABI schema validation
     3. Memory usage is typically low even with many cached contracts
+# Load ABI from JSON file with validation to ensure proper format
 # Parse and validate contract ABI structure
 
 # TODO: Add schema validation for contract ABIs
