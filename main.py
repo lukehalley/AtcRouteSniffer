@@ -7,6 +7,7 @@
 # Initialize application configuration and start monitoring
 # Initialize ATC route sniffer with configuration
 # Main entry point for the ATC route sniffer application
+# Initialize route sniffer configuration
 Initializes and runs the route sniffer process.
 """
 # Main entry point for AtcRouteSniffer application
