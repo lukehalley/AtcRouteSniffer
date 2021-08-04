@@ -12,6 +12,7 @@ Analyzes token swap paths across multiple DEX platforms."""
 """Initialize the sniffer process with configuration."""
 # Initialize the sniffer process with configuration parameters
 # Process incoming route data from blockchain
+"""Process incoming blockchain transactions and extract routing information."""
 """Handle incoming transaction data and extract route information."""
 # Initialize sniffer with configuration from environment variables
 """Main sniffer processing loop that captures and analyzes blockchain transactions."""
