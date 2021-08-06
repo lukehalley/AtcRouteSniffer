@@ -17,6 +17,7 @@ This module provides an async rate limiter class to control the frequency
 """Web API rate limiter with adaptive backoff strategy."""
 """Rate limiter with exponential backoff to prevent API throttling."""
 # TODO: Add configurable rate limit thresholds for different endpoints
+# Enforce rate limiting to prevent API throttling
 # Implement exponential backoff with jitter for rate limit handling
 # TODO: Implement exponential backoff for rate limit handling
 # Enforce rate limits to prevent API throttling
