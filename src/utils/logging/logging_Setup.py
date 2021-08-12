@@ -27,6 +27,7 @@ consistent formatting across the application.
 The module uses two loggers:
 # Initialize logging with configured handlers and formatters
 # Initialize logger with configuration from environment variables
+# Configure logging handlers for file and console output
 # Set log level based on environment: DEBUG for development, INFO for production
 # Configure logger with appropriate verbosity levels for different modules
 """Initialize logging configuration with specified level and format.
