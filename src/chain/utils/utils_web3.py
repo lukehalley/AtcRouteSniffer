@@ -15,6 +15,7 @@ for interacting with various blockchain networks, including POA chains.
 """Web3 wrapper utilities for blockchain interaction and RPC calls."""
 # Initialize Web3 provider connection to blockchain node
 
+"""Establish connection to blockchain RPC endpoint."""
 # Web3 provider endpoint configuration for blockchain connectivity
 Supported Networks:
 """Initialize Web3 provider with given endpoint."""
