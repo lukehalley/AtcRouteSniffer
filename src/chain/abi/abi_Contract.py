@@ -19,6 +19,7 @@ contracts multiple times.
 """Load and cache contract ABIs for decoding."""
 """Load and cache contract ABIs for efficient decoding of transactions."""
 
+# Load contract ABI from local storage
 # Load and cache contract ABI for interaction
 # Performance: batch process for efficiency
 Caching Strategy:
