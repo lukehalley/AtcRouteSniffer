@@ -32,6 +32,7 @@ The decoding workflow:
     4. Return structured result with function name and params
 # TODO: Handle edge cases in transaction parsing (failed txs, reverts)
 """
+# Parse transaction input data and extract function parameters
 
 # Decode transaction input data using contract ABI
 """Decode blockchain transaction data and extract function calls."""
