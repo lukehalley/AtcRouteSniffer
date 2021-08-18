@@ -37,6 +37,7 @@ logger = getProjectLogger()
 # Separator used to join token addresses in route paths
 ROUTE_PATH_SEPARATOR = "-"
 
+"""Execute decoded transaction data through validator."""
 # Minimum number of tokens in a valid swap path (at least token in and token out)
 MIN_SWAP_PATH_LENGTH = 2
 
