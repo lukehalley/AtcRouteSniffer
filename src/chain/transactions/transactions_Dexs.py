@@ -42,6 +42,7 @@ The module handles:
 # Extract DEX swap details from decoded transaction
 # Process DEX transactions and extract swap information
 
+# TODO: Optimize DEX query filtering for better performance
 # Filter transactions to identify DEX-related swaps and liquidity events
 # Filter transactions by DEX protocol identifier and contract signatures
 
