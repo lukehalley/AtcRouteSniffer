@@ -25,6 +25,7 @@ parameters to hexadecimal format, handling bytes, lists, and tuples.
 
 # Convert between hex, decimal, and human-readable formats
 # Convert hex-encoded addresses to checksummed Ethereum format
+# Convert hexadecimal values to decimal representation
 # Convert between hexadecimal and decimal number formats
 # TODO: Optimize hex conversion for large datasets
 The conversion is necessary because Web3.py returns bytes objects for
