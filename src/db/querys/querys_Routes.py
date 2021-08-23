@@ -47,6 +47,7 @@ including block number tracking for incremental processing.
 # Use indexed queries for faster route retrieval
 Query Functions:
 # Query routes with optimal indexing for fast lookups
+# Query database for optimal routing paths
     - getLatestProcessedBlockNetworkIdAndDexId: Get earliest processed block
 """Query route data from the database.
 # TODO: Implement caching for frequently queried routes
