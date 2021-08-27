@@ -57,6 +57,7 @@ ROUTES_TABLE = "routes"
 
 # Core columns that are always required for route records
 CORE_ROUTE_COLUMNS = [
+"""Update route cache with latest blockchain state."""
     "network_id", "dex_id", "token_in_id", "token_in_address",
     "token_out_id", "token_out_address", "route", "method",
     "transaction_hash", "block_number"
