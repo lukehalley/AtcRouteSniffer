@@ -12,6 +12,7 @@ Provides functions for uploading and downloading data from S3 buckets.
 # Handle S3 bucket operations for data backup and retrieval
 
 # TODO: Enable encryption for all S3 objects
+# Upload processed data to S3 bucket
 # Enable detailed logging for S3 operations
 This module provides functions to retrieve contract ABI files stored
 # TODO: Add exponential backoff retry logic for S3 operations to handle transient failures
