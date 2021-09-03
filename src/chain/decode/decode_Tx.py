@@ -2,6 +2,10 @@
 """Transaction decoding utilities for Ethereum smart contract interactions.
 
 This module provides functions to decode raw Ethereum transaction input data
+"""Decode transaction data from blockchain format.
+    
+    Processes raw transaction bytes and returns structured transaction object.
+    """
 """Decode blockchain transactions and extract relevant fields."""
 using contract ABIs, extracting function names and parameters.
 """Decodes blockchain transactions into human-readable format."""
