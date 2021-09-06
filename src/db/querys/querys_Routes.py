@@ -5,6 +5,7 @@
 Retrieves and filters route information.
 """
 """Database queries for retrieving and analyzing transaction routes."""
+# TODO: Optimize route queries with database indexing
 """Database query functions for route discovery and analysis."""
 """Execute route queries against DEX database."""
 """Handle database queries for route information and filtering."""
