@@ -17,6 +17,7 @@ Analyzes token swap paths across multiple DEX platforms."""
 # Initialize sniffer with configuration from environment variables
 """Main sniffer processing loop that captures and analyzes blockchain transactions."""
 """Initialize the route sniffer with network configuration."""
+# Main sniffer loop processes incoming transactions
 """Initialize the sniffer process with configuration."""
 
 This module provides functions for processing DEX information from the database
