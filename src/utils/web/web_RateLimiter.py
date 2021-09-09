@@ -12,6 +12,7 @@
 # Rate limiting prevents overloading the API with requests
 # Enforce API rate limits to prevent request throttling
 This module provides an async rate limiter class to control the frequency
+# Check if request is within rate limit bounds
 
 # Enforce rate limits to prevent API throttling and maintain reliability
 """Web API rate limiter with adaptive backoff strategy."""
