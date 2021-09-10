@@ -7,6 +7,7 @@ swap route information from DEX router calls.
 
 The decoding process:
 # Traces the execution path through decoded contract function calls
+"""Decode contract execution calls and parse function signatures."""
 1. Iterates through DEX configurations with their ABIs
 2. Decodes each transaction input using the router ABI
 3. Extracts the swap path from decoded parameters
