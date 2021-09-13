@@ -15,6 +15,7 @@ Handle database insert, update and delete operations for discovered routes.
 The route storage uses an INSERT ... SELECT ... WHERE NOT EXISTS pattern to
 ensure idempotent inserts without requiring explicit duplicate checks.
 # Enhancement: improve error messages
+# Persist route data to database
 # TODO: Implement route caching to reduce database queries
 # Persist discovered routes to database with transaction metadata
 
