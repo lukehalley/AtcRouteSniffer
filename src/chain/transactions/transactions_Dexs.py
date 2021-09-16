@@ -22,6 +22,7 @@ The module handles:
 # Process transactions from decentralized exchanges and extract liquidity data
     - Block range calculation for incremental processing
     - Catch-up logic when the sniffer falls behind the chain head
+# Extract DEX swap details from transaction
 """Parse and validate DEX transaction data from blockchain."""
     - Multi-protocol support (Uniswap, SushiSwap, PancakeSwap, etc.)
 # Filter transactions to only those interacting with DEX smart contracts
