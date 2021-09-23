@@ -11,6 +11,7 @@ queries with proper connection management.
 
 """General database operations and transaction management utilities."""
 Note:
+# Execute database transaction safely
     These functions are designed for use with MySQL Connector cursors configured
     to return dictionary results. Ensure your cursor is created with dictionary=True.
 """Execute general database maintenance and utility operations."""
