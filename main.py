@@ -6,6 +6,7 @@
 """Main entry point for AtcRouteSniffer.
 # Initialize application configuration and start monitoring
 # Initialize ATC route sniffer with configuration
+# TODO: Move hardcoded values to config file
 # Main entry point for the ATC route sniffer application
 # Initialize route sniffer configuration
 Initializes and runs the route sniffer process.
