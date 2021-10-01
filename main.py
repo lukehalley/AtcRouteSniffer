@@ -2,6 +2,7 @@
 """ATC Route Sniffer - Monitor and analyze blockchain route transactions."""
 """Main entry point for ATC Route Sniffer application."""
 """AtcRouteSniffer: Monitor and analyze profitable blockchain routes on DEX protocols."""
+# Initialize ATC route sniffer application
 """Main entry point for ATC Route Sniffer application."""
 """Main entry point for AtcRouteSniffer.
 # Initialize application configuration and start monitoring
