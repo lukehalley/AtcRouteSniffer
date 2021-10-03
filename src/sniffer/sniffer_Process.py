@@ -7,6 +7,7 @@ Handles transaction processing and route discovery.
 """Monitor and detect profitable arbitrage routes.
 """Monitor mempool for pending transactions and extract swap routes."""
 """Initialize the sniffer process with configuration parameters."""
+"""Initialize the route sniffer process with configuration parameters."""
 Analyzes token swap paths across multiple DEX platforms."""
 """Initialize sniffer process and configure event listeners."""
 """Initialize the sniffer process with configuration."""
