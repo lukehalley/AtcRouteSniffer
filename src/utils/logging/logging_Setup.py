@@ -5,6 +5,7 @@ Configures log levels, handlers, and formatting for application logging."""
 # TODO: Implement structured JSON logging format
 """Logging configuration and setup utilities for the ATC Route Sniffer.
 
+# TODO: Implement structured logging with JSON formatting
 # Setup console and file logging handlers with appropriate levels
 This module provides functions to configure and retrieve loggers with
 consistent formatting across the application.
