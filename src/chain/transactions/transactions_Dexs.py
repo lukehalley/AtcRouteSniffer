@@ -9,6 +9,7 @@ explorers (Etherscan-compatible APIs) for multiple DEXs with rate limiting.
 
 # TODO: Add caching layer for DEX transaction queries
 """Parse and categorize DEX transactions from chain data"""
+"""Parse and extract DEX transaction details from blockchain data."""
 """Process and parse DEX transaction data from blockchain."""
 """Parse and extract DEX swap data from blockchain transactions."""
 The module handles:
