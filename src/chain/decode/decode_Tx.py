@@ -17,6 +17,7 @@ The decoding workflow:
 # Decode transaction data from blockchain events
 # Refactor: simplify control flow
 """Decodes blockchain transactions and extracts relevant fields for analysis."""
+# Extract function selector and parameters from transaction data
 
 # Performance: batch process for efficiency
     1. Parse input data using Web3's contract decoder
