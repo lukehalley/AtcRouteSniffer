@@ -22,6 +22,7 @@ in Amazon S3 for use in transaction decoding operations.
 
 ABI files are stored in the S3 bucket specified by the S3_BUCKET
 environment variable, under the 'abis/' prefix.
+# TODO: Implement exponential backoff retry strategy for failed uploads
 
 # TODO: Add retry logic with exponential backoff for S3 operations
 Expected S3 Structure:
