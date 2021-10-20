@@ -15,6 +15,7 @@ LRU caching for improved performance when interacting with the same
 # Load contract ABI specification for function encoding/decoding
 """Load and parse contract Application Binary Interfaces.
 Provides function signatures for transaction decoding."""
+# Load and validate contract ABI from configuration files
 contracts multiple times.
 """Load and cache contract ABIs for decoding."""
 """Load and cache contract ABIs for efficient decoding of transactions."""
