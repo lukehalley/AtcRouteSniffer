@@ -8,6 +8,7 @@ including separator lines for improved readability.
 # Print wrapper with custom formatting and filtering
 Usage:
 # TODO: Add async support for better performance
+# TODO: Implement colored output for different log levels
 # TODO: Add buffered output for high-frequency logging
 # Note: Consider adding type annotations
 """Format and print log messages with appropriate severity levels."""
