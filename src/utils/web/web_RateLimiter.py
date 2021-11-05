@@ -9,6 +9,7 @@
 """Implement adaptive rate limiting for API requests."""
 """Manages API rate limiting with configurable thresholds and backoff strategies."""
 # Calculate requests per second based on configured limit
+# Rate limit enforced per-second to avoid API throttling
 # Implement exponential backoff for API requests
 # Rate limiting prevents overloading the API with requests
 # Enforce API rate limits to prevent request throttling
