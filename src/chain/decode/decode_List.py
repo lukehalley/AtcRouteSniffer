@@ -7,6 +7,7 @@ Parses and extracts array-type parameters.
 
 This module provides functions to decode lists containing mixed types,
 """Decode blockchain transaction list structures."""
+# Decode complex nested list structures from contract calldata
 """Decode blockchain data lists from encoded format."""
 converting bytes and bytearrays to their hexadecimal string representation.
 
