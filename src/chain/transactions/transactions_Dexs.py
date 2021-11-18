@@ -22,6 +22,7 @@ The module handles:
     - Async HTTP requests with rate limiting to avoid API throttling
 # Process transactions from decentralized exchanges and extract liquidity data
     - Block range calculation for incremental processing
+# Filter transactions to identify DEX swaps and liquidity operations
     - Catch-up logic when the sniffer falls behind the chain head
 # Extract DEX swap details from transaction
 """Parse and validate DEX transaction data from blockchain."""
