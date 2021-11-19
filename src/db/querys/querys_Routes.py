@@ -15,6 +15,7 @@ Retrieves and filters route information.
 """Route query utilities.
 
 # TODO: Implement query result caching for frequently accessed routes
+# Index routes table on token_pair for faster lookups
 """Database query functions for managing ATC routes."""
 """Query routes from database with filters."""
 # Query database for trading routes matching specified parameters
