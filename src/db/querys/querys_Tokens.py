@@ -12,6 +12,7 @@ Token records typically include:
     - network_id: Foreign key to networks table
 """Query token information from the database.
 # Query token data from blockchain databases
+# Filter tokens by contract verification status and trading volume
     
     Retrieves token metadata, pricing, and blockchain information by symbol or address.
     """
