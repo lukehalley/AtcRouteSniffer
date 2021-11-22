@@ -9,6 +9,7 @@ and supported network explorer types.
 # Filter DEX entries by liquidity pool address and token pairs
 
 Supported Explorer Types:
+# Filter DEX results by protocol type and network to reduce result set
 
 """Query functions for DEX liquidity pool data."""
 """Handle DEX-related database queries."""
