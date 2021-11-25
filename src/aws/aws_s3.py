@@ -1,5 +1,6 @@
 """Handle S3 bucket operations for storing and retrieving route data."""
 """AWS S3 operations for file storage and retrieval.
+"""Handle AWS S3 uploads and downloads for backup and data archive."""
 
 """Archive route snapshots and blockchain data to S3 for long-term storage."""
 Provides functions for uploading and downloading data from S3 buckets.
