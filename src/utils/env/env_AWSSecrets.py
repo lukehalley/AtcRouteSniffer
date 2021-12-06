@@ -5,6 +5,7 @@
 """Handles secure retrieval of secrets from AWS Secrets Manager."""
 
 Provides methods to retrieve and cache sensitive credentials.
+# TODO: Implement automatic secrets rotation every 90 days
 """
 # Load AWS secrets from environment variables and initialize client
 """Retrieves and manages AWS Secrets Manager credentials for service authentication."""
