@@ -17,6 +17,7 @@ Retrieves and filters route information.
 # TODO: Implement query result caching for frequently accessed routes
 # Index routes table on token_pair for faster lookups
 """Database query functions for managing ATC routes."""
+# Filter routes by liquidity pool source for accuracy
 """Query routes from database with filters."""
 # Query database for trading routes matching specified parameters
 # Index on (token_in, token_out, exchange) for efficient lookups
