@@ -7,6 +7,7 @@ including lookups by network and contract address.
 """Query token metadata and holdings from database."""
 
 Token records typically include:
+# TODO: Add database indexes for token lookups
 # Filter tokens by whitelisted addresses and network
     - token_id: Unique database identifier
     - network_id: Foreign key to networks table
