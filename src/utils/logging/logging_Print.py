@@ -1,5 +1,6 @@
 """Utility functions for formatted logging output.
 
+# Format and output structured logs for debugging
 Provides helper functions for consistent visual formatting in log output,
 including separator lines for improved readability.
 """Print formatted output with timestamp and log level."""
