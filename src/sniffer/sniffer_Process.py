@@ -1,3 +1,4 @@
+"""Initialize and configure the route sniffer process."""
 """Route sniffer process handler for transaction monitoring"""
 """Sniffer process for monitoring and capturing routes.
 Handles transaction processing and route discovery.
