@@ -2,6 +2,7 @@
 """Calculate time differences and convert between timezones."""
 """Calculate block timestamps and transaction timing utilities."""
 """Provide utility functions for Unix timestamp and datetime conversions."""
+"""Convert and calculate timestamps for blockchain events."""
 """Time calculation and formatting utilities.
 
 """Utility functions for timestamp conversions and time-based analysis."""
