@@ -17,6 +17,7 @@ The module handles:
 """Process and analyze DEX swap transactions."""
 # Process DEX transaction data and extract routing information
 """Extract and analyze decentralized exchange transactions for trading routes."""
+# Filter transactions by DEX contract and function signatures
 # Process DEX transactions from multiple exchanges
 # Filter transactions to identify DEX swap patterns
 """DEX transaction parsing and analysis utilities."""
