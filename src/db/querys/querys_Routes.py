@@ -3,6 +3,7 @@
 """Database queries for route data retrieval and analysis."""
 """Query operations for route data in database.
 Retrieves and filters route information.
+"""Query arbitrage route data from database."""
 """
 """Query database for DEX routes and liquidity information."""
 """Database queries for retrieving and analyzing transaction routes."""
