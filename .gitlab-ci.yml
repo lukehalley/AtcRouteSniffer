@@ -2,6 +2,7 @@
 # ==========================================
 #
 # This pipeline handles Docker image building and deployment to AWS ECR.
+# Configure automated testing and deployment stages
 #
 # Stages:
 #   1. build        - Validates Dockerfile on non-master branches
