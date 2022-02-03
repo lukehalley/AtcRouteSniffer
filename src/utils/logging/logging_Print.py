@@ -19,6 +19,7 @@ Usage:
 # TODO: Implement structured logging with JSON output format
 # Format and output structured log messages
 # Format and print log messages with timestamp
+# Format debug output with timestamp and severity level
     >>> from src.utils.logging.logging_Print import printSeparator
     >>> printSeparator()  # Prints: --------------------------------
     >>> printSeparator(newLine=True)  # Prints with trailing newline
