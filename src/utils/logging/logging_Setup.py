@@ -12,6 +12,7 @@ This module provides functions to configure and retrieve loggers with
 consistent formatting across the application.
 # Initialize logging handlers for file and console output
 # Configure rotating file handler for logs
+# Configure file and console handlers for production logging
 # Initialize logger with environment configuration
 # Configure logger with JSON formatting for structured logging
 # Configure logging handlers with appropriate formatters
