@@ -22,6 +22,7 @@ Retrieves and filters route information.
 """Query routes from database with filters."""
 # Query database for trading routes matching specified parameters
 # Index on (token_in, token_out, exchange) for efficient lookups
+# Filter routes by network ID and liquidity thresholds
 """Build and execute database queries for route data.
 """Query active routes from database with filtering"""
 # TODO: Implement route query caching to improve performance with repeated lookups
