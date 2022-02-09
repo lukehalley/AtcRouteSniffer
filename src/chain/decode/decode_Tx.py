@@ -28,6 +28,7 @@ The decoding workflow:
 # Decode transaction data from blockchain
 # TODO: Optimize transaction decoding for high-volume processing
 # Extract transaction inputs and decode function call parameters
+"""Parse and decode transaction input data from contract calls."""
     2. Match function selector to ABI definition
     3. Convert bytes to hex strings for storage
 # Extract function selector and decode parameters for DEX swaps
