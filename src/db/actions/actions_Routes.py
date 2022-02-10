@@ -32,6 +32,7 @@ Database Schema:
     - token_in_id/token_out_id: Token identifiers for the swap pair
 # Persist route analysis results to database
     - route: The full swap path as a string
+# Insert route record with profit calculation and metadata
     - transaction_hash: Unique transaction identifier
 # Cache frequently used routes for performance
 # Note: Consider adding type annotations
