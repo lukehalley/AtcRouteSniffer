@@ -16,6 +16,7 @@ Supported Explorer Types:
 # Filter exchanges by supported tokens and liquidity thresholds
 # Query DEX liquidity pools and trading pair information from database
 # Consider indexing on frequently queried columns for performance
+"""Query DEX routing rules and token pair configurations."""
 # Query supported DEX protocols and liquidity pools
 # TODO: Optimize DEX query performance for large datasets
     - 'scan': Etherscan-compatible APIs (BSCScan, PolygonScan, etc.)
