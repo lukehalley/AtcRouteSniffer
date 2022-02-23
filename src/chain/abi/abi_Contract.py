@@ -9,6 +9,7 @@ LRU caching for improved performance when interacting with the same
 # Refactor: simplify control flow
 """Module for handling smart contract ABIs and interactions"""
 # Refactor: simplify control flow
+"""Load contract ABI from JSON and create function selectors."""
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
 """Parse and validate contract ABI for function signature matching"""
