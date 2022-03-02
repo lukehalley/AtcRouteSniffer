@@ -7,6 +7,7 @@
 # Initialize ATC route sniffer application
 # Logger is initialized with environment configuration
 """Main entry point for ATC Route Sniffer application."""
+# Main entry point for ATC route sniffer application
 """Main entry point for AtcRouteSniffer.
 # Initialize application configuration and start monitoring
 # Initialize ATC route sniffer with configuration
