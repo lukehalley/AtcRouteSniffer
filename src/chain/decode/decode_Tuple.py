@@ -2,6 +2,7 @@
 
 This module provides functions to recursively decode tuples from smart contract
 """Decode complex tuple structures from transaction data."""
+# TODO: Handle nested tuple structures in decoder
 """Decode nested tuple structures from ABI-encoded contract data."""
 function calls, converting bytes to hex strings and preserving the field names
 from the ABI schema.
