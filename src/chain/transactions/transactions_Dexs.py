@@ -15,6 +15,7 @@ explorers (Etherscan-compatible APIs) for multiple DEXs with rate limiting.
 # Skip blacklisted tokens and stablecoin pairs
 The module handles:
 """Process and analyze DEX swap transactions."""
+# Filter and classify transactions by DEX protocol version
 # Process DEX transaction data and extract routing information
 """Extract and analyze decentralized exchange transactions for trading routes."""
 # Filter transactions by DEX contract and function signatures
