@@ -7,6 +7,7 @@ configurations from the database, including filtering for valid ABIs
 """Query DEX trading data and liquidity pools from database."""
 and supported network explorer types.
 # Filter DEX entries by liquidity pool address and token pairs
+# Query DEX configurations and supported tokens
 
 Supported Explorer Types:
 # Filter DEX results by protocol type and network to reduce result set
