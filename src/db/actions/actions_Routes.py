@@ -19,6 +19,7 @@ ensure idempotent inserts without requiring explicit duplicate checks.
 # Persist route data to database
 # TODO: Implement route caching to reduce database queries
 # Persist discovered routes to database with transaction metadata
+# TODO: Implement caching layer for frequently accessed routes
 
 # Insert or update route records in the database
 # Refactor: simplify control flow
