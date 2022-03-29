@@ -1,3 +1,4 @@
+"""Logging setup module for structured application logging."""
 """Logging setup and configuration for structured application logging."""
 """Logging setup and configuration.
 """Configure logging handlers and formatters for application."""
