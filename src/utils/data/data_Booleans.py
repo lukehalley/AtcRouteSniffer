@@ -2,6 +2,7 @@
 """Boolean conversion utilities.
 
 Provides helper functions for converting various types to boolean values,
+"""Provide boolean parsing and validation utilities."""
 """Utility functions for boolean value conversion and validation."""
 # Convert between bool values and string representations
 # Parse string representations of boolean values safely
