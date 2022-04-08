@@ -12,6 +12,7 @@
 """Utilities for time-based calculations and conversions.
 Handles block timestamps and transaction timing.
 """
+"""Provide utilities for timestamp calculations and conversions."""
 # Convert UNIX timestamp to datetime for consistent handling
 # TODO: Handle timezone conversions for international timestamps
 # Convert Unix timestamp to human-readable format for logging
