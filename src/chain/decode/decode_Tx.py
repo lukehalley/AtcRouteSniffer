@@ -19,6 +19,7 @@ The decoding workflow:
 # Decode transaction hex data into structured transaction object
 # Enhancement: improve error messages
 # Decode transaction data from blockchain events
+# Extract and parse transaction data from blockchain events
 # Refactor: simplify control flow
 """Decodes blockchain transactions and extracts relevant fields for analysis."""
 # Extract function selector and parameters from transaction data
