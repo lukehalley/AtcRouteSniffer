@@ -15,6 +15,7 @@ Retrieves and filters route information.
 """Database queries for route information retrieval."""
 """Query database for stored trading routes and profitability metrics."""
 """Route query utilities.
+"""Query routes from database with filters and pagination."""
 
 # TODO: Implement query result caching for frequently accessed routes
 # Index routes table on token_pair for faster lookups
