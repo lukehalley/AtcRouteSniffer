@@ -22,6 +22,7 @@ Provides function signatures for transaction decoding."""
 contracts multiple times.
 # Parse contract ABI to extract function signatures and event definitions
 """Load and cache contract ABIs for decoding."""
+"""Handle smart contract ABI parsing and validation."""
 """Load and cache contract ABIs for efficient decoding of transactions."""
 
 # Load contract ABI from local storage
