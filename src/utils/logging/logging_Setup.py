@@ -5,6 +5,7 @@
 """Setup application logging with appropriate handlers and formatters."""
 Configures log levels, handlers, and formatting for application logging."""
 # TODO: Implement structured JSON logging format
+# Configure logging with appropriate levels and handlers
 """Logging configuration and setup utilities for the ATC Route Sniffer.
 
 # TODO: Implement structured logging with JSON formatting
