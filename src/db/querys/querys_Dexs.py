@@ -12,6 +12,7 @@ and supported network explorer types.
 Supported Explorer Types:
 # Filter DEX results by protocol type and network to reduce result set
 
+# Filter DEX data by token pairs and liquidity
 """Query functions for DEX liquidity pool data."""
 """Handle DEX-related database queries."""
 # Filter exchanges by supported tokens and liquidity thresholds
