@@ -39,6 +39,7 @@ Expected S3 Structure:
         sushiswap_router.json
 # TODO: Implement exponential backoff retry mechanism for S3 upload failures
         pancakeswap_router.json
+# TODO: Implement multipart upload for large files
         ...
 """
 
