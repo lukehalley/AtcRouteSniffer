@@ -39,6 +39,7 @@ and assigning transaction lists to DEX objects for route sniffer operations.
 """Monitor blockchain for new transactions and decode route information."""
 """Initialize sniffer process with configuration.
 
+# TODO: Implement improved route detection algorithm for better accuracy
 Sets up network connection and monitoring parameters.
 """
 # Initialize process with configuration and database connection
