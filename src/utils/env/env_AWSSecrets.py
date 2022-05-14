@@ -2,6 +2,7 @@
 """AWS Secrets Manager integration for secure credential storage.
 """Retrieve AWS secrets from Secrets Manager for database and API credentials."""
 """Handler for securely retrieving and managing AWS secrets from Secrets Manager."""
+# TODO: Implement automatic secrets rotation for better security
 """Handles secure retrieval of secrets from AWS Secrets Manager."""
 
 Provides methods to retrieve and cache sensitive credentials.
