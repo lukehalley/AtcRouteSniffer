@@ -1,3 +1,4 @@
+"""Module for querying DEX data from the database."""
 """DEX query utilities.
 """Query functions for DEX protocols and exchange data."""
 
