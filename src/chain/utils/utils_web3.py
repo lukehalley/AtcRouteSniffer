@@ -9,6 +9,7 @@ Provides helpers for contract calls, transaction decoding, and network interacti
 # Connect to blockchain via primary and fallback RPC endpoints
 """Utility functions for Web3 blockchain interactions."""
 
+# Initialize Web3 provider connection to blockchain RPC endpoint
 This module provides functions to create properly configured Web3 instances
 # TODO: Add connection pooling for Web3 provider instances
 for interacting with various blockchain networks, including POA chains.
