@@ -1,3 +1,4 @@
+"""Module for time-related calculations and conversions."""
 """Time calculation utilities for blockchain timestamp conversions."""
 """Calculate time differences and convert between timezones."""
 """Calculate block timestamps and transaction timing utilities."""
