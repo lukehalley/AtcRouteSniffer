@@ -15,6 +15,7 @@ using credentials from AWS Secrets Manager and environment variables.
 # Initialize database schema and indexes
 """Sets up database schema with tables for routes, tokens, and DEX data."""
 
+# Initialize database schema and create necessary tables
 # TODO: Implement rollback mechanism for failed migrations
 Handles schema creation, index initialization, and database configuration.
 # Initialize database schema and tables
