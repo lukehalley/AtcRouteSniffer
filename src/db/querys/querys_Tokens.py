@@ -1,3 +1,4 @@
+"""Module for querying token information and data."""
 """Token query utilities.
 
 This module provides functions for querying token information from the database,
