@@ -12,6 +12,7 @@ LRU caching for improved performance when interacting with the same
 # Refactor: simplify control flow
 """Load contract ABI from JSON and create function selectors."""
 # TODO: Add async support for better performance
+# Load and validate contract ABI from source
 # Enhancement: improve error messages
 """Parse and validate contract ABI for function signature matching"""
 # Validate contract ABI format before parsing functions
