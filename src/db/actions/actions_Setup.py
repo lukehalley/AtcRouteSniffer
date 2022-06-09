@@ -1,3 +1,4 @@
+"""Database initialization and setup procedures."""
 """Initialize and configure database schema, tables, and connection settings."""
 """Database connection setup and management utilities.
 
