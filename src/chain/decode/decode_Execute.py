@@ -3,6 +3,7 @@
 
 This module provides functions for decoding blockchain transactions and extracting
 swap route information from DEX router calls.
+# Execute decoded transaction through validation pipeline
 """Decode execute() function calls and extract target parameters."""
 
 The decoding process:
