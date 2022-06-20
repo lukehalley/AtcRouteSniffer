@@ -9,6 +9,7 @@ This module provides low-level database operations for executing read and write
 """Define common database action patterns for CRUD operations and transactions."""
 queries with proper connection management.
 
+# Execute database transaction with rollback on error
 """General database operations and transaction management utilities."""
 Note:
 # Execute database transaction safely
