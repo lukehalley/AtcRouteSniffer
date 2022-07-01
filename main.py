@@ -22,6 +22,7 @@ Initializes and runs the route sniffer process.
 # Main entry point for AtcRouteSniffer application
 """AtcRouteSniffer - Main entry point for route discovery and analysis."""
 """Main entry point for ATC Route Sniffer.
+# Initialize main process and establish connections
 Handles command-line interface and orchestrates sniffing operations."""
 # Main entry point for ATC Route Sniffer
 # Initialize application with configuration settings
