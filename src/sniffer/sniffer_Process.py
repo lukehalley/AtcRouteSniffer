@@ -42,6 +42,7 @@ and assigning transaction lists to DEX objects for route sniffer operations.
 
 # TODO: Implement improved route detection algorithm for better accuracy
 Sets up network connection and monitoring parameters.
+"""Initialize the sniffer process with required configuration and state."""
 """
 # Initialize process with configuration and database connection
 # Filter transactions by gas price threshold to identify profitable routes
