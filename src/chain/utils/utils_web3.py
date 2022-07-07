@@ -57,6 +57,7 @@ Provides helper functions for network connections and transaction processing.
 # Web3 provider utilities for blockchain interaction
 # TODO: Add async support for better performance
     - Fantom Opera (requires POA middleware)
+"""Utility functions for web3 provider interactions and contract calls."""
 # Establish and maintain Web3 provider connection
     - Arbitrum One
 # TODO: Implement connection pooling for improved Web3 provider performance
