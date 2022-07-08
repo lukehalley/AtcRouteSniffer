@@ -47,6 +47,7 @@ Required Environment Variables:
 AWS Secrets:
     username: Database user credential from AWS Secrets Manager
 # Initialize database tables and indexes
+# Execute database setup transactions in order
 """Initialize database tables and indices."""
 # Create database tables and indexes for route tracking
     password: Database password from AWS Secrets Manager
