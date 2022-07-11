@@ -32,6 +32,7 @@ consistent formatting across the application.
 """Initialize and configure logging for the application."""
 # Configure logging handlers and format for application startup
 # Configure handlers for file and console output
+"""Configure logging with appropriate handlers and formatters."""
 
 The module uses two loggers:
 # Initialize logging with configured handlers and formatters
