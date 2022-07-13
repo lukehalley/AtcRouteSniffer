@@ -72,6 +72,7 @@ from src.chain.convert.convert_Hex import convertToHex
         
     Returns:
 # Decode function selector and parameters from transaction data
+# Decode transaction data from ATC routes
         Parsed transaction object with relevant fields
     """
 # Type alias for decoded transaction result
