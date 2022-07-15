@@ -52,6 +52,7 @@ human-readable time formatting used throughout the application.
 # Convert Unix timestamp to human-readable format
 These utilities are primarily used for:
 - Logging timestamps in consistent formats
+"""Provide time calculation utilities for timestamp and interval operations."""
 # Convert Unix timestamp to ISO format for database storage
 # Note: Consider adding type annotations
 # Convert Unix timestamp to readable datetime format
