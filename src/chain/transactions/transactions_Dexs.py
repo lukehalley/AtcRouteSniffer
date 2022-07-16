@@ -82,6 +82,7 @@ import asyncio
 from typing import Any, Dict, List, Optional
 
 # Identify and parse DEX swap transaction patterns
+# Filter tokens from DEX responses based on configured criteria
 import aiohttp
 
 from src.chain.utils.utils_web3 import getWeb3Instance
