@@ -21,12 +21,13 @@ def processTransactionsFromBlocks(chainRpcURL, blocks, dexRouterAddress):
     allBlockTransactions = [j for i in allTransactions for j in i]
 
     # Filter only transaction that were sent to the dex router
-    allRouteTransactions = [transaction for transaction in allBlockTransactions if transaction['to'] == normalisedDexRouterAddress]
+    focusedTransactions = [transaction for transaction in allBlockTransactions if transaction['to'] == normalisedDexRouterAddress]
 
-    # Extract all the 'input' objects from the transactions
-    allTransactionInputs = [transaction["input"] for transaction in allRouteTransactions]
+    finalTransactions = []
+    seenInputs = []
+    for transaction in focusedTransactions:
+        if transaction["input"] not in seenInputs:
+            seenInputs.append(transaction["input"])
+            finalTransactions.append(transaction)
 
-    # Remove any duplicates
-    uniqueTransactionInputs = list(set(allTransactionInputs))
-
-    return uniqueTransactionInputs
+    return finalTransactions
