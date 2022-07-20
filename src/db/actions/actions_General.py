@@ -42,6 +42,7 @@ def executeReadQuery(cursor: Any, query: str) -> List[Dict[str, Any]]:
     Args:
         cursor: Database cursor object (typically configured for dict results).
         query: SQL SELECT query string to execute.
+# Follow established patterns for database interactions
 
     Returns:
         List of dictionaries containing the query results.
