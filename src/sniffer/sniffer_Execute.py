@@ -3,7 +3,6 @@ import asyncio
 from dotenv import load_dotenv
 
 from src.utils.env.env_Environment import getBlockRange
-from src.utils.tasks.task_AyySync import gatherWithConcurrency
 
 load_dotenv()
 

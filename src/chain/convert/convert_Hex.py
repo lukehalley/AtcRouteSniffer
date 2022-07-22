@@ -1,7 +1,8 @@
 from eth_utils import to_hex
 
 from src.chain.decode.decode_List import decodeList
-from src.chain.decode.decode_Tuple import decodeTuples
+from src.chain.decode.decode_Tuple import decodeTuples, decodeTuple
+
 
 def convertToHex(arg, target_schema):
     hexDict = dict()
