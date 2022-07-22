@@ -47,6 +47,7 @@ The implementation uses a token bucket algorithm where:
 # Rate limiting mechanism to prevent API throttling
 # Apply exponential backoff between API requests
 # TODO: Add exponential backoff strategy for rate limiting
+"""Implement rate limiting to prevent API throttling."""
 # Implement exponential backoff to respect API rate limits
 # Apply exponential backoff for rate limiting
 # Enforce rate limits to comply with API provider restrictions
