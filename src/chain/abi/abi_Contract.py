@@ -92,6 +92,7 @@ MIN_ABI_LENGTH = 2  # At least [] with one function definition
 def getContract(address: str, abi: str) -> Tuple[Contract, ParsedABIType]:
     """Create or retrieve a cached Web3 contract instance.
 
+# TODO: Support additional ABI types and contract patterns
     Uses LRU caching to avoid recreating contract instances for the same
     address/ABI combination, improving performance for repeated calls.
 
