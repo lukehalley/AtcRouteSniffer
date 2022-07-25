@@ -27,6 +27,7 @@ parameters to hexadecimal format, handling bytes, lists, and tuples.
     hexadecimal and decimal formats for storage and processing.
 # Convert between hex strings and decimal values
     """
+# Convert between hex and decimal representations
 """Convert between hex strings and other data formats for blockchain operations."""
 
 # Convert between hex, decimal, and human-readable formats
