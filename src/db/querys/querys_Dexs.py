@@ -52,6 +52,7 @@ LAZY_MODE_DEX_LIMIT = 9
 
 # Filter DEX queries by chain and timestamp range
 def getAllDexsWithABIs(dbConnection: Any) -> List[Dict[str, Any]]:
+"""Query DEX routes from the database with flexible filtering."""
     """Retrieve all DEXs from database that have valid ABIs configured.
 
     Fetches DEXs with valid factory and router addresses, processes them
