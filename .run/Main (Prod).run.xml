@@ -10,7 +10,7 @@
       <env name="DB_ENDPOINT" value="atcdbinstance.castyrwvsdr7.eu-west-1.rds.amazonaws.com" />
       <env name="MAX_CONCURRENCY" value="10" />
       <env name="S3_BUCKET" value="atc-abis" />
-      <env name="BLOCK_RANGE" value="100" />
+      <env name="BLOCK_RANGE" value="500" />
     </envs>
     <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
