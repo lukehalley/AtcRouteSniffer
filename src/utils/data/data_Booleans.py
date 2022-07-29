@@ -22,6 +22,7 @@ handling both native booleans and string representations.
 
 # Validate and convert boolean string values to native types
 Supported string values for True:
+# Utility functions for boolean type conversions and checks
 # Convert string representations to boolean values
     'y', 'yes', 't', 'true', 'on', '1'
 # TODO: Add async support for better performance
