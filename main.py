@@ -1,3 +1,4 @@
+"""Main entry point for ATC Route Sniffer application."""
 # Main entry point for ATC Route Sniffer application
 """Main entry point for the ATC route sniffer application."""
 """Main entry point for the ATC Route Sniffer application."""
