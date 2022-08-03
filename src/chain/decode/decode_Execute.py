@@ -1,45 +1,53 @@
-from eth_utils import to_int
-
 from src.chain.decode.decode_Tx import decodeTx
-from src.utils.tasks.task_AyySync import gatherWithConcurrency
 
-async def decodeTransactions(blockInputs, routeAddress, routeAbiStr):
 
-    # Create the dict of decode tasks
-    tasks = [decodeTx(routeAddress, uniqueBlockInput, routeAbiStr) for uniqueBlockInput in blockInputs]
+def decodeTransactions(dexs):
 
-    # Decode all the block transactions
-    results = await gatherWithConcurrency(*tasks)
+    routes = []
 
-    # Filter out the invalid results
-    results = [result for result in results if isinstance(result, dict) and "path" in result["params"]]
+    for dex in dexs:
 
-    collectedRoutes = {}
-    for result in results:
+        dexRouterAddress = dex["router"]
+        dexRouterABI = dex["router_abi"]
+        dexTransactions = dex["transactions"]
 
-        routeUsed = result["params"]["path"]
-        routeName = f"{routeUsed[0]}-{routeUsed[-1]}"
-    
-        isLoopRoute = routeUsed[0] == routeUsed[-1]
-    
-        if not isLoopRoute:
-    
-            if routeName not in collectedRoutes:
-                collectedRoutes[routeName] = []
-    
-            routeObject = {
-                "method": result["name"],
-                "route": routeUsed,
-                "blockNumber": result["blockNumber"]
-            }
-    
-            if "amountIn" in result["params"]:
-                routeObject["amountIn"] = result["params"]["amountIn"]
-    
-            if "amountOutMin" in result["params"]:
-                routeObject["amountOutMin"] = result["params"]["amountOutMin"]
-    
-            if routeObject not in collectedRoutes[routeName]:
-                collectedRoutes[routeName].append(routeObject)
+        # Create the dict of decode tasks
+        decodedTransactions = [decodeTx(address=dexRouterAddress, transaction=transaction, abi=dexRouterABI) for transaction in dexTransactions]
 
-    return collectedRoutes
+        # Filter out the invalid results
+        finalDecodedTransactions = [decodedTransaction for decodedTransaction in decodedTransactions if isinstance(decodedTransaction, dict) and "path" in decodedTransaction["params"]]
+
+        collectedRoutes = {}
+
+        for finalDecodedTransaction in finalDecodedTransactions:
+
+            routeUsed = finalDecodedTransaction["params"]["path"]
+            routeName = f"{routeUsed[0]}-{routeUsed[-1]}"
+
+            isLoopRoute = routeUsed[0] == routeUsed[-1]
+
+            if not isLoopRoute:
+
+                if routeName not in collectedRoutes:
+                    collectedRoutes[routeName] = []
+
+                routeObject = {
+                    "method": finalDecodedTransaction["name"],
+                    "route": routeUsed,
+                    "blockNumber": finalDecodedTransaction["blockNumber"]
+                }
+
+                if "amountIn" in finalDecodedTransaction["params"]:
+                    routeObject["amountIn"] = finalDecodedTransaction["params"]["amountIn"]
+
+                if "amountOutMin" in finalDecodedTransaction["params"]:
+                    routeObject["amountOutMin"] = finalDecodedTransaction["params"]["amountOutMin"]
+
+                if routeObject not in collectedRoutes[routeName]:
+                    collectedRoutes[routeName].append(routeObject)
+
+                x = 1
+
+        dex["routes"] = collectedRoutes
+
+    return dexs
