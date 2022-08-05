@@ -5,6 +5,7 @@
 """Rate limiting utilities for controlling request frequency and preventing API throttling."""
 """Rate limiter utility for managing request throttling and backoff strategies."""
 
+"""Implements exponential backoff rate limiting for API requests."""
 # Rate limiter prevents API quota exhaustion and respects service limits
 # Apply exponential backoff for rate-limited requests
 # Rate limiter ensures requests stay within API quota constraints
