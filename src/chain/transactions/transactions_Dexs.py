@@ -14,19 +14,21 @@ async def getTransactions(clientSession, rateLimiter, apiUrl, totalBlocks, netwo
     async with rateLimiter.throttle():
         apiResponse = await clientSession.get(apiUrl)
 
-    apiResponse = await apiResponse.json()
+    try:
+        apiResponse = await apiResponse.json()
 
-    transactions = apiResponse["result"]
+        transactions = apiResponse["result"]
+    except:
+        transactions = []
 
     amountOfTransactions = len(transactions)
 
-    logger.info(f"[{networkName}] {dexName}: {amountOfTransactions} Transactions From {totalBlocks} Blocks!")
+    logger.info(f"[{networkName}] {dexName}: {amountOfTransactions} Transactions")
 
     return transactions
 
 
 async def getDexTransactions(dexs):
-
     blockRange = getBlockRange()
 
     async with RateLimiter(rate_limit=3, concurrency_limit=1000) as rate_limiter:

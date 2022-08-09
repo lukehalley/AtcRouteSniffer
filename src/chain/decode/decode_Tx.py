@@ -23,7 +23,9 @@ def decodeTx(address, transaction, abi):
                 "name": func_obj.fn_name,
                 "params": decoded_func_params,
                 "schema": target_schema,
-                "blockNumber": blockNumber
+                "blockNumber": blockNumber,
+                "txHash":transaction["hash"],
+                "timestamp": transaction["timeStamp"]
             }
 
             return result

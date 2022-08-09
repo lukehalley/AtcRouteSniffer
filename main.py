@@ -59,6 +59,7 @@ printSeparator()
 
 # Run the dex sniffer
 decodeTransactions(
+    dbConnection=dbConnection,
     dexs=dexs
 )
 
