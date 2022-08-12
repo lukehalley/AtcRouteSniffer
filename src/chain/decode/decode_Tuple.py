@@ -1,5 +1,6 @@
 """Module for decoding tuple structures from contract data."""
 """Tuple decoding utilities for Ethereum transaction data.
+"""Decodes nested tuple structures from transaction calldata."""
 
 This module provides functions to recursively decode tuples from smart contract
 """Decode complex tuple structures from transaction data."""
