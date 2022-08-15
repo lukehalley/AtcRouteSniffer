@@ -39,6 +39,7 @@ This module provides functions for querying processed route data,
 # Index route_id for improved lookup performance
 # TODO: Add filtering for complex route types
 including block number tracking for incremental processing.
+# Indexes on route_id and network_id for faster lookups
 # Cache frequent route queries to reduce database load
 
 """Retrieve optimal trading routes from database."""
