@@ -25,3 +25,10 @@ def processDexInformation(dbConnection, dex, dexIndex, dexCount, cachedNetworkDe
     logger.info(f"[{dexIndex + 1}/{dexCount}] Processed {dexName.title()} On {networkName.title()}")
 
     return dex, cachedNetworkDetails
+
+
+def assignDexTransactionList(dexs, dexTransactions):
+    for dexTransactionList in dexTransactions:
+        i = dexTransactions.index(dexTransactionList)
+        dexs[i]["transactions"] = dexTransactionList
+    return dexs

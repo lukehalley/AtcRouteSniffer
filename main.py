@@ -7,8 +7,10 @@ from src.chain.decode.decode_Execute import decodeTransactions
 from src.chain.transactions.transactions_Dexs import getDexTransactions
 from src.db.actions.actions_Setup import initDBConnection
 from src.db.querys.querys_Dexs import getAllDexsWithABIs
+from src.sniffer.sniffer_Process import assignDexTransactionList
 from src.utils.env.env_Environment import getBlockRange
-from src.utils.tasks.task_AyySync import getMaxConcurrency
+
+from src.utils.time.time_Calculations import getMinSecString
 
 load_dotenv()
 
@@ -25,7 +27,6 @@ startingTime = time.perf_counter()
 printSeparator()
 logger.info(f"ATC Route Sniffer")
 printSeparator()
-logger.info(f"Concurrency: {getMaxConcurrency()}")
 logger.info(f"Blocks: {getBlockRange()}")
 printSeparator(newLine=True)
 
@@ -49,18 +50,23 @@ dexTransactions = asyncio.run(getDexTransactions(
 
 printSeparator(True)
 
-for dexTransactionList in dexTransactions:
-    i = dexTransactions.index(dexTransactionList)
-    dexs[i]["transactions"] = dexTransactionList
+dexs = assignDexTransactionList(
+    dexs=dexs,
+    dexTransactions=dexTransactions
+)
 
-printSeparator()
-logger.info(f"Decoding Transactions")
-printSeparator()
-
-# Run the dex sniffer
-decodeTransactions(
+routesAdded = decodeTransactions(
     dbConnection=dbConnection,
     dexs=dexs
 )
 
-x = 1
+# Get our ending time
+timerString = getMinSecString(time.perf_counter() - startingTime)
+
+# Log that out scraping is done
+printSeparator()
+logger.info(f"Route Sniffer Complete ✅")
+printSeparator()
+logger.info(f"Added {routesAdded} Routes")
+logger.info(f"Took: {timerString}")
+printSeparator()

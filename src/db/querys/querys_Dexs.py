@@ -1,12 +1,17 @@
+import os
+
 from src.db.actions.actions_General import executeReadQuery
 from src.db.actions.actions_Setup import getCursor
 from src.sniffer.sniffer_Process import processDexInformation
+from src.utils.data.data_Booleans import strToBool
 from src.utils.logging.logging_Print import printSeparator
 from src.utils.logging.logging_Setup import getProjectLogger
 
 logger= getProjectLogger()
 
 def getAllDexsWithABIs(dbConnection):
+
+    lazyMode = strToBool(os.getenv("LAZY_MODE"))
 
     conditions = "factory IS NOT NULL " \
                  "AND " \
@@ -28,7 +33,8 @@ def getAllDexsWithABIs(dbConnection):
         query=query
     )
 
-    dexs = dexs[0:1]
+    if lazyMode:
+        dexs = dexs[0:5]
 
     dexCount = len(dexs)
     logger.info(f"Retrieved {dexCount} Dexs From DB")
@@ -49,24 +55,9 @@ def getAllDexsWithABIs(dbConnection):
 
         finalDexs.append(processedDex)
 
-        # break
+        if lazyMode:
+            break
 
     printSeparator(True)
 
     return finalDexs
-
-
-def getAllDexsForNetwork(dbConnection, networkDbId):
-    query = "" \
-            f"SELECT * " \
-            f"FROM dexs " \
-            f"WHERE network_id={networkDbId}"
-
-    cursor = getCursor(dbConnection=dbConnection)
-
-    dexsDict = executeReadQuery(
-        cursor=cursor,
-        query=query
-    )
-
-    return dexsDict
