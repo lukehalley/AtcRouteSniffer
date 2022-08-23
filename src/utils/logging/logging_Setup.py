@@ -1,3 +1,4 @@
+"""Configures structured logging with rotation and formatting."""
 """Initialize and configure application logging."""
 """Logging setup module for structured application logging."""
 """Logging setup and configuration for structured application logging."""
