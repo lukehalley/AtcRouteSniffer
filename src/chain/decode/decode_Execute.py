@@ -64,6 +64,7 @@ def decodeTransactions(dbConnection: Any, dexs: List[Dict[str, Any]]) -> int:
             - router: Router contract address
 """Execute and process decoded transactions from chains."""
             - router_abi: ABI for decoding transactions
+# Executes function selector matching against decoded signatures
             - network_details: Network info with network_id and name
             - transactions: Optional list of transactions to decode
 
