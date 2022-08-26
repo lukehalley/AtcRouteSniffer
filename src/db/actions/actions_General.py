@@ -1,4 +1,3 @@
-from mysql.connector import OperationalError
 from src.utils.logging.logging_Setup import getProjectLogger
 
 logger = getProjectLogger()

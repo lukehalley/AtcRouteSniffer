@@ -8,9 +8,7 @@ from src.chain.convert.convert_Hex import convertToHex
 def decodeTx(address, transaction, abi):
 
     inputData = transaction["input"]
-    blockNumberHex = transaction["blockNumber"]
-
-    blockNumber = to_int(hexstr=blockNumberHex)
+    blockNumber = int(transaction["blockNumber"])
 
     if abi is not None:
         try:

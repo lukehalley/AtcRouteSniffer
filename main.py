@@ -2,6 +2,7 @@ import asyncio
 import time
 
 from dotenv import load_dotenv
+from retry import retry
 
 from src.chain.decode.decode_Execute import decodeTransactions
 from src.chain.transactions.transactions_Dexs import getDexTransactions
@@ -23,50 +24,54 @@ logger = setupLogging()
 # Get our starting time
 startingTime = time.perf_counter()
 
-# Log init message
-printSeparator()
-logger.info(f"ATC Route Sniffer")
-printSeparator()
-logger.info(f"Blocks: {getBlockRange()}")
-printSeparator(newLine=True)
+@retry()
+def runSniffer():
 
-printSeparator()
-logger.info(f"Querying DB For Dexs w/ Networks + ABIs ")
-printSeparator()
+    # Log init message
+    printSeparator()
+    logger.info(f"ATC Route Sniffer")
+    printSeparator()
+    logger.info(f"Blocks: {getBlockRange()}")
+    printSeparator(newLine=True)
 
-# Run the dex sniffer
-dbConnection = initDBConnection()
-dexs = getAllDexsWithABIs(
-    dbConnection=dbConnection
-)
+    printSeparator()
+    logger.info(f"Querying DB For Dexs w/ Networks + ABIs ")
+    printSeparator()
 
-printSeparator()
-logger.info(f"Getting Dex Transactions")
-printSeparator()
+    # Run the dex sniffer
+    dbConnection = initDBConnection()
+    dexs = getAllDexsWithABIs(
+        dbConnection=dbConnection
+    )
 
-dexTransactions = asyncio.run(getDexTransactions(
-    dexs=dexs
-))
+    dexTransactions = asyncio.run(getDexTransactions(
+        dbConnection=dbConnection,
+        dexs=dexs
+    ))
 
-printSeparator(True)
+    dexs = assignDexTransactionList(
+        dexs=dexs,
+        dexTransactions=dexTransactions
+    )
 
-dexs = assignDexTransactionList(
-    dexs=dexs,
-    dexTransactions=dexTransactions
-)
+    printSeparator()
+    logger.info(f"Decoding + Uploading Routes")
+    printSeparator()
 
-routesAdded = decodeTransactions(
-    dbConnection=dbConnection,
-    dexs=dexs
-)
+    routesAdded = decodeTransactions(
+        dbConnection=dbConnection,
+        dexs=dexs
+    )
 
-# Get our ending time
-timerString = getMinSecString(time.perf_counter() - startingTime)
+    # Get our ending time
+    timerString = getMinSecString(time.perf_counter() - startingTime)
 
-# Log that out scraping is done
-printSeparator()
-logger.info(f"Route Sniffer Complete ✅")
-printSeparator()
-logger.info(f"Added {routesAdded} Routes")
-logger.info(f"Took: {timerString}")
-printSeparator()
+    # Log that out scraping is done
+    printSeparator()
+    logger.info(f"Route Sniffer Complete ✅")
+    printSeparator()
+    logger.info(f"Added {routesAdded} Routes")
+    logger.info(f"Took: {timerString}")
+    printSeparator()
+
+runSniffer()
