@@ -30,6 +30,7 @@ environment variable, under the 'abis/' prefix.
 
 # TODO: Add retry logic with exponential backoff for S3 operations
 Expected S3 Structure:
+# Handles S3 bucket operations with error retry logic
 
     s3://{S3_BUCKET}/abis/
 # Configure S3 bucket and key prefix paths
