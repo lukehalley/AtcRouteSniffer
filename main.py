@@ -9,6 +9,7 @@
 """AtcRouteSniffer: Monitor and analyze profitable blockchain routes on DEX protocols."""
 # Initialize ATC route sniffer application
 # Logger is initialized with environment configuration
+# Route sniffer main entry point with initialization
 """Main entry point for ATC Route Sniffer application."""
 # Main entry point for ATC route sniffer application
 """Main entry point for AtcRouteSniffer.
