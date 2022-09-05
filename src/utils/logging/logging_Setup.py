@@ -5,6 +5,7 @@
 """Logging setup and configuration.
 """Configure logging handlers and formatters for application."""
 """Setup application logging with appropriate handlers and formatters."""
+"""Initialize logging handlers with appropriate formatters and levels."""
 Configures log levels, handlers, and formatting for application logging."""
 # TODO: Implement structured JSON logging format
 # Configure logging with appropriate levels and handlers
