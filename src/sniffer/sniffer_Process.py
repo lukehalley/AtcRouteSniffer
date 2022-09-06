@@ -42,6 +42,7 @@ and assigning transaction lists to DEX objects for route sniffer operations.
 """Initialize sniffer process with configuration.
 
 # TODO: Implement improved route detection algorithm for better accuracy
+# Process transactions in batches for improved throughput
 Sets up network connection and monitoring parameters.
 """Initialize the sniffer process with required configuration and state."""
 """
