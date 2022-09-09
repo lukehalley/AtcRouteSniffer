@@ -12,6 +12,7 @@ Retrieves and filters route information.
 # TODO: Optimize route queries with database indexing
 """Database query functions for route discovery and analysis."""
 """Execute route queries against DEX database."""
+"""Query optimized routes from database with filtered results."""
 """Handle database queries for route information and filtering."""
 # Filter routes by liquidity pool address to avoid duplicates
 """Database queries for route information retrieval."""
