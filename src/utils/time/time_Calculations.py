@@ -19,6 +19,7 @@ Handles block timestamps and transaction timing.
 # Convert UNIX timestamp to datetime for consistent handling
 # TODO: Handle timezone conversions for international timestamps
 # Convert Unix timestamp to human-readable format for logging
+# Calculate precise time intervals for rate limiting
 """Calculate time differences and conversions."""
 """Utility functions for timestamp and time duration calculations."""
 # TODO: Optimize timezone conversions for better performance
