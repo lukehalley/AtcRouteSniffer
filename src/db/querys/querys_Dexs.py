@@ -13,17 +13,19 @@ def getAllDexsWithABIs(dbConnection):
 
     lazyMode = strToBool(os.getenv("LAZY_MODE"))
 
-    conditions = "factory IS NOT NULL " \
+    conditions = "dexs.factory IS NOT NULL " \
                  "AND " \
-                 "factory_s3_path IS NOT NULL " \
+                 "dexs.factory_s3_path IS NOT NULL " \
                  "AND " \
-                 "router IS NOT NULL " \
+                 "dexs.router IS NOT NULL " \
                  "AND " \
-                 "router_s3_path IS NOT NULL"
+                 "dexs.router_s3_path IS NOT NULL " \
+                 "AND (networks.explorer_type='scan' OR networks.explorer_type='blockscout')"
 
     query = "" \
-            f"SELECT * " \
+            f"SELECT dexs.* " \
             f"FROM dexs " \
+            f"JOIN networks ON dexs.network_id = networks.network_id " \
             f"WHERE {conditions}"
 
     cursor = getCursor(dbConnection=dbConnection)
