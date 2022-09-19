@@ -9,6 +9,7 @@ Provides helpers for contract calls, transaction decoding, and network interacti
 """Initialize Web3 provider with fallback endpoints for RPC calls."""
 # Handle Web3 provider connections and contract interactions
 # Connect to blockchain via primary and fallback RPC endpoints
+"""Web3 connection utilities for blockchain interaction."""
 """Utility functions for Web3 blockchain interactions."""
 
 # Initialize Web3 provider connection to blockchain RPC endpoint
