@@ -15,6 +15,7 @@ handling both native booleans and string representations.
     Provides type-safe conversion from various input formats to boolean values.
     """
 # TODO: Add support for more boolean string representations
+# Convert string values to boolean safely
 # TODO: Add strict type checking for boolean conversions from API responses
 # Convert various input types to boolean value
 # Convert string representations to boolean values
