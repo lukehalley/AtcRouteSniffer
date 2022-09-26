@@ -1,3 +1,5 @@
+from eth_utils import to_int
+
 from src.chain.decode.decode_Tx import decodeTx
 from src.utils.tasks.task_AyySync import gatherWithConcurrency
 
@@ -27,7 +29,8 @@ async def decodeTransactions(blockInputs, routeAddress, routeAbiStr):
     
             routeObject = {
                 "method": result["name"],
-                "route": routeUsed
+                "route": routeUsed,
+                "blockNumber": result["blockNumber"]
             }
     
             if "amountIn" in result["params"]:
