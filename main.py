@@ -4,6 +4,7 @@ import time
 from dotenv import load_dotenv
 
 from src.sniffer.sniffer_Gather import gatherData
+from src.utils.env.env_Environment import getBlockRange
 from src.utils.tasks.task_AyySync import getMaxConcurrency
 
 load_dotenv()
@@ -22,6 +23,7 @@ printSeparator()
 logger.info(f"ATC Route Sniffer")
 printSeparator()
 logger.info(f"Concurrency: {getMaxConcurrency()}")
+logger.info(f"Blocks: {getBlockRange()}")
 printSeparator(newLine=True)
 
 dexsToSniff = [

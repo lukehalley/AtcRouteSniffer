@@ -21,8 +21,6 @@ async def gatherData(dexsToSniff):
     printSeparator()
     logger.info(f"Gathering Data")
     printSeparator()
-    logger.info(f"Blocks: {getBlockRange()}")
-    printSeparator(newLine=True)
 
     # Asynchronously gather each dex's blocks
     tasks = [executeSniffer(
@@ -35,6 +33,11 @@ async def gatherData(dexsToSniff):
 
     gatheredData = await gatherWithConcurrency(*tasks)
 
-    x = 1
+    printSeparator(True)
+
+    # Log setup message
+    printSeparator()
+    logger.info(f"Finished Gathering Routes For {len(dexsToSniff)} Dexs ✅")
+    printSeparator()
 
     return gatheredData

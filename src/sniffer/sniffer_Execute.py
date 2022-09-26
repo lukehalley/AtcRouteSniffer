@@ -17,10 +17,10 @@ logger = setupLogging()
 
 async def executeSniffer(chainName, chainRpcURL, dexName, dexRouterAddress, dexRouterAbi):
 
-    logger.info(chainName)
+    # Create an async event loop
+    loop = asyncio.get_event_loop()
 
     # Collect the previous n blocks from the current block eg. from block 3000 to 2900 where n = 100
-    loop = asyncio.get_event_loop()
     allBlocks, processedBlockRange = loop.run_until_complete(
         getBlocksForRange(
             chainRpcURL=chainRpcURL,
@@ -47,5 +47,7 @@ async def executeSniffer(chainName, chainRpcURL, dexName, dexRouterAddress, dexR
             routeAbiStr=dexRouterAbi
         )
     )
+
+    logger.info(f"Network: {chainName.title()} | Dex: {dexName.title()} [{len(results)} Routes] ✅")
 
     return chainName, dexName, results
