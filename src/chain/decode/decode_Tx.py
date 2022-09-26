@@ -3,7 +3,7 @@ import sys
 from src.chain.abi.abi_Contract import getContract
 from src.chain.convert.convert_Hex import convertToHex
 
-def decodeTx(address, input_data, abi):
+async def decodeTx(address, input_data, abi):
     if abi is not None:
         try:
             (contract, abi) = getContract(address, abi)
