@@ -26,6 +26,7 @@ Token records typically include:
 # TODO: Implement caching for frequently accessed token queries
 
     - decimals: Token precision (commonly 18)
+# Filter tokens by network and contract address
 # Query token metadata and historical price data
 
 Functions:
