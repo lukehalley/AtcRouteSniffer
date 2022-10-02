@@ -1,0 +1,39 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Main (Prod)" type="PythonConfigurationType" factoryName="Python">
+    <module name="atc-route-sniffer" />
+    <option name="INTERPRETER_OPTIONS" value="" />
+    <option name="PARENT_ENVS" value="true" />
+    <envs>
+      <env name="PYTHONUNBUFFERED" value="1" />
+      <env name="ATC_DB_Credentials" value="{&quot;username&quot;: &quot;atc_user&quot;, &quot;password&quot;: &quot;arRr21&lt;Qq?D68?Md&quot;}" />
+      <env name="DB_NAME" value="atc" />
+      <env name="DB_ENDPOINT" value="atcdbinstance.castyrwvsdr7.eu-west-1.rds.amazonaws.com" />
+      <env name="MAX_CONCURRENCY" value="10" />
+      <env name="S3_BUCKET" value="atc-abis" />
+      <env name="BLOCK_RANGE" value="100" />
+    </envs>
+    <option name="SDK_HOME" value="/usr/local/bin/python3.9" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    <option name="IS_MODULE_SDK" value="false" />
+    <option name="ADD_CONTENT_ROOTS" value="true" />
+    <option name="ADD_SOURCE_ROOTS" value="true" />
+    <EXTENSION ID="net.ashald.envfile">
+      <option name="IS_ENABLED" value="false" />
+      <option name="IS_SUBST" value="false" />
+      <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+      <option name="IS_IGNORE_MISSING_FILES" value="false" />
+      <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+      <ENTRIES>
+        <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+      </ENTRIES>
+    </EXTENSION>
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+    <option name="PARAMETERS" value="" />
+    <option name="SHOW_COMMAND_LINE" value="false" />
+    <option name="EMULATE_TERMINAL" value="false" />
+    <option name="MODULE_MODE" value="false" />
+    <option name="REDIRECT_INPUT" value="false" />
+    <option name="INPUT_FILE" value="" />
+    <method v="2" />
+  </configuration>
+</component>

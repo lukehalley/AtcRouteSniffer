@@ -3,6 +3,8 @@ import time
 
 from dotenv import load_dotenv
 
+from src.db.actions.actions_Setup import initDBConnection
+from src.db.querys.querys_Dexs import getAllDexsWithABIs
 from src.sniffer.sniffer_Gather import gatherData
 from src.utils.env.env_Environment import getBlockRange
 from src.utils.tasks.task_AyySync import getMaxConcurrency
@@ -25,6 +27,12 @@ printSeparator()
 logger.info(f"Concurrency: {getMaxConcurrency()}")
 logger.info(f"Blocks: {getBlockRange()}")
 printSeparator(newLine=True)
+
+dbConnection = initDBConnection()
+
+dexs = getAllDexsWithABIs(
+    dbConnection=dbConnection
+)
 
 dexsToSniff = [
     {
