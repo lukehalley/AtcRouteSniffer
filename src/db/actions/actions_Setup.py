@@ -3,9 +3,7 @@ import os
 import mysql.connector
 from mysql.connector import errorcode
 
-from src.db.db_Utils import executeWriteQuery
 from src.utils.env.env_AWSSecrets import getAWSSecret
-from src.utils.env.env_Environment import checkIsDocker, checkIsAWS
 from src.utils.logging.logging_Setup import getProjectLogger
 
 logger = getProjectLogger()
@@ -26,11 +24,11 @@ def initDBConnection():
         )
     except mysql.connector.Error as err:
       if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-        print("Something is wrong with your user name or password")
+        logger.info("Something is wrong with your user name or password")
       elif err.errno == errorcode.ER_BAD_DB_ERROR:
-        print("Database does not exist")
+        logger.info("Database does not exist")
       else:
-        print(err)
+        logger.info(err)
     else:
         return dbConnection
 

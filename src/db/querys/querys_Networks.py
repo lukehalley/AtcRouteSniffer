@@ -1,10 +1,10 @@
-from src.db.db_Setup import getCursor
-from src.db.db_Utils import executeReadQuery
+from src.db.actions.actions_Setup import getCursor
+from src.db.actions.actions_General import executeReadQuery
 
 def getAllNetworks(dbConnection):
 
     query = "" \
-            f"SELECT name " \
+            f"SELECT * " \
             f"FROM networks"
 
     cursor = getCursor(dbConnection=dbConnection)
@@ -14,7 +14,7 @@ def getAllNetworks(dbConnection):
         query=query
     )
 
-    return [networkName['name'] for networkName in allNetworksDict]
+    return [networkName for networkName in allNetworksDict]
 
 def getNetworkDbIdByName(dbConnection, networkName):
     query = "" \
@@ -29,4 +29,16 @@ def getNetworkDbIdByName(dbConnection, networkName):
         query=query
     )
 
+def getNetworkById(dbConnection, networkDbId):
+    query = "" \
+            f"SELECT * " \
+            f"FROM networks " \
+            f"WHERE network_id='{networkDbId}'"
+
+    cursor = getCursor(dbConnection=dbConnection)
+
+    return executeReadQuery(
+        cursor=cursor,
+        query=query
+    )[0]
 
