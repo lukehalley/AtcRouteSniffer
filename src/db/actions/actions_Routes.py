@@ -9,7 +9,7 @@ def addRouteToDB(dbConnection, networkDbId, dexDbId, tokenInAddress, tokenOutAdd
                  txTimestamp, blockNumber, amountIn, amountOut):
     cursor = getCursor(dbConnection=dbConnection)
 
-    keys = f"network_id, dex_id, token_in_address, token_out_address, route, method, transaction_hash, block_number, amount_in, amount_out, tx_timestamp"
+    keys = f"network_id, dex_id, token_in_address, token_out_address, route, method, transaction_hash, block_number, "
 
     selectStatement = f"SELECT " \
                       f"{networkDbId} AS network_id, " \
@@ -19,23 +19,30 @@ def addRouteToDB(dbConnection, networkDbId, dexDbId, tokenInAddress, tokenOutAdd
                       f"'{route}' AS route, " \
                       f"'{method}' AS method, " \
                       f"'{transactionHash}' AS transaction_hash, " \
-                      f"{blockNumber} AS block_number, " \
-                      f"{amountIn} AS amount_in, " \
-                      f"{amountOut} AS amount_out, " \
-                      f"'{txTimestamp}' AS tx_timestamp"
+                      f"{blockNumber} AS block_number, "
 
     compareStatement = f"network_id = {networkDbId} AND " \
                        f"dex_id = {dexDbId} AND " \
-                       f"token_in_address = {tokenInAddress} AND " \
-                       f"token_out_address = {tokenOutAddress} AND " \
+                       f"token_in_address = '{tokenInAddress}' AND " \
+                       f"token_out_address = '{tokenOutAddress}' AND " \
                        f"route = '{route}' AND " \
                        f"method = '{method}' AND " \
                        f"transaction_hash = '{transactionHash}' AND " \
-                       f"block_number = {blockNumber} AND " \
-                       f"amount_in = {amountIn} AND " \
-                       f"amount_out = {amountOut} AND " \
-                       f"tx_timestamp = {txTimestamp}"
+                       f"block_number = {blockNumber} AND "
 
+    if amountIn:
+        selectStatement = selectStatement + f"{amountIn} AS amount_in, "
+        compareStatement = compareStatement + f"amount_in = {amountIn} AND "
+        keys = keys + "amount_in, "
+
+    if amountOut:
+        selectStatement = selectStatement + f"{amountOut} AS amount_out, "
+        compareStatement = compareStatement + f"amount_out = {amountOut} AND "
+        keys = keys + "amount_out, "
+
+    selectStatement = selectStatement + f"'{txTimestamp}' AS tx_timestamp"
+    compareStatement = compareStatement + f"tx_timestamp = {txTimestamp}"
+    keys = keys + " tx_timestamp"
 
     query = f"INSERT INTO routes ({keys}) " \
             f"SELECT * FROM ({selectStatement}) AS tmp " \
