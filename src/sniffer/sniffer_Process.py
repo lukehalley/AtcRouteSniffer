@@ -18,7 +18,7 @@ def processDexInformation(dbConnection, dex, dexIndex, dexCount, cachedNetworkDe
         dex["network_details"] = getNetworkById(dbConnection=dbConnection, networkDbId=dexNetworkDbId)
         cachedNetworkDetails[dexNetworkDbId] = dex["network_details"]
 
-    dex["router_abi"] = getAbiFromS3(s3Key=dex["factory_s3_path"])
+    dex["router_abi"] = getAbiFromS3(s3Key=dex["router_s3_path"])
 
     networkName = dex["network_details"]["name"]
 

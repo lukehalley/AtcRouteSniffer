@@ -5,7 +5,7 @@ from eth_utils import to_int
 from src.chain.abi.abi_Contract import getContract
 from src.chain.convert.convert_Hex import convertToHex
 
-async def decodeTx(address, transaction, abi):
+def decodeTx(address, transaction, abi):
 
     inputData = transaction["input"]
     blockNumberHex = transaction["blockNumber"]

@@ -14,7 +14,7 @@ nest_asyncio.apply()
 # Set up logging
 logger = getProjectLogger()
 
-async def gatherData(dexsToSniff):
+def gatherData(dexsToSniff):
 
     # Log setup message
     printSeparator()

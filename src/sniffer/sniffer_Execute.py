@@ -19,24 +19,7 @@ async def executeSniffer(chainName, chainRpcURL, dexName, dexRouterAddress, dexr
     # Create an async event loop
     loop = asyncio.get_event_loop()
 
-    # Collect the previous n blocks from the current block eg. from block 3000 to 2900 where n = 100
-    allBlocks, processedBlockRange = loop.run_until_complete(
-        getBlocksForRange(
-            chainRpcURL=chainRpcURL,
-            blockRange=getBlockRange(),
-            returnFullTransaction=True
-        )
-    )
 
-    # Process the blocks we collected and extract and process them to get the transaction data
-    processedTransactions = processTransactionsFromBlocks(
-        chainRpcURL=chainRpcURL,
-        blocks=allBlocks,
-        dexRouterAddress=dexRouterAddress
-    )
-
-    # Create an async event loop
-    loop = asyncio.get_event_loop()
 
     # Run the Dexscreener scraper
     results = loop.run_until_complete(
