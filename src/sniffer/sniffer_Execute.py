@@ -9,12 +9,12 @@ load_dotenv()
 from src.chain.decode.decode_Execute import decodeTransactions
 from src.chain.transactions.transactions_Blocks import getBlocksForRange
 from src.sniffer.sniffer_Process import processTransactionsFromBlocks
-from src.utils.logging.logging_Setup import setupLogging
+from src.utils.logging.logging_Setup import getProjectLogger
 
 # Set up logging
-logger = setupLogging()
+logger = getProjectLogger()
 
-async def executeSniffer(chainName, chainRpcURL, dexName, dexRouterAddress, dexRouterAbi):
+async def executeSniffer(chainName, chainRpcURL, dexName, dexRouterAddress, dexrouter_abi):
 
     # Create an async event loop
     loop = asyncio.get_event_loop()
@@ -43,7 +43,7 @@ async def executeSniffer(chainName, chainRpcURL, dexName, dexRouterAddress, dexR
         decodeTransactions(
             blockInputs=processedTransactions,
             routeAddress=dexRouterAddress,
-            routeAbiStr=dexRouterAbi
+            routeAbiStr=dexrouter_abi
         )
     )
 

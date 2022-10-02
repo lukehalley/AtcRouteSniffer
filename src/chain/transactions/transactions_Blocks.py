@@ -1,10 +1,9 @@
 import aio_eth
 
 from src.chain.utils.utils_web3 import getWeb3Instance
-from src.utils.logging.logging_Print import printSeparator
-from src.utils.logging.logging_Setup import setupLogging
+from src.utils.logging.logging_Setup import getProjectLogger
 
-logger = setupLogging()
+logger = getProjectLogger()
 
 async def getBlocksForRange(chainRpcURL, returnFullTransaction=False, blockRange=250):
 
