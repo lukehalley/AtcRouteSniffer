@@ -1,7 +1,5 @@
-from src.aws.aws_s3 import getAbiFromS3
-from src.db.actions.actions_Setup import getCursor
 from src.db.actions.actions_General import executeReadQuery
-from src.db.querys.querys_Networks import getNetworkById
+from src.db.actions.actions_Setup import getCursor
 from src.sniffer.sniffer_Process import processDexInformation
 from src.utils.logging.logging_Print import printSeparator
 from src.utils.logging.logging_Setup import getProjectLogger
@@ -30,11 +28,11 @@ def getAllDexsWithABIs(dbConnection):
         query=query
     )
 
+    dexs = dexs[0:1]
+
     dexCount = len(dexs)
     logger.info(f"Retrieved {dexCount} Dexs From DB")
     printSeparator()
-
-    dexs = dexs[0:2]
 
     finalDexs = []
     cachedNetworkDetails = {}
