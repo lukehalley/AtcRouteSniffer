@@ -1,53 +1,101 @@
 from src.chain.decode.decode_Tx import decodeTx
+from src.db.actions.actions_Routes import addRouteToDB
+from src.utils.logging.logging_Print import printSeparator
+from src.utils.logging.logging_Setup import getProjectLogger
 
+logger = getProjectLogger()
 
-def decodeTransactions(dexs):
+def decodeTransactions(dbConnection, dexs):
 
-    routes = []
+    amountOfDexs = len(dexs)
 
     for dex in dexs:
 
+        # Dex
+        dexIndex = dexs.index(dex)
+        dexDbId = dex["dex_id"]
+        dexName = dex["name"].title()
         dexRouterAddress = dex["router"]
         dexRouterABI = dex["router_abi"]
-        dexTransactions = dex["transactions"]
 
-        # Create the dict of decode tasks
-        decodedTransactions = [decodeTx(address=dexRouterAddress, transaction=transaction, abi=dexRouterABI) for transaction in dexTransactions]
+        # Network
+        networkDetails = dex["network_details"]
+        networkName = networkDetails["name"].title()
+        networkDbId = networkDetails["network_id"]
 
-        # Filter out the invalid results
-        finalDecodedTransactions = [decodedTransaction for decodedTransaction in decodedTransactions if isinstance(decodedTransaction, dict) and "path" in decodedTransaction["params"]]
+        if "transactions" in dex:
 
-        collectedRoutes = {}
+            dexTransactions = dex["transactions"]
+            dexTransactionCount = len(dexTransactions)
 
-        for finalDecodedTransaction in finalDecodedTransactions:
+            logger.info(f"{networkName}")
 
-            routeUsed = finalDecodedTransaction["params"]["path"]
-            routeName = f"{routeUsed[0]}-{routeUsed[-1]}"
+            printSeparator()
 
-            isLoopRoute = routeUsed[0] == routeUsed[-1]
+            # Create the dict of decode tasks
+            decodedTransactions = [decodeTx(address=dexRouterAddress, transaction=transaction, abi=dexRouterABI) for transaction in dexTransactions]
 
-            if not isLoopRoute:
+            # Filter out the invalid results
+            finalDecodedTransactions = [decodedTransaction for decodedTransaction in decodedTransactions if isinstance(decodedTransaction, dict) and "path" in decodedTransaction["params"]]
 
-                if routeName not in collectedRoutes:
-                    collectedRoutes[routeName] = []
+            collectedRoutes = {}
 
-                routeObject = {
-                    "method": finalDecodedTransaction["name"],
-                    "route": routeUsed,
-                    "blockNumber": finalDecodedTransaction["blockNumber"]
-                }
+            for finalDecodedTransaction in finalDecodedTransactions:
 
-                if "amountIn" in finalDecodedTransaction["params"]:
-                    routeObject["amountIn"] = finalDecodedTransaction["params"]["amountIn"]
+                transactionIndex = finalDecodedTransactions.index(finalDecodedTransaction)
 
-                if "amountOutMin" in finalDecodedTransaction["params"]:
-                    routeObject["amountOutMin"] = finalDecodedTransaction["params"]["amountOutMin"]
+                routeUsed = finalDecodedTransaction["params"]["path"]
 
-                if routeObject not in collectedRoutes[routeName]:
-                    collectedRoutes[routeName].append(routeObject)
+                tokenInAddress = routeUsed[0]
+                tokenOutAddress = routeUsed[-1]
 
-                x = 1
+                routeName = f"{tokenInAddress}-{tokenOutAddress}"
 
-        dex["routes"] = collectedRoutes
+                isLoopRoute = tokenInAddress == tokenOutAddress
+
+                if not isLoopRoute:
+
+                    if routeName not in collectedRoutes:
+                        collectedRoutes[routeName] = []
+
+                    routeObject = {
+                        "method": finalDecodedTransaction["name"],
+                        "route": ", ".join(routeUsed),
+                        "blockNumber": finalDecodedTransaction["blockNumber"]
+                    }
+
+                    if "amountIn" in finalDecodedTransaction["params"]:
+                        routeObject["amountIn"] = finalDecodedTransaction["params"]["amountIn"]
+                    else:
+                        routeObject["amountIn"] = None
+
+                    if "amountOutMin" in finalDecodedTransaction["params"]:
+                        routeObject["amountOutMin"] = finalDecodedTransaction["params"]["amountOutMin"]
+                    else:
+                        routeObject["amountOutMin"] = None
+
+                    if routeObject not in collectedRoutes[routeName]:
+                        collectedRoutes[routeName].append(routeObject)
+
+                    addRouteToDB(
+                        dbConnection=dbConnection,
+                        networkDbId=networkDbId,
+                        dexDbId=dexDbId,
+                        tokenInAddress=tokenInAddress,
+                        tokenOutAddress=tokenOutAddress,
+                        route=routeObject["route"],
+                        method=routeObject["method"],
+                        transactionHash=finalDecodedTransaction["txHash"],
+                        txTimestamp=finalDecodedTransaction["timestamp"],
+                        blockNumber=finalDecodedTransaction["blockNumber"],
+                        amountIn=routeObject["amountIn"],
+                        amountOut=routeObject["amountOutMin"]
+                    )
+
+                    logger.info(f"{dexName} {transactionIndex + 1}/{dexTransactionCount}")
+
+            dex["routes"] = collectedRoutes
+
+            printSeparator()
 
     return dexs
