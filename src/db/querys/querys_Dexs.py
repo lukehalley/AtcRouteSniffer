@@ -34,6 +34,8 @@ def getAllDexsWithABIs(dbConnection):
     logger.info(f"Retrieved {dexCount} Dexs From DB")
     printSeparator()
 
+    dexs = dexs[0:2]
+
     finalDexs = []
     cachedNetworkDetails = {}
     for dex in dexs:
@@ -48,6 +50,8 @@ def getAllDexsWithABIs(dbConnection):
         )
 
         finalDexs.append(processedDex)
+
+        # break
 
     printSeparator(True)
 
