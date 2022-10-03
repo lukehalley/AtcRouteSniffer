@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/playwright/python:v1.25.2-focal
 
 # Create a home directory.
-ARG HOME_DIR="home/atc-scraper"
+ARG HOME_DIR="home/atc-route-sniffer"
 RUN mkdir -p /$HOME_DIR
 WORKDIR /$HOME_DIR
 

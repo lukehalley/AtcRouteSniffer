@@ -10,7 +10,7 @@ from src.utils.web.web_RateLimiter import RateLimiter
 logger = getProjectLogger()
 
 
-async def getTransactions(clientSession, rateLimiter, apiUrl, totalBlocks, networkName, dexName, contractType):
+async def getTransactions(clientSession, rateLimiter, apiUrl, networkName, dexName):
     async with rateLimiter.throttle():
         apiResponse = await clientSession.get(apiUrl)
 
@@ -54,7 +54,6 @@ async def getDexTransactions(dexs):
                 # Get the block range
                 latestBlockNumber = web3.eth.block_number
                 startingBlock = latestBlockNumber - blockRange
-                totalBlocks = latestBlockNumber - startingBlock
 
                 contractsToGetTransactionsFor = ["router"]
 
@@ -74,10 +73,8 @@ async def getDexTransactions(dexs):
                         asyncio.ensure_future(getTransactions(clientSession=session,
                                                               rateLimiter=rate_limiter,
                                                               apiUrl=apiUrl,
-                                                              totalBlocks=totalBlocks,
                                                               networkName=networkName,
                                                               dexName=dexName,
-                                                              contractType=contractType
                                                               )
                                               ))
 

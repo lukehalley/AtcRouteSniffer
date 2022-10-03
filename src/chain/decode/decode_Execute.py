@@ -1,5 +1,8 @@
+import os
+
 from src.chain.decode.decode_Tx import decodeTx
 from src.db.actions.actions_Routes import addRouteToDB
+from src.utils.data.data_Booleans import strToBool
 from src.utils.logging.logging_Print import printSeparator
 from src.utils.logging.logging_Setup import getProjectLogger
 
@@ -7,12 +10,17 @@ logger = getProjectLogger()
 
 def decodeTransactions(dbConnection, dexs):
 
-    amountOfDexs = len(dexs)
+    printSeparator()
+    logger.info(f"Decoding + Uploading Routes")
+    printSeparator()
+
+    routesAdded = 0
+
+    lazyMode = strToBool(os.getenv("LAZY_MODE"))
 
     for dex in dexs:
 
         # Dex
-        dexIndex = dexs.index(dex)
         dexDbId = dex["dex_id"]
         dexName = dex["name"].title()
         dexRouterAddress = dex["router"]
@@ -92,10 +100,15 @@ def decodeTransactions(dbConnection, dexs):
                         amountOut=routeObject["amountOutMin"]
                     )
 
+                    routesAdded = routesAdded + 1
+
                     logger.info(f"{dexName} {transactionIndex + 1}/{dexTransactionCount}")
+
+                    if lazyMode:
+                        break
 
             dex["routes"] = collectedRoutes
 
-            printSeparator()
+            printSeparator(True)
 
-    return dexs
+    return routesAdded
