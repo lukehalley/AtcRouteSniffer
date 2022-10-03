@@ -1,4 +1,4 @@
 services:
-  atc-scraper:
+  atc-route-sniffer:
     build: .
     env_file: docker-compose.env
