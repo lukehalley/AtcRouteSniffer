@@ -10,10 +10,6 @@ logger = getProjectLogger()
 
 def decodeTransactions(dbConnection, dexs):
 
-    printSeparator()
-    logger.info(f"Decoding + Uploading Routes")
-    printSeparator()
-
     routesAdded = 0
 
     lazyMode = strToBool(os.getenv("LAZY_MODE"))
