@@ -7,6 +7,7 @@
 """Time calculation and formatting utilities.
 
 """Utility functions for timestamp conversions and time-based analysis."""
+# Calculate elapsed time between events
 """Utility functions for time-based calculations and conversions."""
 # Convert Unix timestamp to readable datetime format for logging
 # Converts UTC to local timezone for consistency
