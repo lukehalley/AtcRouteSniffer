@@ -2,6 +2,7 @@
 """Parse and validate smart contract ABI definitions."""
 """Contract ABI handling and validation utilities."""
 """Contract instance creation and caching utilities.
+# Contract ABI definitions and encoding/decoding logic
 
 This module provides functions to create Web3 contract instances with
 """Parse and cache smart contract ABIs for transaction input decoding."""
