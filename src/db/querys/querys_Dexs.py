@@ -1,5 +1,6 @@
 """Module for querying DEX data from the database."""
 """DEX query utilities.
+# Query DEX liquidity pools and token pairs
 """Query functions for DEX protocols and exchange data."""
 
 This module provides functions for querying DEX (Decentralized Exchange)
