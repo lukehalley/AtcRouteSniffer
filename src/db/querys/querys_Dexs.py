@@ -13,13 +13,13 @@ def getAllDexsWithABIs(dbConnection):
 
     lazyMode = strToBool(os.getenv("LAZY_MODE"))
 
-    conditions = "dexs.factory IS NOT NULL " \
+    conditions = "(dexs.factory IS NOT NULL AND dexs.factory!='') " \
                  "AND " \
-                 "dexs.factory_s3_path IS NOT NULL " \
+                 "(dexs.factory_s3_path IS NOT NULL AND dexs.factory_s3_path!='') " \
                  "AND " \
-                 "dexs.router IS NOT NULL " \
+                 "(dexs.router IS NOT NULL AND dexs.router!='')" \
                  "AND " \
-                 "dexs.router_s3_path IS NOT NULL " \
+                 "(dexs.router_s3_path IS NOT NULL AND dexs.router_s3_path!='')" \
                  "AND (networks.explorer_type='scan' OR networks.explorer_type='blockscout')"
 
     query = "" \
@@ -47,18 +47,22 @@ def getAllDexsWithABIs(dbConnection):
     for dex in dexs:
         dexIndex = dexs.index(dex)
 
-        processedDex, cachedNetworkDetails = processDexInformation(
-            dbConnection=dbConnection,
-            dex=dex,
-            dexIndex=dexIndex,
-            dexCount=dexCount,
-            cachedNetworkDetails=cachedNetworkDetails
-        )
+        try:
+            processedDex, cachedNetworkDetails = processDexInformation(
+                dbConnection=dbConnection,
+                dex=dex,
+                dexIndex=dexIndex,
+                dexCount=dexCount,
+                cachedNetworkDetails=cachedNetworkDetails
+            )
 
-        finalDexs.append(processedDex)
+            finalDexs.append(processedDex)
 
-        if lazyMode:
-            break
+            if lazyMode:
+                break
+        except:
+            x = 1
+            continue
 
     printSeparator(True)
 
