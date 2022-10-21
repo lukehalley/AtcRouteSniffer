@@ -12,8 +12,6 @@ def decodeTransactions(dbConnection, dexs):
 
     routesAdded = 0
 
-    lazyMode = strToBool(os.getenv("LAZY_MODE"))
-
     for dex in dexs:
 
         # Dex
@@ -64,7 +62,7 @@ def decodeTransactions(dbConnection, dexs):
 
                     routeObject = {
                         "method": finalDecodedTransaction["name"],
-                        "route": ", ".join(routeUsed),
+                        "route": "-".join(routeUsed),
                         "blockNumber": finalDecodedTransaction["blockNumber"]
                     }
 
@@ -99,9 +97,6 @@ def decodeTransactions(dbConnection, dexs):
                     routesAdded = routesAdded + 1
 
                     logger.info(f"{dexName} {transactionIndex + 1}/{dexTransactionCount}")
-
-                    if lazyMode:
-                        break
 
             dex["routes"] = collectedRoutes
 
