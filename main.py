@@ -38,7 +38,6 @@ def runSniffer():
     logger.info(f"Querying DB For Dexs w/ Networks + ABIs ")
     printSeparator()
 
-    # Run the dex sniffer
     dbConnection = initDBConnection()
     dexs = getAllDexsWithABIs(
         dbConnection=dbConnection
