@@ -36,7 +36,7 @@ def getAllDexsWithABIs(dbConnection):
     )
 
     if lazyMode:
-        dexs = dexs[0:5]
+        dexs = dexs[0:9]
 
     dexCount = len(dexs)
     logger.info(f"Retrieved {dexCount} Dexs From DB")
