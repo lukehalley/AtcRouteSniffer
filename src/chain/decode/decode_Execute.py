@@ -1,3 +1,4 @@
+"""Decode and execute transaction processing logic."""
 """Transaction decoding and route extraction utilities.
 """Decode and interpret smart contract execution calls and state changes."""
 
