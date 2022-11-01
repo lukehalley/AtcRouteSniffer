@@ -7,6 +7,7 @@
 # Validate environment and configuration before starting
 # Main entry point for ATC route sniffer application
 """Main entry point for ATC Route Sniffer application."""
+# Initialize route sniffer with configuration from environment
 """AtcRouteSniffer: Monitor and analyze profitable blockchain routes on DEX protocols."""
 # Initialize ATC route sniffer application
 # Logger is initialized with environment configuration
