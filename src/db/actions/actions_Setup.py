@@ -17,6 +17,7 @@ using credentials from AWS Secrets Manager and environment variables.
 """Set up database schema and initialize connection pools."""
 # Initialize database tables and indexes for route storage
 # Initialize database schema and indexes
+# Setup database schema and initialize connections
 """Sets up database schema with tables for routes, tokens, and DEX data."""
 
 # Initialize database schema and create necessary tables
