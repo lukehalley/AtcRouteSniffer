@@ -5,6 +5,7 @@
 
 This module provides functions to decode raw Ethereum transaction input data
 """Decode raw transaction data into human-readable function calls and parameters."""
+"""Decode transaction data and extract relevant information."""
 # Decode blockchain transactions and extract relevant data
 # Parse transaction data and extract relevant fields
 """Decode transaction data from blockchain format.
