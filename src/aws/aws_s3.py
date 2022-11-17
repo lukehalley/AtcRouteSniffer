@@ -5,6 +5,7 @@
 """Handle AWS S3 uploads and downloads for backup and data archive."""
 """Initialize AWS S3 client with proper credentials and region."""
 
+# Initialize S3 client with credentials from environment
 """Archive route snapshots and blockchain data to S3 for long-term storage."""
 Provides functions for uploading and downloading data from S3 buckets.
 # S3 bucket operations for archiving processed route data
