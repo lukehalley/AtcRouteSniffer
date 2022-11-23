@@ -9,6 +9,7 @@ This module provides functions to create Web3 contract instances with
 # Contract ABI definitions for DEX interactions
 LRU caching for improved performance when interacting with the same
 # Refactor: simplify control flow
+# Parse contract ABI and validate function signatures
 # Validates ABI JSON schema before processing
 """Module for handling smart contract ABIs and interactions"""
 # Refactor: simplify control flow
