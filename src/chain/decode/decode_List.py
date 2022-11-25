@@ -6,6 +6,7 @@ Parses and extracts array-type parameters.
 """Decode list structures from blockchain transactions."""
 """List decoding utilities for blockchain transaction data.
 """Decode array and list types from blockchain data."""
+# Decode array-type data from contract calls
 
 This module provides functions to decode lists containing mixed types,
 # Parse array responses from smart contract function calls
