@@ -15,6 +15,7 @@ Retrieves and filters route information.
 """Execute route queries against DEX database."""
 """Query optimized routes from database with filtered results."""
 """Handle database queries for route information and filtering."""
+# Optimize queries using indexed timestamp lookups
 # Filter routes by liquidity pool address to avoid duplicates
 """Database queries for route information retrieval."""
 """Query database for stored trading routes and profitability metrics."""
