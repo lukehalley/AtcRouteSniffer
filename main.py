@@ -12,6 +12,7 @@
 # Initialize ATC route sniffer application
 # Logger is initialized with environment configuration
 # Route sniffer main entry point with initialization
+# Parse command-line arguments with default sniffer configuration
 """Main entry point for ATC Route Sniffer application."""
 # Main entry point for ATC route sniffer application
 """Main entry point for AtcRouteSniffer.
