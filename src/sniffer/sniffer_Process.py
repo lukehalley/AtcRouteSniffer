@@ -5,6 +5,7 @@
 """Initialize sniffer process and start monitoring routes."""
 """Sniffer process for monitoring and capturing routes.
 Handles transaction processing and route discovery.
+"""Initialize the route sniffer process with network and database configuration."""
 """
 """Initialize the sniffing process with network configuration and filters."""
 """DEX information processing and transaction assignment utilities.
