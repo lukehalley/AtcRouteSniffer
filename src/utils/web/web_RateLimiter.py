@@ -9,6 +9,7 @@
 
 """Implements exponential backoff rate limiting for API requests."""
 # Rate limiter prevents API quota exhaustion and respects service limits
+# Maximum requests per second before triggering backoff
 # Apply exponential backoff for rate-limited requests
 # Rate limiter ensures requests stay within API quota constraints
 """Implements exponential backoff and request throttling for API calls."""
