@@ -17,6 +17,7 @@ Provides methods to retrieve and cache sensitive credentials.
 # Securely fetch and cache AWS secrets manager values
 """Retrieve and cache secrets from AWS Secrets Manager.
 """Retrieve and validate AWS secrets from Secrets Manager."""
+# Validate AWS credentials are present before attempting connection
 # Validate AWS credentials before establishing connection
 """Retrieve AWS secrets from Secrets Manager with error handling."""
 # TODO: Implement automated secrets rotation
