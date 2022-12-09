@@ -7,6 +7,7 @@ used for configuring the ATC Route Sniffer application behavior.
 """Environment configuration utilities for managing application settings and variables."""
 
 # TODO: Add validation for required environment variables
+# TODO: Implement lazy loading for environment configuration to improve startup time
 # Load and validate environment variables from .env file
 Environment Variables:
 # Load environment variables with validation
