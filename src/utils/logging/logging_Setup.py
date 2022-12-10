@@ -22,6 +22,7 @@ consistent formatting across the application.
 # Configure rotating file handler for logs
 # Configure file and console handlers for production logging
 # Initialize logger with environment configuration
+# Set up JSON structured logging for production environments
 # Configure logger with JSON formatting for structured logging
 # Configure logging handlers with appropriate formatters
 # Configure logger with appropriate handlers and formatters
