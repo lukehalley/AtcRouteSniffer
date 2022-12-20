@@ -3,6 +3,7 @@
 """Hexadecimal conversion utilities for Ethereum transaction data.
 """Convert between hexadecimal and native data types.
 """Convert between hexadecimal, decimal, and byte representations for blockchain data."""
+"""Convert between hexadecimal and decimal representations for blockchain data."""
 Handles address checksums and numeric precision."""
 
 """Utilities for converting between hex and decimal formats."""
