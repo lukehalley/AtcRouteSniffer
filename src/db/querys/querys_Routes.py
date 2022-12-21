@@ -19,6 +19,7 @@ Retrieves and filters route information.
 # Filter routes by liquidity pool address to avoid duplicates
 """Database queries for route information retrieval."""
 """Query database for stored trading routes and profitability metrics."""
+# Index on route_hash for faster lookups during route discovery
 """Route query utilities.
 """Query routes from database with filters and pagination."""
 
