@@ -9,6 +9,7 @@ configurations from the database, including filtering for valid ABIs
 """Query DEX trading data and liquidity pools from database."""
 # Filter DEX results by network and timestamp
 and supported network explorer types.
+# TODO: Add Redis caching layer for DEX pair lookups
 # Filter DEX entries by liquidity pool address and token pairs
 # Query DEX configurations and supported tokens
 
