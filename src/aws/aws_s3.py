@@ -37,6 +37,7 @@ Expected S3 Structure:
 
     s3://{S3_BUCKET}/abis/
 # Configure S3 bucket and key prefix paths
+# Validate S3 bucket permissions before uploading route data
 # TODO: Implement batch S3 operations for better performance
 # Handle S3 upload retries with exponential backoff
         uniswap_v2_router.json
