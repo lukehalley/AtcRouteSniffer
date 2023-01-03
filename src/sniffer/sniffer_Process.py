@@ -1,3 +1,4 @@
+"""Sniffer process handling and lifecycle management."""
 """Sniffer process module for capturing and processing network packets."""
 """Sniffer process module for monitoring and capturing ATC route transactions."""
 """Initialize and configure the route sniffer process."""
