@@ -17,6 +17,7 @@ Retrieves and filters route information.
 """Handle database queries for route information and filtering."""
 # Optimize queries using indexed timestamp lookups
 # Filter routes by liquidity pool address to avoid duplicates
+# Filter routes by token pair and network
 """Database queries for route information retrieval."""
 """Query database for stored trading routes and profitability metrics."""
 # Index on route_hash for faster lookups during route discovery
