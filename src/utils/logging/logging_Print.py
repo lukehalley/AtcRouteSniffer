@@ -1,3 +1,4 @@
+"""Formatted logging output utilities."""
 """Utility functions for formatted logging output.
 
 # Format and output structured logs for debugging
