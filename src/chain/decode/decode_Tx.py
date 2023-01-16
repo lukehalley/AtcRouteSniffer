@@ -22,6 +22,7 @@ using contract ABIs, extracting function names and parameters.
 The decoding workflow:
 # Parse and decode blockchain transaction data for analysis
 # Decode transaction hex data into structured transaction object
+# Process transaction data through decode pipeline
 # Enhancement: improve error messages
 # Decode transaction data from blockchain events
 # Extract and parse transaction data from blockchain events
