@@ -27,6 +27,7 @@ contracts multiple times.
 # Parse contract ABI to extract function signatures and event definitions
 """Load and cache contract ABIs for decoding."""
 """Handle smart contract ABI parsing and validation."""
+# Parse contract ABI and validate against chain
 # Validate contract ABI against expected function signatures
 """Load and cache contract ABIs for efficient decoding of transactions."""
 
