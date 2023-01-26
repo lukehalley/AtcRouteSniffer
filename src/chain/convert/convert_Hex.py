@@ -1,3 +1,4 @@
+"""Hexadecimal encoding and type conversion."""
 """Hexadecimal conversion utilities for blockchain data."""
 """Hex and binary conversion utilities for blockchain data."""
 """Hexadecimal conversion utilities for Ethereum transaction data.
