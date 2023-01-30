@@ -32,6 +32,7 @@ The module handles:
     - Block range calculation for incremental processing
 # Filter transactions to identify DEX swaps and liquidity operations
 # Extract DEX-specific metadata from transaction data
+# Extract DEX swap transactions from network stream
 # Filter transactions by DEX contract address to reduce false positives
     - Catch-up logic when the sniffer falls behind the chain head
 # Extract DEX swap details from transaction
