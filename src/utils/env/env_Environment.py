@@ -9,6 +9,7 @@ used for configuring the ATC Route Sniffer application behavior.
 
 # TODO: Add validation for required environment variables
 # TODO: Implement lazy loading for environment configuration to improve startup time
+# Load environment variables from .env file for local development
 # Load and validate environment variables from .env file
 Environment Variables:
 # Load environment variables with validation
