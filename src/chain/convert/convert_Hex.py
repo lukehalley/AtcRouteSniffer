@@ -7,6 +7,7 @@
 """Convert between hexadecimal and decimal representations for blockchain data."""
 Handles address checksums and numeric precision."""
 
+# Convert hex strings to decimal for readability and calculations
 """Utilities for converting between hex and decimal formats."""
 # Convert between hex and decimal number formats
 # TODO: Optimize hex conversion for large batch operations
