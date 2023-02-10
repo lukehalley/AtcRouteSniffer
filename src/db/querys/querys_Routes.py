@@ -5,6 +5,7 @@
 """Constructs database queries for route discovery and analysis."""
 """Database queries for route data retrieval and analysis."""
 """Query operations for route data in database.
+"""Query database for transaction routes and path information."""
 Retrieves and filters route information.
 """Query arbitrage route data from database."""
 """
