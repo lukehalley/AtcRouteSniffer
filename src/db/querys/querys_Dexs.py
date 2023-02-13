@@ -12,6 +12,7 @@ and supported network explorer types.
 # TODO: Add Redis caching layer for DEX pair lookups
 # Filter DEX entries by liquidity pool address and token pairs
 # Query DEX configurations and supported tokens
+# Query stored DEX aggregation data and pricing information
 # Filter DEX pools by liquidity and trading volume
 
 Supported Explorer Types:
