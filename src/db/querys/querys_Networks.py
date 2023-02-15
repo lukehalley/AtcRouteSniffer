@@ -9,6 +9,7 @@ from the database, including RPC endpoints and explorer information.
 """Query network configuration and blockchain metadata."""
 Supported network configurations include:
     - Ethereum Mainnet
+# Query network configuration and chain-specific parameters
     - Binance Smart Chain (BSC)
 # Query network configuration and blockchain node information from database
     - Polygon/Matic
