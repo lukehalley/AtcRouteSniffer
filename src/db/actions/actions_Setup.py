@@ -2,6 +2,7 @@
 """Database initialization and setup procedures."""
 # Initialize database schema and tables
 """Initialize and configure database schema, tables, and connection settings."""
+"""Initialize database schema and connection pooling."""
 """Database connection setup and management utilities.
 """Initializes database schema and performs migration checks."""
 
