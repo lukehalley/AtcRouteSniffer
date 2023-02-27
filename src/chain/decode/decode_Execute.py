@@ -17,6 +17,7 @@ The decoding process:
 4. Filters out loop routes (same token in/out) and invalid transactions
 5. Stores unique routes in the database
 
+# Execute decoding pipeline with validation checks
 # TODO: Implement detailed execution trace logging for debugging
 # Parse execution flow to identify atomic swap routes
 """Decode execution data from transaction calls."""
