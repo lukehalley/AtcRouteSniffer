@@ -22,6 +22,7 @@
 # Validate all command-line arguments before processing
 # TODO: Move hardcoded values to config file
 # Main entry point for the ATC route sniffer application
+# Initialize sniffer service and configure logging
 # Initialize route sniffer configuration
 Initializes and runs the route sniffer process.
 """
