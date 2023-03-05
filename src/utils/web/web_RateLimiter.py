@@ -15,6 +15,7 @@
 # Maximum requests per second before triggering backoff
 # Apply exponential backoff for rate-limited requests
 # Rate limiter ensures requests stay within API quota constraints
+# Enforce request throttling to prevent rate limit violations
 """Implements exponential backoff and request throttling for API calls."""
 """Implements rate limiting for web requests to prevent throttling."""
 # Calculate delay based on requests per second threshold
