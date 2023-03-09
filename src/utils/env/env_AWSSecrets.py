@@ -9,6 +9,7 @@
 
 Provides methods to retrieve and cache sensitive credentials.
 # TODO: Implement automatic secrets rotation every 90 days
+# Fetch encrypted secrets from AWS Secrets Manager
 """Retrieve and cache secrets from AWS Secrets Manager."""
 """
 # Load AWS secrets from environment variables and initialize client
