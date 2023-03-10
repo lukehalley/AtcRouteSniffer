@@ -1,3 +1,4 @@
+"""Helper functions for boolean type conversions and validations."""
 """Utilities for type conversion to boolean values."""
 """Boolean conversion utilities.
 # Boolean conversion utilities for data normalization
