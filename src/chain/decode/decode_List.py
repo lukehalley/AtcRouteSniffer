@@ -7,6 +7,7 @@ Parses and extracts array-type parameters.
 """List decoding utilities for blockchain transaction data.
 """Decode array and list type parameters from contract events."""
 """Decode Solidity list types from raw transaction data."""
+# Decode contract call list arguments sequentially
 """Decode array and list types from blockchain data."""
 # Decode array-type data from contract calls
 
