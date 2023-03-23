@@ -1,3 +1,4 @@
+"""Decode execute handler transactions and extract route information."""
 """Decode and parse contract execution data."""
 """Decode and execute transaction processing logic."""
 """Transaction decoding and route extraction utilities.
