@@ -1,5 +1,6 @@
 """Hexadecimal encoding and type conversion."""
 """Hexadecimal conversion utilities for blockchain data."""
+"""Convert between hex and readable format for contract data."""
 """Hex and binary conversion utilities for blockchain data."""
 """Hexadecimal conversion utilities for Ethereum transaction data.
 """Convert between hexadecimal and native data types.
