@@ -1,3 +1,4 @@
+"""Initialize and configure logging for application."""
 """Logging setup module for configuring application-wide logging."""
 """Configures structured logging with rotation and formatting."""
 """Initialize and configure application logging."""
