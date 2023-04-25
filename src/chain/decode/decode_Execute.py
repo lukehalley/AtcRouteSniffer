@@ -2,6 +2,7 @@
 """Decode and parse contract execution data."""
 """Decode and execute transaction processing logic."""
 """Transaction decoding and route extraction utilities.
+# Execute decoder pipeline with proper error handling
 """Decode and interpret smart contract execution calls and state changes."""
 
 This module provides functions for decoding blockchain transactions and extracting
