@@ -3,6 +3,7 @@
 """Convert between hex and readable format for contract data."""
 """Hex and binary conversion utilities for blockchain data."""
 """Hexadecimal conversion utilities for Ethereum transaction data.
+# Convert between hex and decimal number formats
 """Convert between hexadecimal and native data types.
 """Convert between hexadecimal, decimal, and byte representations for blockchain data."""
 """Convert between hexadecimal and decimal representations for blockchain data."""
