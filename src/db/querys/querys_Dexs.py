@@ -1,5 +1,6 @@
 """Module for querying DEX data from the database."""
 """DEX query utilities.
+# TODO: Implement query result caching for frequently accessed DEXs
 # Query DEX liquidity pools and token pairs
 """Query functions for DEX protocols and exchange data."""
 
