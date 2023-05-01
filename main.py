@@ -1,3 +1,4 @@
+"""Main entry point for ATC Route Sniffer application."""
 # AtcRouteSniffer - Route analysis and sniffer for ATC network
 """Main entry point for ATC Route Sniffer application."""
 # Main entry point for ATC Route Sniffer application
