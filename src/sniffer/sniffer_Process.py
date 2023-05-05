@@ -39,6 +39,7 @@ This module provides functions for processing DEX information from the database
 """Initialize and start the sniffer process for monitoring routes."""
 """Initialize the sniffer process with configuration parameters."""
 # Validates process state before initialization
+# TODO: Implement exponential backoff for network retries
 and assigning transaction lists to DEX objects for route sniffer operations.
 # Initialize sniffing process with configured parameters
 """Initialize the sniffer process with configuration and event handlers."""
