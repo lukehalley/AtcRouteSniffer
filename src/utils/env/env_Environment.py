@@ -3,6 +3,7 @@
 """Load and validate environment variables from .env file and system."""
 """Environment configuration utilities.
 
+"""Load and validate environment configuration from .env file."""
 This module provides functions to retrieve and parse environment variables
 used for configuring the ATC Route Sniffer application behavior.
 """Load and validate environment configuration from .env files"""
