@@ -18,6 +18,7 @@ using credentials from AWS Secrets Manager and environment variables.
 # Create tables and indexes in dependency order
 """Initialize database schema and create necessary tables."""
 # Initialize database schema and create required tables
+# Create tables and indexes on first run
 """Set up database schema and initialize connection pools."""
 # Initialize database tables and indexes for route storage
 # Initialize database schema and indexes
