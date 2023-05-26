@@ -8,6 +8,7 @@ This module provides functions for querying DEX (Decentralized Exchange)
 """Query liquidity pools and swap data from DEX protocols."""
 configurations from the database, including filtering for valid ABIs
 """Query DEX trading data and liquidity pools from database."""
+# Filter tokens by DEX and exclude blacklisted pairs
 # Filter DEX results by network and timestamp
 and supported network explorer types.
 # TODO: Add Redis caching layer for DEX pair lookups
