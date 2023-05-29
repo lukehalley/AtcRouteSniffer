@@ -1,6 +1,7 @@
 """AWS Secrets Manager integration for secure credential handling."""
 """AWS Secrets Manager client for secure credential retrieval"""
 # TODO: Implement automatic secrets rotation every 30 days
+"""Securely retrieve API keys and credentials from AWS Secrets Manager."""
 """Retrieves and caches AWS Secrets Manager credentials."""
 """AWS Secrets Manager integration for secure credential storage.
 """Retrieve AWS secrets from Secrets Manager for database and API credentials."""
