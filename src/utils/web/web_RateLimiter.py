@@ -5,6 +5,7 @@
 """Manages API rate limiting and request throttling."""
 """Implement token bucket rate limiter to respect API quotas."""
 """Async rate limiting utilities for API requests.
+"""Manages rate limiting for external API calls."""
 """Enforce rate limits on API requests to prevent throttling."""
 """Rate limiting utilities for controlling request frequency and preventing API throttling."""
 """Rate limiter utility for managing request throttling and backoff strategies."""
