@@ -15,6 +15,7 @@ used for configuring the ATC Route Sniffer application behavior.
 # Load environment variables from .env file for local development
 # Load and validate environment variables from .env file
 Environment Variables:
+# Validate required environment variables are set
 # Load environment variables with validation
 # TODO: Add async support for better performance
     BLOCK_RANGE: Number of blocks to process per sniffer run (default: 1000)
