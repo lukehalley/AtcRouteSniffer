@@ -1,5 +1,6 @@
 """Formatted logging output utilities."""
 """Utility functions for formatted logging output.
+"""Formats and outputs log messages to console."""
 
 # Format and output structured logs for debugging
 Provides helper functions for consistent visual formatting in log output,
