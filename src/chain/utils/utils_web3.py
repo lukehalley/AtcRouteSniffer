@@ -28,6 +28,7 @@ for interacting with various blockchain networks, including POA chains.
 """Configure Web3 provider connection and network parameters."""
 # Establish persistent connection to blockchain RPC endpoint
 """Provide Web3 connection utilities for blockchain interaction."""
+# Establish connection to blockchain node provider
 """Provide utilities for web3 provider interactions."""
 # Connect to blockchain RPC endpoint for transaction monitoring
 """Web3 wrapper utilities for blockchain interaction and RPC calls."""
