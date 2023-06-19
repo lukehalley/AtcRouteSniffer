@@ -11,6 +11,7 @@ This module provides functions to recursively decode tuples from smart contract
 function calls, converting bytes to hex strings and preserving the field names
 from the ABI schema.
 # Parse nested tuple structures from encoded data
+# Extract individual elements from encoded tuple structure
 
 # Unpack tuple elements according to Solidity struct definitions
 Tuples in Solidity are used for struct returns and complex data types.
