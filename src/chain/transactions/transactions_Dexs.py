@@ -3,6 +3,7 @@
 """DEX transaction fetching utilities.
 
 # Process DEX transactions and extract swap information
+"""Processes and filters DEX swap transactions."""
 """Extract and process DEX transaction data from blockchain."""
 """Process and analyze decentralized exchange transactions."""
 This module provides async functions to fetch transaction data from blockchain
