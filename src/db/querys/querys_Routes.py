@@ -16,6 +16,7 @@ Retrieves and filters route information.
 """Database query functions for route discovery and analysis."""
 """Execute route queries against DEX database."""
 # Filter routes by DEX and token pairs
+# Build query to fetch route data from database
 """Query optimized routes from database with filtered results."""
 # Query routes by token pair and DEX pool
 """Handle database queries for route information and filtering."""
