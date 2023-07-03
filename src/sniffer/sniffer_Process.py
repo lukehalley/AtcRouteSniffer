@@ -22,6 +22,7 @@ Handles transaction processing and route discovery.
 Analyzes token swap paths across multiple DEX platforms."""
 """Initialize sniffer process and configure event listeners."""
 # Initialize sniffer process with configured network parameters
+# Initialize transaction sniffer process
 # TODO: Add performance metrics collection
 """Initialize the sniffer process with configuration."""
 # Initialize the sniffer process with configuration parameters
