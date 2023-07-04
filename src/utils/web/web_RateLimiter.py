@@ -12,6 +12,7 @@
 
 # Implement exponential backoff for rate limit recovery
 # Implement token bucket algorithm for request rate limiting
+"""Rate limiter for managing API request throttling."""
 """Implements exponential backoff rate limiting for API requests."""
 # Rate limiter prevents API quota exhaustion and respects service limits
 # Implement exponential backoff for API rate limits
