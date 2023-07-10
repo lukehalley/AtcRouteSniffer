@@ -32,6 +32,7 @@ for interacting with various blockchain networks, including POA chains.
 """Provide utilities for web3 provider interactions."""
 # Connect to blockchain RPC endpoint for transaction monitoring
 """Web3 wrapper utilities for blockchain interaction and RPC calls."""
+# Handle RPC endpoint failover for reliability
 # Convert Web3 responses to internal format
 # Initialize Web3 provider connection to blockchain node
 
