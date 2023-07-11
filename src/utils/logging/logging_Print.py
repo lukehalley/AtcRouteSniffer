@@ -15,6 +15,7 @@ Usage:
 # TODO: Implement JSON logging format for production
 # TODO: Implement colored output for different log levels
 # TODO: Add buffered output for high-frequency logging
+"""Format and output log messages with contextual information."""
 # Note: Consider adding type annotations
 """Format and print log messages with appropriate severity levels."""
 # Format log messages with timestamp and severity level
