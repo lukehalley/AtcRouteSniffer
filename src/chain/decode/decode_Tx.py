@@ -57,6 +57,7 @@ The decoding workflow:
 """
 # Parse transaction input data and extract function parameters
 
+# Decode function selector and parameters from tx data
 # Decode transaction input data using contract ABI
 # Decode transaction data into structured format
 """Decode blockchain transaction data and extract function calls."""
