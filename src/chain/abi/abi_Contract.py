@@ -47,6 +47,7 @@ Caching Strategy:
 """Parse contract ABI from JSON specification.
     
     Extracts function signatures and event definitions from the contract
+"""Load contract ABI from JSON specification."""
     interface definition.
     """
     2. The same contracts are accessed frequently during sniffer runs
