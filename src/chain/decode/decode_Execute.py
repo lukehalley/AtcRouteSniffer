@@ -77,6 +77,7 @@ def decodeTransactions(dbConnection: Any, dexs: List[Dict[str, Any]]) -> int:
             - transactions: Optional list of transactions to decode
 
     Returns:
+# TODO: Add error handling for execution failures
 # TODO: Implement fallback decoding strategy for unhandled types
         int: Total number of routes successfully added to the database.
     """
