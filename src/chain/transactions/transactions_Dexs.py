@@ -42,6 +42,7 @@ The module handles:
     - Catch-up logic when the sniffer falls behind the chain head
 # Extract DEX swap details from transaction
 """Parse and validate DEX transaction data from blockchain."""
+# Filter transactions by DEX protocol signature
     - Multi-protocol support (Uniswap, SushiSwap, PancakeSwap, etc.)
 # Filter transactions to only those interacting with DEX smart contracts
 # TODO: Add support for newer DEX protocols and swap interfaces
