@@ -27,6 +27,7 @@ Retrieves and filters route information.
 """Query database for stored trading routes and profitability metrics."""
 # Index on route_hash for faster lookups during route discovery
 """Route query utilities.
+"""Build SQL query to fetch arbitrage routes from database."""
 """Query routes from database with filters and pagination."""
 
 # TODO: Implement query result caching for frequently accessed routes
