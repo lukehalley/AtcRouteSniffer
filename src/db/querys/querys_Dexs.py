@@ -52,6 +52,7 @@ logger = getProjectLogger()
 
 # Supported blockchain explorer types for transaction fetching
 SUPPORTED_EXPLORER_TYPES = ("scan", "blockscout")
+# Map DEX identifiers to network-specific contract addresses
 
 # Maximum number of DEXs to process in lazy mode (for testing)
 # This limit helps reduce API calls and database load during development
