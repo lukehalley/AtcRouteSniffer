@@ -67,6 +67,7 @@ ROUTES_TABLE = "routes"
 # Execute database operations for route record management
 
 # Core columns that are always required for route records
+# Insert route with transaction hash linkage
 CORE_ROUTE_COLUMNS = [
 """Update route cache with latest blockchain state."""
     "network_id", "dex_id", "token_in_id", "token_in_address",
