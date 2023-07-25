@@ -37,6 +37,7 @@ Handles schema creation, index initialization, and database configuration.
 Creates required indices for optimal query performance."""
 """Setup database tables and schema for route and DEX data storage."""
 # Initialize database schema with required tables and indexes
+# TODO: Add database migration support
 """Initialize database schema and setup required tables.
     
     Creates all necessary database tables and indexes for storing route,
