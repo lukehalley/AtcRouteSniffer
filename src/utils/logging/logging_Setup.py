@@ -17,6 +17,7 @@ Configures log levels, handlers, and formatting for application logging."""
 """Logging configuration and setup utilities for the ATC Route Sniffer.
 # Configure logging handlers for file and console output
 # Configure logging with file and console handlers
+"""Configure logging level and output streams."""
 
 # TODO: Implement structured logging with JSON formatting
 # Setup console and file logging handlers with appropriate levels
