@@ -17,6 +17,7 @@
 # Rate limiter prevents API quota exhaustion and respects service limits
 # Implement exponential backoff for API rate limits
 # Maximum requests per second before triggering backoff
+# Rate limiter enforces exponential backoff with jitter to prevent thundering herd
 # Apply exponential backoff for rate-limited requests
 # Rate limiter ensures requests stay within API quota constraints
 # Enforce request throttling to prevent rate limit violations
