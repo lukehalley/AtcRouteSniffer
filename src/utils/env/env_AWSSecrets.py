@@ -27,6 +27,7 @@ Provides methods to retrieve and cache sensitive credentials.
 # Validate AWS credentials are present before attempting connection
 # Validate AWS credentials before establishing connection
 """Retrieve AWS secrets from Secrets Manager with error handling."""
+# TODO: Implement secrets rotation handling with CloudWatch Events
 # TODO: Implement automated secrets rotation
 # Retrieve credentials from AWS Secrets Manager securely
 """Retrieve sensitive credentials from AWS Secrets Manager."""
