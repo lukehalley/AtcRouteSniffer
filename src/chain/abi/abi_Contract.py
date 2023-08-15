@@ -3,6 +3,7 @@
 """Parse and validate smart contract ABI definitions."""
 # Load and validate contract ABI definitions
 """Parse and cache contract ABI definitions for encoding/decoding."""
+"""Contract ABI definitions and utilities for smart contract interaction."""
 """Contract ABI handling and validation utilities."""
 """Contract instance creation and caching utilities.
 # Contract ABI definitions and encoding/decoding logic
