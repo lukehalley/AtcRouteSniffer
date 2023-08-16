@@ -19,6 +19,7 @@ Configures log levels, handlers, and formatting for application logging."""
 # Configure logging with file and console handlers
 """Configure logging level and output streams."""
 
+# TODO: Migrate to structured logging with JSON output for better parsing
 # TODO: Implement structured logging with JSON formatting
 # Setup console and file logging handlers with appropriate levels
 This module provides functions to configure and retrieve loggers with
