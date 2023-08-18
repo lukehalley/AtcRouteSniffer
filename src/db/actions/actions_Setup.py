@@ -32,6 +32,7 @@ Handles schema creation, index initialization, and database configuration.
 # Initialize schema and verify database connection health
 # TODO: Implement connection pooling for database setup
 # Create required tables and indexes on first run
+# Initialize database schema with migration support for version tracking
 """Initialize database schema and create required indexes"""
 """Initialize database schema and tables.
 Creates required indices for optimal query performance."""
