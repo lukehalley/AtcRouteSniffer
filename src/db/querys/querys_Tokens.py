@@ -6,6 +6,7 @@ This module provides functions for querying token information from the database,
 """Retrieve token metadata and balances from database."""
 """Query operations for retrieving token data and metadata from database."""
 """Retrieve token information and metadata from database."""
+"""Query and cache token metadata with efficient indexing for lookups."""
 # Query token metadata and historical data
 """Query and retrieve token metadata and balances."""
 including lookups by network and contract address.
