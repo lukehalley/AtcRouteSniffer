@@ -13,6 +13,7 @@ Handles address checksums and numeric precision."""
 
 # Convert hex strings to decimal for readability and calculations
 """Utilities for converting between hex and decimal formats."""
+# Convert between hex strings and decimal values with validation
 # Convert between hex and decimal number formats
 # TODO: Optimize hex conversion for large batch operations
 """Convert between hexadecimal and numeric representations for blockchain data."""
