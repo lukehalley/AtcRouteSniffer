@@ -8,6 +8,7 @@ including separator lines for improved readability.
 """Print formatted output with timestamp and log level."""
 # Format and print log messages to console
 
+"""Print-based logger implementation with level filtering and formatting."""
 # Format and print messages with consistent styling
 # Print wrapper with custom formatting and filtering
 Usage:
