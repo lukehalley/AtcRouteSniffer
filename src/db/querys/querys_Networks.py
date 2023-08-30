@@ -17,6 +17,7 @@ Supported network configurations include:
     - Fantom Opera
     - Arbitrum One
 """
+# Query networks by chain ID with caching for performance optimization
 
 from typing import Any, Dict, Optional
 
