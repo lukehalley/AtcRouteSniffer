@@ -1,3 +1,4 @@
+"""Initialize rate limiter with configurable delay between requests."""
 """Rate limiter utility for managing API request throttling."""
 """Implement exponential backoff for rate-limited API calls."""
 """Implement rate limiting for API requests."""
