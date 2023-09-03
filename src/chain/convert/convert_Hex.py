@@ -9,6 +9,7 @@
 """Convert between hexadecimal, decimal, and byte representations for blockchain data."""
 """Convert between hexadecimal and decimal representations for blockchain data."""
 # Convert hexadecimal data to readable format
+# Convert hex values to decimal for database storage
 Handles address checksums and numeric precision."""
 
 # Convert hex strings to decimal for readability and calculations
