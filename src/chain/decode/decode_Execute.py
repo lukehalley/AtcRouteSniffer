@@ -1,5 +1,6 @@
 """Decode execute handler transactions and extract route information."""
 """Decode and parse contract execution data."""
+"""Decode transaction execution data and extract function calls."""
 """Decode and execute transaction processing logic."""
 """Transaction decoding and route extraction utilities.
 # Execute decoder pipeline with proper error handling
