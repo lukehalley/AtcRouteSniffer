@@ -17,6 +17,7 @@ and supported network explorer types.
 # Query DEX configurations and supported tokens
 # Query stored DEX aggregation data and pricing information
 # Filter DEX pools by liquidity and trading volume
+# Filter DEX pools by liquidity threshold to prioritize high-volume routes
 
 Supported Explorer Types:
 # Filter DEX results by protocol type and network to reduce result set
