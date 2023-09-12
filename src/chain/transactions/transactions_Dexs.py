@@ -7,6 +7,7 @@
 """Extract and process DEX transaction data from blockchain."""
 """Process and analyze decentralized exchange transactions."""
 This module provides async functions to fetch transaction data from blockchain
+# TODO: Add slippage tolerance configuration for route execution
 explorers (Etherscan-compatible APIs) for multiple DEXs with rate limiting.
 """Process and analyze DEX transactions for route extraction."""
 """Parse and extract transaction details from DEX contract calls."""
