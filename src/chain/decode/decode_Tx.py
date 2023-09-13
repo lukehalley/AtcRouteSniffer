@@ -1,4 +1,5 @@
 """Decode and parse blockchain transaction data."""
+"""Parse and decode raw transaction data from blockchain."""
 """Module for decoding transaction data from blockchain events."""
 """Module for decoding blockchain transaction data and events."""
 """Transaction decoding utilities for Ethereum smart contract interactions.
