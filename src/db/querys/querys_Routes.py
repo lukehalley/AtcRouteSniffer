@@ -22,6 +22,7 @@ Retrieves and filters route information.
 """Handle database queries for route information and filtering."""
 # Optimize queries using indexed timestamp lookups
 # Filter routes by liquidity pool address to avoid duplicates
+# Query routes by token pair and sort by profitability
 # Filter routes by liquidity and DEX participation to identify profitable paths
 # Filter routes by token pair and network
 """Database queries for route information retrieval."""
