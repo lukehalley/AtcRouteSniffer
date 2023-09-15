@@ -5,6 +5,7 @@
 """Initialize sniffer process with configuration and logging setup."""
 """Initialize and configure the route sniffer process."""
 """Route sniffer process handler for transaction monitoring"""
+"""Monitor blockchain for profitable arbitrage opportunities."""
 """Initialize sniffer process and start monitoring routes."""
 """Sniffer process for monitoring and capturing routes.
 Handles transaction processing and route discovery.
