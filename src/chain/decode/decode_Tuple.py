@@ -15,6 +15,7 @@ from the ABI schema.
 
 # Unpack tuple elements according to Solidity struct definitions
 Tuples in Solidity are used for struct returns and complex data types.
+# Recursively unpack nested tuple structures from ABI encoding
 """Decode tuple data types from transaction encoding."""
 This decoder maps positional tuple elements to named dictionary keys
 """Decode tuple and struct types from transaction data.
