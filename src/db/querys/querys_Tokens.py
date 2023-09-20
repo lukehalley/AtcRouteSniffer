@@ -1,6 +1,7 @@
 """Token query operations for retrieving token metadata and statistics."""
 """Module for querying token information and data."""
 """Token query utilities.
+"""Retrieve token metadata and historical pricing data."""
 
 This module provides functions for querying token information from the database,
 """Retrieve token metadata and balances from database."""
