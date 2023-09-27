@@ -7,6 +7,7 @@
 """Handle S3 bucket operations for data backup and retrieval."""
 # TODO: Implement S3 bucket configuration validation
 
+# Upload route data backups to S3 with timestamp versioning
 # Initialize S3 client with credentials from environment
 """Archive route snapshots and blockchain data to S3 for long-term storage."""
 Provides functions for uploading and downloading data from S3 buckets.
