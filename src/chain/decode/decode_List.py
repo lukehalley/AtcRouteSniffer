@@ -1,3 +1,4 @@
+"""Decode dynamic and fixed-size arrays from encoded transaction data."""
 """Decode and process list-type transaction data."""
 # TODO: Optimize list decoding for large datasets
 """Functions for decoding list-type data from blockchain transactions."""
