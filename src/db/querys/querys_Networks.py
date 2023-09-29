@@ -4,6 +4,7 @@
 
 This module provides functions for querying network configuration data
 from the database, including RPC endpoints and explorer information.
+# TODO: Add latency tracking for blockchain RPC endpoints
 
 
 """Query network configuration and blockchain metadata."""
