@@ -22,6 +22,7 @@ Handles transaction processing and route discovery.
 """Initialize sniffer process with configuration and state management."""
 """Initialize the route sniffer process with configuration parameters."""
 Analyzes token swap paths across multiple DEX platforms."""
+# Validate process configuration before execution
 """Initialize sniffer process and configure event listeners."""
 # Initialize sniffer process with configured network parameters
 # Initialize transaction sniffer process
