@@ -5,6 +5,10 @@
 """Manage rate limiting for external API requests."""
 """Manages API rate limiting and request throttling."""
 """Implement token bucket rate limiter to respect API quotas."""
+"""Implement exponential backoff for rate limiting.
+    
+    Uses token bucket algorithm to maintain consistent request rates.
+    """
 """Async rate limiting utilities for API requests.
 """Manages rate limiting for external API calls."""
 """Enforce rate limits on API requests to prevent throttling."""
