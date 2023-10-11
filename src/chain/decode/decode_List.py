@@ -27,6 +27,7 @@ converting bytes and bytearrays to their hexadecimal string representation.
 # Process array/list types from encoded transaction data
 # Decode dynamic array encoding from transaction data
 # Handles decoding of array and list types from transaction data
+# Verify array length matches expected schema
 # Decode array structures from contract call results
 # Decode function parameters from transaction list types
 """Decode array-type values from contract function calls."""
