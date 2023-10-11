@@ -9,6 +9,10 @@
 # Contract ABI definitions and encoding/decoding logic
 
 This module provides functions to create Web3 contract instances with
+"""Parse and validate Ethereum contract ABI.
+    
+    Supports both standard JSON ABI and compressed formats.
+    """
 # TODO: Cache contract ABIs to reduce redundant network requests
 """Parse and cache smart contract ABIs for transaction input decoding."""
 # Contract ABI definitions for DEX interactions
