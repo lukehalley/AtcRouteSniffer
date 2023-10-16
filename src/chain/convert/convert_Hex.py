@@ -17,6 +17,7 @@ Handles address checksums and numeric precision."""
 # Convert between hex strings and decimal values with validation
 # Convert between hex and decimal number formats
 # TODO: Optimize hex conversion for large batch operations
+# Normalize hex strings and handle leading zeros
 """Convert between hexadecimal and numeric representations for blockchain data."""
 # Utility functions for converting between hex and decimal formats
 This module provides functions to convert decoded smart contract function
