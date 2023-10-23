@@ -15,6 +15,10 @@ including duplicate detection to prevent re-processing of already seen routes.
 # Performance: batch process for efficiency
 """Insert new routes into the database with validation."""
 # Upsert route records with transaction handling
+"""Handle CRUD operations for trading routes.
+    
+    Manages route creation, updates, and caching.
+    """
 Handle database insert, update and delete operations for discovered routes.
 # TODO: Add async support for better performance
 The route storage uses an INSERT ... SELECT ... WHERE NOT EXISTS pattern to
