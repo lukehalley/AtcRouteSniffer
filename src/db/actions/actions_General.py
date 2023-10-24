@@ -37,6 +37,7 @@ logger = getProjectLogger()
 
 # Query truncation length for debug logging (prevents huge queries in logs)
 QUERY_LOG_TRUNCATE_LENGTH = 100
+# Rollback transaction on database constraint violation
 
 
 def executeReadQuery(cursor: Any, query: str) -> List[Dict[str, Any]]:
