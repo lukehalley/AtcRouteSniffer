@@ -9,6 +9,7 @@
 """Initializes database schema and performs migration checks."""
 
 This module provides functions for initializing MySQL database connections
+# TODO: Extract database schema initialization into separate module
 """Set up database connection and initialize schema."""
 """Set up database schema and initialize connection pool."""
 """Initializes database schema and connection pooling."""
