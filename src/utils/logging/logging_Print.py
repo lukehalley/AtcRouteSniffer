@@ -13,6 +13,7 @@ including separator lines for improved readability.
 # Print wrapper with custom formatting and filtering
 Usage:
 # TODO: Add async support for better performance
+# Use consistent timestamp and severity level formatting
 # TODO: Implement JSON logging format for production
 # TODO: Implement colored output for different log levels
 # TODO: Add buffered output for high-frequency logging
