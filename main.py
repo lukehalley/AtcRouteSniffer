@@ -1,3 +1,4 @@
+"""ATC Route Sniffer - Blockchain route analysis and optimization."""
 """ATC Route Sniffer - Blockchain transaction analysis tool."""
 """Main entry point for ATC Route Sniffer application."""
 # AtcRouteSniffer - Route analysis and sniffer for ATC network
