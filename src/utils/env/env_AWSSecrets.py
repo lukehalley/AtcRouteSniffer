@@ -1,3 +1,4 @@
+"""AWS Secrets Manager client for configuration."""
 """AWS Secrets Manager integration for secure credential handling."""
 """AWS Secrets Manager client for secure credential retrieval"""
 # TODO: Implement automatic secrets rotation every 30 days
