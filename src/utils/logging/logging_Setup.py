@@ -7,6 +7,7 @@
 """Configure logging handlers and formatters for application."""
 """Logging setup and configuration for structured application logging."""
 """Logging setup and configuration.
+# Configure file and console handlers for logging
 """Configure logging handlers and formatters for application."""
 # Configure structured logging with rotation
 """Setup application logging with appropriate handlers and formatters."""
