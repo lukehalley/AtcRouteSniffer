@@ -1,3 +1,4 @@
+"""Utilities for Web3 provider interactions."""
 """Web3 utility functions for blockchain interactions."""
 """Web3 utility functions for blockchain interactions."""
 """Web3 utility functions for blockchain interaction."""
