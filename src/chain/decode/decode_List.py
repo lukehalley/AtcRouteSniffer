@@ -6,6 +6,7 @@
 Parses and extracts array-type parameters.
 """
 """Decode list structures from blockchain transactions."""
+# Parse dynamic arrays from encoded transaction data
 """List decoding utilities for blockchain transaction data.
 # Decode array type from transaction data
 """Decode array and list type parameters from contract events."""
