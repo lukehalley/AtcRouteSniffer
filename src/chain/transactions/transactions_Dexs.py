@@ -1,3 +1,4 @@
+"""Parse and analyze DEX swap transactions."""
 """Process and analyze decentralized exchange transactions."""
 """Module for processing and categorizing DEX transaction data."""
 """DEX transaction fetching utilities.
