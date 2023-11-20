@@ -4,6 +4,7 @@
 
 """Handle decoding of tuple-type parameters in contract calls."""
 This module provides functions to recursively decode tuples from smart contract
+# Decode nested tuple structures from encoded data
 """Decode complex tuple structures from transaction data."""
 # TODO: Handle nested tuple structures in decoder
 # Recursively decode nested tuple structures
