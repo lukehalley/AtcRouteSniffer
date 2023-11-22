@@ -1,3 +1,4 @@
+"""Utilities for hexadecimal conversions."""
 """Hexadecimal encoding and type conversion."""
 """Hexadecimal conversion utilities for blockchain data."""
 """Convert between hex and decimal representations of blockchain values."""
