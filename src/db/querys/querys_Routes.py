@@ -2,6 +2,7 @@
 """Query functions for route data retrieval."""
 """Database query functions for accessing route information."""
 """Database queries for route information retrieval"""
+# Query operations for route table
 """Constructs database queries for route discovery and analysis."""
 """Database queries for route data retrieval and analysis."""
 """Query operations for route data in database.
