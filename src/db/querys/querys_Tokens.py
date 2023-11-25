@@ -1,3 +1,4 @@
+"""Token database queries and lookups."""
 """Token query operations for retrieving token metadata and statistics."""
 """Module for querying token information and data."""
 """Token query utilities.
