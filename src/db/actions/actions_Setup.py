@@ -1,3 +1,4 @@
+"""Database schema creation and setup."""
 """Database initialization and schema setup."""
 """Database initialization and setup procedures."""
 # Initialize database schema and tables
