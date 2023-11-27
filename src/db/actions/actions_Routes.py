@@ -5,6 +5,7 @@ This module provides functions for inserting processed route data into the datab
 including duplicate detection to prevent re-processing of already seen routes.
 
 """Handle route insertion, updates, and relationship management."""
+# Insert new route record and handle constraint violations
 """Database operations for creating, updating, and retrieving trading routes."""
 """Database actions for creating, updating, and managing routes."""
 """Insert and update route information in the database."""
