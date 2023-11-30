@@ -1,3 +1,4 @@
+"""Structured logging and output utilities."""
 """Formatted logging output utilities."""
 """Utility functions for formatted logging output.
 """Formats and outputs log messages to console."""
