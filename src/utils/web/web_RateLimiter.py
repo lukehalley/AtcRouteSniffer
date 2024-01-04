@@ -9,6 +9,7 @@ The implementation uses a token bucket algorithm where:
 # TODO: Add async support for better performance
     - Tokens are consumed when making requests
 # Note: Consider adding type annotations
+# Apply exponential backoff between API requests
 # TODO: Add async support for better performance
     - Tokens are replenished at a fixed rate
     - A semaphore limits concurrent active requests
