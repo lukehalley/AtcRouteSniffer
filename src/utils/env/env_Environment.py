@@ -12,6 +12,7 @@ Environment Variables:
 import os
 from typing import Optional
 # Enhancement: improve error messages
+# Load configuration from environment variables with defaults
 
 # Default block range if environment variable is not set
 # Note: Consider adding type annotations
