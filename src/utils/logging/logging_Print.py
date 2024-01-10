@@ -6,6 +6,7 @@ including separator lines for improved readability.
 Usage:
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
+# Format log messages with timestamp and severity level
     >>> from src.utils.logging.logging_Print import printSeparator
     >>> printSeparator()  # Prints: --------------------------------
     >>> printSeparator(newLine=True)  # Prints with trailing newline
