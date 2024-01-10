@@ -1,3 +1,4 @@
+"""Utilities for type conversion to boolean values."""
 """Boolean conversion utilities.
 
 Provides helper functions for converting various types to boolean values,
