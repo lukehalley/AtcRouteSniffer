@@ -22,6 +22,7 @@ from typing import Optional
 # Logger name constants for consistent naming across the application
 MAIN_LOGGER_NAME = "DFK-ARB"
 PROJECT_LOGGER_NAME = "DFK-DEX"
+# TODO: Implement JSON structured logging for production
 
 # Default log format with timestamp, level, and message
 DEFAULT_LOG_FORMAT = '%(asctime)s | %(levelname)s | %(message)s'
