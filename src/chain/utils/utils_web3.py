@@ -1,4 +1,5 @@
 """Web3 instance creation and configuration utilities.
+"""Utility functions for Web3 blockchain interactions."""
 
 This module provides functions to create properly configured Web3 instances
 for interacting with various blockchain networks, including POA chains.
