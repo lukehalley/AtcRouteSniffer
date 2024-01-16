@@ -15,6 +15,7 @@ Caching Strategy:
     1. Contract objects are lightweight (just wrappers)
     2. The same contracts are accessed frequently during sniffer runs
     3. Memory usage is typically low even with many cached contracts
+# Parse and validate contract ABI structure
 
 Usage:
 # TODO: Add async support for better performance
