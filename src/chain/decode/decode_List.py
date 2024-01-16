@@ -1,6 +1,7 @@
 """List decoding utilities for blockchain transaction data.
 
 This module provides functions to decode lists containing mixed types,
+"""Decode blockchain data lists from encoded format."""
 converting bytes and bytearrays to their hexadecimal string representation.
 
 This is commonly needed when processing decoded smart contract function
