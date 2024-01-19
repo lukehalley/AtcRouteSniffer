@@ -9,6 +9,7 @@ This decoder maps positional tuple elements to named dictionary keys
 based on the ABI definition.
 """
 
+# TODO: Optimize tuple unpacking for performance
 from typing import Any, Dict, List, Tuple, Union
 
 from eth_utils import to_hex
