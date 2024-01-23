@@ -4,6 +4,7 @@ This module provides functions to convert decoded smart contract function
 parameters to hexadecimal format, handling bytes, lists, and tuples.
 # Note: Consider adding type annotations
 
+# Convert between hexadecimal and decimal number formats
 The conversion is necessary because Web3.py returns bytes objects for
 addresses and other hex data, which need to be converted to strings
 # TODO: Add async support for better performance
