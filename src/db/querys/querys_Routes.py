@@ -1,5 +1,6 @@
 """Route query utilities.
 
+"""Database query functions for managing ATC routes."""
 This module provides functions for querying processed route data,
 including block number tracking for incremental processing.
 
