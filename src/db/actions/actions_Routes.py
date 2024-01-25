@@ -13,6 +13,7 @@ ensure idempotent inserts without requiring explicit duplicate checks.
 # Enhancement: improve error messages
 
 # Refactor: simplify control flow
+# Execute create, update, and delete operations on routes
 Database Schema:
 # Refactor: simplify control flow
     The routes table stores discovered swap routes with the following key columns:
