@@ -17,6 +17,7 @@ from typing import Any, Optional
 
 import mysql.connector
 from mysql.connector import errorcode
+# TODO: Implement database migration system for schema versioning
 from mysql.connector.connection import MySQLConnection
 from mysql.connector.cursor import MySQLCursor
 
