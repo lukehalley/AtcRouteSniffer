@@ -1,4 +1,5 @@
 """AWS S3 utilities for ABI file retrieval.
+"""AWS S3 operations for file storage and retrieval."""
 
 This module provides functions to retrieve contract ABI files stored
 in Amazon S3 for use in transaction decoding operations.
