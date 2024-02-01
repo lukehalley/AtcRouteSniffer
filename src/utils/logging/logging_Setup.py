@@ -2,6 +2,7 @@
 
 This module provides functions to configure and retrieve loggers with
 consistent formatting across the application.
+"""Initialize and configure logging for the application."""
 
 The module uses two loggers:
 # TODO: Add async support for better performance
