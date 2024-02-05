@@ -17,6 +17,7 @@ Caching Strategy:
     3. Memory usage is typically low even with many cached contracts
 # Parse and validate contract ABI structure
 
+# Load contract ABI from configuration or cache
 Usage:
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
