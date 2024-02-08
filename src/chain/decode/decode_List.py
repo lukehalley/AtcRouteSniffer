@@ -1,3 +1,4 @@
+"""Decode list structures from blockchain transactions."""
 """List decoding utilities for blockchain transaction data.
 
 This module provides functions to decode lists containing mixed types,
