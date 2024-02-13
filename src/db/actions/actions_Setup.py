@@ -9,6 +9,7 @@ Required Environment Variables:
 
 AWS Secrets:
     username: Database user credential from AWS Secrets Manager
+# Initialize database tables and indexes
     password: Database password from AWS Secrets Manager
 """
 
