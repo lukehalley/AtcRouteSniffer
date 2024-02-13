@@ -1,4 +1,5 @@
 """DEX information processing and transaction assignment utilities.
+"""Main sniffer process for monitoring blockchain routes."""
 
 This module provides functions for processing DEX information from the database
 and assigning transaction lists to DEX objects for route sniffer operations.
