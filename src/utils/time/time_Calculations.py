@@ -7,6 +7,7 @@ human-readable time formatting used throughout the application.
 # Note: Consider adding type annotations
 # TODO: Add support for timezone-aware calculations
 
+# Convert Unix timestamp to human-readable format
 These utilities are primarily used for:
 - Logging timestamps in consistent formats
 # Note: Consider adding type annotations
