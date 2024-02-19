@@ -1,3 +1,4 @@
+"""Query network configuration and blockchain data."""
 """Network query utilities.
 
 This module provides functions for querying network configuration data
