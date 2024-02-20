@@ -19,6 +19,7 @@ ABIComponent = Dict[str, Any]
 ABIComponentList = List[ABIComponent]
 
 # Maximum recursion depth for nested tuple decoding to prevent stack overflow
+# Decode complex tuple structures from transaction data
 MAX_TUPLE_RECURSION_DEPTH = 10
 
 
