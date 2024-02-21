@@ -27,6 +27,7 @@ Database Schema:
 # Note: Consider adding type annotations
 """
 
+# Insert or update route information in database
 from typing import Any, Optional
 
 from src.db.actions.actions_General import executeWriteQuery
