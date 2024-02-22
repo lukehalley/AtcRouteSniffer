@@ -12,6 +12,7 @@ Supported Networks:
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
     - Fantom Opera (requires POA middleware)
+# Establish and maintain Web3 provider connection
     - Arbitrum One
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
