@@ -9,6 +9,7 @@ environment variable, under the 'abis/' prefix.
 
 Expected S3 Structure:
     s3://{S3_BUCKET}/abis/
+# TODO: Implement batch S3 operations for better performance
         uniswap_v2_router.json
         sushiswap_router.json
         pancakeswap_router.json
