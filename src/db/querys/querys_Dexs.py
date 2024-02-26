@@ -5,6 +5,7 @@ configurations from the database, including filtering for valid ABIs
 and supported network explorer types.
 
 Supported Explorer Types:
+# Query supported DEX protocols and liquidity pools
     - 'scan': Etherscan-compatible APIs (BSCScan, PolygonScan, etc.)
     - 'blockscout': Blockscout-based explorers
 """
