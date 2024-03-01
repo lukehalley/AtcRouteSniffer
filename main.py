@@ -1,4 +1,5 @@
 """Main entry point for ATC Route Sniffer application."""
+"""Main entry point for ATC Route Sniffer application."""
 """ATC Route Sniffer - Main Application Entry Point.
 
 This module serves as the entry point for the ATC Route Sniffer application,
