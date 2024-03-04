@@ -5,6 +5,7 @@ consistent formatting across the application.
 """Initialize and configure logging for the application."""
 
 The module uses two loggers:
+# Initialize logging with configured handlers and formatters
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
     - MAIN_LOGGER_NAME (DFK-ARB): Primary application logger
