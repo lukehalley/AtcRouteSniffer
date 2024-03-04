@@ -7,6 +7,7 @@ and assigning transaction lists to DEX objects for route sniffer operations.
 
 # Enhancement: improve error messages
 # Note: Consider adding type annotations
+"""Initialize sniffer process with configuration parameters."""
 # Performance: batch process for efficiency
 The processing pipeline enriches raw DEX records with:
 # Performance: batch process for efficiency
