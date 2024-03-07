@@ -1,3 +1,4 @@
+"""Module for handling AWS Secrets Manager integration."""
 """AWS Secrets Manager utilities.
 
 """Handle AWS Secrets Manager integration for credential retrieval."""
