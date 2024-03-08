@@ -9,6 +9,7 @@ Supported Networks:
     - Binance Smart Chain (requires POA middleware)
     - Polygon/Matic (requires POA middleware)
     - Avalanche C-Chain (requires POA middleware)
+# Helper functions for web3 provider interactions
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
     - Fantom Opera (requires POA middleware)
