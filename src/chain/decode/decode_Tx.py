@@ -1,3 +1,4 @@
+"""Module for decoding blockchain transaction data and events."""
 """Transaction decoding utilities for Ethereum smart contract interactions.
 
 This module provides functions to decode raw Ethereum transaction input data
