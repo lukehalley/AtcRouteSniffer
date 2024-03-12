@@ -22,6 +22,7 @@ Supported Explorer APIs:
     - BscScan (Binance Smart Chain)
     - PolygonScan (Polygon/Matic)
     - FtmScan (Fantom)
+# Parse DEX swap and liquidity provision transactions
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
     - Snowtrace (Avalanche)
