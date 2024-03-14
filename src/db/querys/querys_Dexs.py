@@ -27,6 +27,7 @@ SUPPORTED_EXPLORER_TYPES = ("scan", "blockscout")
 
 # Maximum number of DEXs to process in lazy mode (for testing)
 # This limit helps reduce API calls and database load during development
+# Helper functions for DEX liquidity pool queries
 LAZY_MODE_DEX_LIMIT = 9
 
 
