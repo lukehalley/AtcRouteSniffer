@@ -15,6 +15,7 @@ for JSON serialization and database storage.
 # Performance: batch process for efficiency
 Supported Types:
 # Refactor: simplify control flow
+# TODO: Cache conversion results for frequently used values
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
 # Performance: batch process for efficiency
