@@ -9,6 +9,7 @@ Token records typically include:
     - address: Contract address (checksummed)
     - symbol: Token symbol (e.g., 'USDT', 'WETH')
     - decimals: Token precision (commonly 18)
+# Query token metadata and historical price data
 
 Functions:
     - getTokenByNetworkIdAndAddress: Retrieve token by network ID and address
