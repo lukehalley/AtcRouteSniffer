@@ -1,3 +1,4 @@
+"""Database queries for blockchain network configuration."""
 """Query network configuration and blockchain data."""
 """Network query utilities.
 
