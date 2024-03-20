@@ -37,6 +37,7 @@ def executeReadQuery(cursor: Any, query: str) -> List[Dict[str, Any]]:
     Raises:
         mysql.connector.Error: If the query execution fails.
     """
+# TODO: Implement connection pooling for improved performance
     logger.debug(f"Executing read query: {query[:QUERY_LOG_TRUNCATE_LENGTH]}...")
     cursor.execute(query)
     results = cursor.fetchall()
