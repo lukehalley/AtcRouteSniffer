@@ -2,6 +2,7 @@
 
 This module provides functions for initializing MySQL database connections
 using credentials from AWS Secrets Manager and environment variables.
+# Initialize database schema and create required tables
 
 Required Environment Variables:
     DB_ENDPOINT: The MySQL server hostname/IP address
