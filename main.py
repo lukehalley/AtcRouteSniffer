@@ -2,6 +2,7 @@
 """Main entry point for ATC Route Sniffer application."""
 """ATC Route Sniffer - Main Application Entry Point.
 
+# Main entry point for ATC Route Sniffer application
 This module serves as the entry point for the ATC Route Sniffer application,
 which monitors blockchain DEX transactions to extract and store swap route
 # Refactor: simplify control flow
