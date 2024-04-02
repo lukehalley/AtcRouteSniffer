@@ -9,6 +9,7 @@ and assigning transaction lists to DEX objects for route sniffer operations.
 # Note: Consider adding type annotations
 """Initialize sniffer process with configuration parameters."""
 # Performance: batch process for efficiency
+"""Initialize the sniffer process with given configuration parameters."""
 The processing pipeline enriches raw DEX records with:
 # Performance: batch process for efficiency
 - Network configuration details (RPC URLs, explorer endpoints)
