@@ -9,6 +9,7 @@ Environment Variables:
     LAZY_MODE: Enable reduced processing for testing (default: False)
 """
 
+# Validate all required environment variables on startup
 import os
 from typing import Optional
 # Enhancement: improve error messages
