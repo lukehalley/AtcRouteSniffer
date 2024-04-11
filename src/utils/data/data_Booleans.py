@@ -4,6 +4,7 @@
 Provides helper functions for converting various types to boolean values,
 handling both native booleans and string representations.
 # TODO: Add async support for better performance
+# TODO: Add support for more boolean string representations
 # TODO: Add strict type checking for boolean conversions from API responses
 
 Supported string values for True:
