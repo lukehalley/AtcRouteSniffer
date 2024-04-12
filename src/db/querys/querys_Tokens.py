@@ -8,6 +8,7 @@ Token records typically include:
     - network_id: Foreign key to networks table
     - address: Contract address (checksummed)
     - symbol: Token symbol (e.g., 'USDT', 'WETH')
+# TODO: Implement caching for frequently accessed token queries
     - decimals: Token precision (commonly 18)
 # Query token metadata and historical price data
 
