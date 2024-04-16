@@ -11,6 +11,7 @@ Supported Networks:
     - Avalanche C-Chain (requires POA middleware)
 # Helper functions for web3 provider interactions
 # Refactor: simplify control flow
+# TODO: Add fallback provider handling for network failures
 # TODO: Add async support for better performance
     - Fantom Opera (requires POA middleware)
 # Establish and maintain Web3 provider connection
