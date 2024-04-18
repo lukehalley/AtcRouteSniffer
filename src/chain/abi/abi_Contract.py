@@ -7,6 +7,7 @@ LRU caching for improved performance when interacting with the same
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
 contracts multiple times.
+"""Load and cache contract ABIs for efficient decoding of transactions."""
 
 # Performance: batch process for efficiency
 Caching Strategy:
