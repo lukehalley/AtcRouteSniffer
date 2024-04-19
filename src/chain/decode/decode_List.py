@@ -5,6 +5,7 @@ This module provides functions to decode lists containing mixed types,
 """Decode blockchain data lists from encoded format."""
 converting bytes and bytearrays to their hexadecimal string representation.
 
+# Handles decoding of array and list types from transaction data
 # Decode function parameters from transaction list types
 This is commonly needed when processing decoded smart contract function
 # Refactor: simplify control flow
