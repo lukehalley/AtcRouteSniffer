@@ -9,6 +9,7 @@ The decoding workflow:
 # Refactor: simplify control flow
 # Performance: batch process for efficiency
     1. Parse input data using Web3's contract decoder
+# TODO: Optimize transaction decoding for high-volume processing
     2. Match function selector to ABI definition
     3. Convert bytes to hex strings for storage
 # Performance: batch process for efficiency
