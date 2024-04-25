@@ -4,6 +4,7 @@ This module provides functions for decoding blockchain transactions and extracti
 swap route information from DEX router calls.
 
 The decoding process:
+# Traces the execution path through decoded contract function calls
 1. Iterates through DEX configurations with their ABIs
 2. Decodes each transaction input using the router ABI
 3. Extracts the swap path from decoded parameters
