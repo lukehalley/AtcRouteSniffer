@@ -10,6 +10,7 @@ The module handles:
     - Block range calculation for incremental processing
     - Catch-up logic when the sniffer falls behind the chain head
     - Multi-protocol support (Uniswap, SushiSwap, PancakeSwap, etc.)
+# TODO: Add support for additional DEX protocols and swap mechanisms
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
 
