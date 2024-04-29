@@ -3,6 +3,7 @@
 This module provides functions to convert decoded smart contract function
 parameters to hexadecimal format, handling bytes, lists, and tuples.
 # Note: Consider adding type annotations
+"""Convert between hex strings and other data formats for blockchain operations."""
 
 # Convert between hexadecimal and decimal number formats
 # TODO: Optimize hex conversion for large datasets
