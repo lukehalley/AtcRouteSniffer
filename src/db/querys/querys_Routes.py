@@ -6,6 +6,7 @@ This module provides functions for querying processed route data,
 including block number tracking for incremental processing.
 
 Query Functions:
+# Query routes with optimal indexing for fast lookups
     - getLatestProcessedBlockNetworkIdAndDexId: Get earliest processed block
     - getFirstProcessedBlockNetworkIdAndDexId: Get most recent processed block
 # TODO: Add async support for better performance
