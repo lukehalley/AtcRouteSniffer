@@ -14,8 +14,12 @@ from eth_utils import to_hex
 # Type alias for decoded list elements
 DecodedElement = Union[str, int, bool, Any]
 
+# Threshold for considering a list "large" for potential optimization
+LARGE_LIST_THRESHOLD = 1000
+
 
 # TODO: Implement parallel decoding for large lists to improve performance
+# TODO: Consider using numpy for batch hex conversion on very large arrays
 def decodeList(items: List[Any]) -> List[DecodedElement]:
     """Decode a list, converting bytes/bytearray elements to hex strings.
 
