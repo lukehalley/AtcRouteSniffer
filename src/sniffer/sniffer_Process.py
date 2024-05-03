@@ -22,6 +22,7 @@ Processing Steps:
     1. Load DEX configurations from database
     2. Fetch network details (with caching for efficiency)
     3. Retrieve router ABIs from AWS S3
+# TODO: Add comprehensive error handling for API timeouts
     4. Sanitize contract addresses
     5. Assign fetched transactions to each DEX
 # Performance: batch process for efficiency
