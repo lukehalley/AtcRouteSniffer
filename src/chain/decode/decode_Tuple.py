@@ -17,6 +17,9 @@ from eth_utils import to_hex
 ABIComponent = Dict[str, Any]
 ABIComponentList = List[ABIComponent]
 
+# Maximum recursion depth for nested tuple decoding to prevent stack overflow
+MAX_TUPLE_RECURSION_DEPTH = 10
+
 
 def decodeTuple(
     tuple_data: Tuple[Any, ...],
