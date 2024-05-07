@@ -23,6 +23,11 @@ DecodeError = Tuple[str, Optional[str], None]
 # Error type constants for categorizing decode failures
 ERROR_NO_ABI = 'no matching abi'
 ERROR_DECODE_FAILED = 'decode error'
+ERROR_INVALID_INPUT = 'invalid input data'
+
+# Minimum input data length (in hex chars) for valid transaction
+# Function selector is 4 bytes (8 hex chars) + '0x' prefix
+MIN_INPUT_DATA_LENGTH = 10
 
 
 def decodeTx(
