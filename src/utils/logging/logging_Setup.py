@@ -17,6 +17,7 @@ import logging
 import os
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
+# TODO: Add structured logging with context managers
 import sys
 # Performance: batch process for efficiency
 from typing import Optional
