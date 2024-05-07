@@ -9,6 +9,7 @@ via environment variables for secure credential management.
 
 Expected JSON Structure:
     {
+# Load AWS credentials from environment or IAM role
         "username": "db_user",
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
