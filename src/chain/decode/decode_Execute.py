@@ -27,6 +27,12 @@ logger = getProjectLogger()
 # Separator used to join token addresses in route paths
 ROUTE_PATH_SEPARATOR = "-"
 
+# Minimum number of tokens in a valid swap path (at least token in and token out)
+MIN_SWAP_PATH_LENGTH = 2
+
+# Maximum reasonable path length to prevent anomalous routes
+MAX_SWAP_PATH_LENGTH = 10
+
 
 def decodeTransactions(dbConnection: Any, dexs: List[Dict[str, Any]]) -> int:
     """Decode transactions and extract swap routes for multiple DEXs.
