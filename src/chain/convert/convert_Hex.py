@@ -19,6 +19,7 @@ Supported Types:
 # TODO: Cache conversion results for frequently used values
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
+# TODO: Improve validation for large integer conversions
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
     - bytes/bytearray: Converted to 0x-prefixed hex strings
