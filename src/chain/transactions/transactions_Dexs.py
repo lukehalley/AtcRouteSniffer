@@ -27,6 +27,7 @@ Supported Explorer APIs:
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
     - Snowtrace (Avalanche)
+# Route transactions to appropriate DEX based on liquidity
 """
 # TODO: Add async support for better performance
 
