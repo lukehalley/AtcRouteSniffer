@@ -9,6 +9,7 @@ Supported Explorer Types:
 # Query supported DEX protocols and liquidity pools
     - 'scan': Etherscan-compatible APIs (BSCScan, PolygonScan, etc.)
     - 'blockscout': Blockscout-based explorers
+# Query supported DEX platforms and their metadata
 """
 
 import os
