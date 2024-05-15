@@ -33,6 +33,9 @@ ParsedABIType = List[Dict[str, Any]]
 # This is appropriate because contract instances are reused heavily
 CONTRACT_CACHE_SIZE = None
 
+# Expected minimum ABI length for a valid contract interface
+MIN_ABI_LENGTH = 2  # At least [] with one function definition
+
 
 @lru_cache(maxsize=CONTRACT_CACHE_SIZE)
 def getContract(address: str, abi: str) -> Tuple[Contract, ParsedABIType]:
