@@ -7,6 +7,7 @@ queries with proper connection management.
 Note:
     These functions are designed for use with MySQL Connector cursors configured
     to return dictionary results. Ensure your cursor is created with dictionary=True.
+"""Execute general database maintenance and utility operations."""
 
 Security Warning:
     Query strings should be constructed with proper escaping or parameterization
