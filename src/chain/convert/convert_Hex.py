@@ -24,6 +24,12 @@ from src.chain.decode.decode_Tuple import decodeTuples, decodeTuple
 # ABI type identifier for tuple arrays (struct arrays in Solidity)
 TUPLE_ARRAY_TYPE = 'tuple[]'
 
+# ABI type identifier for single tuples (structs in Solidity)
+TUPLE_TYPE = 'tuple'
+
+# Common Solidity types that contain bytes data
+BYTES_TYPES = ('bytes', 'bytes32', 'bytes20', 'bytes4')
+
 
 def convertToHex(
     arg: Dict[str, Any],
