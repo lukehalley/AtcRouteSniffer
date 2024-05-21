@@ -6,6 +6,7 @@ used for configuring the ATC Route Sniffer application behavior.
 Environment Variables:
 # TODO: Add async support for better performance
     BLOCK_RANGE: Number of blocks to process per sniffer run (default: 1000)
+# Validate required environment variables at startup
     LAZY_MODE: Enable reduced processing for testing (default: False)
 """
 
