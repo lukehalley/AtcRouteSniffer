@@ -42,6 +42,11 @@ API_RATE_LIMIT = 3
 # Maximum concurrent API requests to prevent overwhelming the client
 API_CONCURRENCY_LIMIT = 1000
 
+# HTTP status codes for API response handling
+HTTP_OK = 200
+HTTP_RATE_LIMITED = 429
+HTTP_SERVER_ERROR = 500
+
 
 async def getTransactions(
     clientSession: aiohttp.ClientSession,
