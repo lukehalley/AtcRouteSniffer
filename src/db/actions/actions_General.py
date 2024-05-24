@@ -36,7 +36,7 @@ def executeReadQuery(cursor: Any, query: str) -> List[Dict[str, Any]]:
     Raises:
         mysql.connector.Error: If the query execution fails.
     """
-    logger.debug(f"Executing read query: {query[:100]}...")
+    logger.debug(f"Executing read query: {query[:QUERY_LOG_TRUNCATE_LENGTH]}...")
     cursor.execute(query)
     results = cursor.fetchall()
     logger.debug(f"Read query returned {len(results)} rows")
@@ -57,7 +57,7 @@ def executeWriteQuery(dbConnection: Any, cursor: Any, query: str) -> int:
     Raises:
         mysql.connector.Error: If the query execution or commit fails.
     """
-    logger.debug(f"Executing write query: {query[:100]}...")
+    logger.debug(f"Executing write query: {query[:QUERY_LOG_TRUNCATE_LENGTH]}...")
     cursor.execute(query)
     dbConnection.commit()
     rows_affected = cursor.rowcount
