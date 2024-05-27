@@ -33,6 +33,10 @@ DB_NAME_ENV_VAR = "DB_NAME"
 AWS_SECRET_USERNAME = "username"
 AWS_SECRET_PASSWORD = "password"
 
+# Database connection pool configuration
+DEFAULT_POOL_SIZE = 5
+MAX_POOL_SIZE = 10
+
 
 def initDBConnection() -> Optional[MySQLConnection]:
     """Initialize a MySQL database connection using AWS credentials.
