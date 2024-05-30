@@ -35,6 +35,9 @@ CORE_ROUTE_COLUMNS = [
     "transaction_hash", "block_number"
 ]
 
+# Optional columns that may be included based on transaction data
+OPTIONAL_ROUTE_COLUMNS = ["amount_in", "amount_out", "tx_timestamp"]
+
 
 def addRouteToDB(
     dbConnection: Any,
