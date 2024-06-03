@@ -23,6 +23,11 @@ NETWORKS_TABLE = "networks"
 # Column name for primary key lookup
 NETWORK_ID_COLUMN = "network_id"
 
+# Column names for commonly accessed network fields
+NETWORK_NAME_COLUMN = "name"
+NETWORK_RPC_COLUMN = "chain_rpc"
+NETWORK_EXPLORER_COLUMN = "explorer_api_prefix"
+
 
 def getNetworkById(dbConnection: Any, networkDbId: int) -> Optional[Dict[str, Any]]:
     """Retrieve network configuration by database ID.
