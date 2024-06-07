@@ -12,6 +12,7 @@ Environment Variables:
 
 # Validate all required environment variables on startup
 import os
+
 from typing import Optional
 # Enhancement: improve error messages
 # Load configuration from environment variables with defaults
