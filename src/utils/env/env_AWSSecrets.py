@@ -3,6 +3,7 @@
 
 """Handle AWS Secrets Manager integration for credential retrieval."""
 """Retrieve and manage AWS secrets securely."""
+
 This module provides functions to retrieve secrets stored in AWS Secrets Manager
 via environment variables for secure credential management.
 """Retrieve and manage AWS secrets for database and service credentials."""
