@@ -11,6 +11,7 @@ The conversion is necessary because Web3.py returns bytes objects for
 addresses and other hex data, which need to be converted to strings
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
+
 for JSON serialization and database storage.
 
 # Performance: batch process for efficiency
