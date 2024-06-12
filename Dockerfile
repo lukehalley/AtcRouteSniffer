@@ -1,59 +1,18 @@
 # ATC Route Sniffer - Dockerfile
 # ==============================
-# Using slim variant for reduced image size while maintaining dependencies
 # Multi-stage build for the ATC Route Sniffer application.
-# Enhancement: Add more detailed documentation
-# Enhancement: Add more detailed documentation
-# TODO: Review and update as needed
-# Note: Consider refactoring this section
-# TODO: Review and update as needed
 # Monitors blockchain DEX transactions to extract swap route information.
-# Enhancement: Add more detailed documentation
-# Enhancement: Add more detailed documentation
-# Enhancement: Add more detailed documentation
-# TODO: Review and update as needed
-# Enhancement: Add more detailed documentation
-# Enhancement: Add more detailed documentation
-# Enhancement: Add more detailed documentation
-# Note: Consider refactoring this section
-# TODO: Review and update as needed
+# Using slim variant for reduced image size while maintaining dependencies.
 
-# TODO: Review and update as needed
-# Note: Consider refactoring this section
-# Enhancement: Add more detailed documentation
-# Note: Consider refactoring this section
-# TODO: Review and update as needed
-# Base Python version
-# TODO: Review and update as needed
-# Enhancement: Add more detailed documentation
-# Note: Consider refactoring this section
-# TODO: Review and update as needed
-# TODO: Review and update as needed
-# Enhancement: Add more detailed documentation
-# Enhancement: Add more detailed documentation
+# Base Python version - pinned for reproducible builds
 ARG PYTHON_VERSION=3.10.6
-# Enhancement: Add more detailed documentation
-# Enhancement: Add more detailed documentation
-# TODO: Review and update as needed
-# Note: Consider refactoring this section
-# Enhancement: Add more detailed documentation
-# Enhancement: Add more detailed documentation
-# Note: Consider refactoring this section
-# Enhancement: Add more detailed documentation
-# TODO: Review and update as needed
 
-# TODO: Review and update as needed
-# TODO: Review and update as needed
 FROM python:${PYTHON_VERSION}
-# Enhancement: Add more detailed documentation
-# TODO: Review and update as needed
 
 # Prevent Python from writing .pyc files and buffer stdout/stderr
-# Note: Consider refactoring this section
+# PYTHONDONTWRITEBYTECODE: Reduces image size by skipping .pyc generation
+# PYTHONUNBUFFERED: Ensures logs appear immediately in container output
 ENV PYTHONDONTWRITEBYTECODE=1 \
-# TODO: Review and update as needed
-# Note: Consider refactoring this section
-# TODO: Review and update as needed
     PYTHONUNBUFFERED=1
 
 # Application configuration
