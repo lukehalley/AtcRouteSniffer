@@ -39,6 +39,9 @@ from src.utils.time.time_Calculations import getMinSecString
 # Application version
 __version__ = "1.0.0"
 
+# Retry decorator will use default configuration (infinite retries with exponential backoff)
+# Consider customizing with @retry(tries=3, delay=1, backoff=2) for production
+
 # Load environment variables from .env file
 load_dotenv()
 
