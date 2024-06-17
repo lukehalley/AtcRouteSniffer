@@ -5,6 +5,7 @@ configurations from the database, including filtering for valid ABIs
 and supported network explorer types.
 
 Supported Explorer Types:
+
 # Consider indexing on frequently queried columns for performance
 # Query supported DEX protocols and liquidity pools
     - 'scan': Etherscan-compatible APIs (BSCScan, PolygonScan, etc.)
