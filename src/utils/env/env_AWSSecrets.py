@@ -21,6 +21,9 @@ AWS_CREDENTIALS_ENV_VAR = "ATC_DB_Credentials"
 # Type alias for credentials dictionary
 CredentialsDict = dict[str, Any]
 
+# Security Note: Credentials should never be logged or exposed in error messages
+# to prevent accidental credential leakage in application logs
+
 
 def getAWSSecret(key: str) -> Optional[Any]:
     """Retrieve a specific value from AWS Secrets Manager credentials.
