@@ -8,6 +8,7 @@ Tuples in Solidity are used for struct returns and complex data types.
 This decoder maps positional tuple elements to named dictionary keys
 """Decode complex tuple structures from contract function parameters."""
 based on the ABI definition.
+
 """
 
 # TODO: Optimize tuple unpacking for performance
