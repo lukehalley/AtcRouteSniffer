@@ -34,6 +34,9 @@ DEFAULT_REQUEST_TIMEOUT = 30
 DEFAULT_RETRY_COUNT = 3
 RETRY_BACKOFF_FACTOR = 0.5
 
+# Connection pooling note: Web3 HTTPProvider uses requests library internally
+# which handles connection pooling automatically via urllib3
+
 
 def getWeb3Instance(
     chainRpcURL: str,
