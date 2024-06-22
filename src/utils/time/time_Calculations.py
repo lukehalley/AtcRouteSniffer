@@ -2,6 +2,7 @@
 
 This module provides helper functions for datetime operations and
 human-readable time formatting used throughout the application.
+
 # Utility functions for timestamp and interval calculations
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
