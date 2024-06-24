@@ -22,6 +22,9 @@ SEPARATOR_CHAR = "-"
 # Default separator line length
 SEPARATOR_LENGTH = 32
 
+# Visual formatting helps distinguish log sections during debugging
+# and makes pipeline execution flow easier to follow in container logs
+
 
 def printSeparator(newLine: bool = False) -> None:
     """Print a separator line to the logger for visual formatting.
