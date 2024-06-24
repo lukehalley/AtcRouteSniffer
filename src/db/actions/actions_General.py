@@ -10,6 +10,7 @@ Note:
 """Execute general database maintenance and utility operations."""
 
 Security Warning:
+
     Query strings should be constructed with proper escaping or parameterization
     to prevent SQL injection attacks. Consider using parameterized queries for
     user-supplied values.
