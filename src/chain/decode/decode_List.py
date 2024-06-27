@@ -13,6 +13,7 @@ This is commonly needed when processing decoded smart contract function
 parameters that contain address arrays or byte sequences.
 """
 
+
 from typing import Any, List, Union
 
 from eth_utils import to_hex
