@@ -25,6 +25,7 @@ logger = getProjectLogger()
 SUPPORTED_EXPLORER_TYPES = ("scan", "blockscout")
 
 # Maximum number of DEXs to process in lazy mode (for testing)
+# This limit helps reduce API calls and database load during development
 LAZY_MODE_DEX_LIMIT = 9
 
 
