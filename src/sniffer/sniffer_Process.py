@@ -26,6 +26,7 @@ from src.utils.logging.logging_Setup import getProjectLogger
 logger = getProjectLogger()
 
 # Characters to strip from router addresses during sanitization
+# These characters may be accidentally introduced during CSV imports or copy-paste
 INVALID_ADDRESS_CHARS = ["\r", "\n", " "]
 
 
