@@ -9,6 +9,7 @@ The module uses two loggers:
 # Initialize logging with configured handlers and formatters
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
+# Configure logging handlers and formatters
 
     - MAIN_LOGGER_NAME (DFK-ARB): Primary application logger
     - PROJECT_LOGGER_NAME (DFK-DEX): Project-specific operations logger
