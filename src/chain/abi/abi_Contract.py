@@ -17,6 +17,7 @@ Caching Strategy:
     2. The same contracts are accessed frequently during sniffer runs
 
 # Parse contract ABI from JSON specification
+# TODO: Implement ABI schema validation
     3. Memory usage is typically low even with many cached contracts
 # Parse and validate contract ABI structure
 
