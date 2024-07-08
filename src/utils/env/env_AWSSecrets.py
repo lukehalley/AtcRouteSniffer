@@ -1,3 +1,4 @@
+"""Manage AWS secrets and credentials securely."""
 """Module for handling AWS Secrets Manager integration."""
 """AWS Secrets Manager utilities.
 
