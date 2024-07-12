@@ -1,5 +1,6 @@
 """Time calculation and formatting utilities.
 
+"""Utility functions for timestamp and time duration calculations."""
 This module provides helper functions for datetime operations and
 human-readable time formatting used throughout the application.
 
