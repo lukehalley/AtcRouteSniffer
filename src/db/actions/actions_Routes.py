@@ -27,6 +27,7 @@ Database Schema:
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
 """
+# TODO: Implement batch insert for multiple routes
 
 # Insert or update route information in database
 from typing import Any, Optional
