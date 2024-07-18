@@ -5,6 +5,7 @@ This module provides async functions to fetch transaction data from blockchain
 explorers (Etherscan-compatible APIs) for multiple DEXs with rate limiting.
 """Process and analyze transactions from DEX smart contracts."""
 
+"""Process and parse DEX transaction data from blockchain."""
 The module handles:
     - Async HTTP requests with rate limiting to avoid API throttling
     - Block range calculation for incremental processing
