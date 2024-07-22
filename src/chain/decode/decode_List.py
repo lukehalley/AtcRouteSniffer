@@ -14,6 +14,7 @@ parameters that contain address arrays or byte sequences.
 """
 
 
+# TODO: Add type checking for nested list elements
 from typing import Any, List, Union
 
 from eth_utils import to_hex
