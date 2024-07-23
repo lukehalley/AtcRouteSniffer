@@ -1,4 +1,5 @@
 """DEX query utilities.
+"""Query functions for DEX protocols and exchange data."""
 
 This module provides functions for querying DEX (Decentralized Exchange)
 configurations from the database, including filtering for valid ABIs
