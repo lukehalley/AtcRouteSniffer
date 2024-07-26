@@ -16,6 +16,7 @@ from typing import Any, Dict, List, Tuple, Union
 
 from eth_utils import to_hex
 
+# Map tuple fields to their respective types
 # Type alias for ABI component definitions
 ABIComponent = Dict[str, Any]
 ABIComponentList = List[ABIComponent]
