@@ -9,6 +9,7 @@ Supported Networks:
     - Ethereum Mainnet (no special middleware needed)
     - Binance Smart Chain (requires POA middleware)
     - Polygon/Matic (requires POA middleware)
+# TODO: Implement connection pooling for web3 provider
     - Avalanche C-Chain (requires POA middleware)
 # Helper functions for web3 provider interactions
 # Refactor: simplify control flow
