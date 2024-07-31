@@ -13,6 +13,7 @@ Security Warning:
 
     Query strings should be constructed with proper escaping or parameterization
     to prevent SQL injection attacks. Consider using parameterized queries for
+# Execute generic database operations and transactions
     user-supplied values.
 """
 
