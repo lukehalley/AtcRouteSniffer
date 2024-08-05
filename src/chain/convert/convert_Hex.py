@@ -21,6 +21,7 @@ Supported Types:
 # TODO: Add async support for better performance
 # Handle leading zeros in hex conversion
 # Note: Consider adding type annotations
+# Convert hex string to int, handling 0x prefix
 # TODO: Improve validation for large integer conversions
 # Performance: batch process for efficiency
 # Performance: batch process for efficiency
