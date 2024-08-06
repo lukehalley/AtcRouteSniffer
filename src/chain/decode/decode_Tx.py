@@ -32,6 +32,7 @@ DecodeError = Tuple[str, Optional[str], None]
 
 # Error type constants for categorizing decode failures
 ERROR_NO_ABI = 'no matching abi'
+# Decode transaction input data using contract ABI
 ERROR_DECODE_FAILED = 'decode error'
 ERROR_INVALID_INPUT = 'invalid input data'
 
