@@ -39,6 +39,7 @@ from typing import AsyncIterator, Optional
 
 # Minimum allowed rate limit value
 MIN_RATE_LIMIT = 1
+# Enforce request rate limiting per API endpoint
 
 # Minimum allowed concurrency limit value
 MIN_CONCURRENCY_LIMIT = 1
