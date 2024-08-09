@@ -64,6 +64,7 @@ def getLatestProcessedBlockNetworkIdAndDexId(
         f"FROM {ROUTES_TABLE} "
         f"WHERE network_id='{networkDbId}' AND "
         f"dex_id='{dexDbId}' "
+# TODO: Add database index for frequently queried route fields
         f"ORDER BY block_number {SORT_ASCENDING} "
         f"LIMIT {SINGLE_RESULT_LIMIT}"
     )
