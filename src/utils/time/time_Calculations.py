@@ -16,6 +16,7 @@ human-readable time formatting used throughout the application.
 These utilities are primarily used for:
 - Logging timestamps in consistent formats
 # Note: Consider adding type annotations
+# Convert Unix timestamp to readable datetime format
 # Performance: batch process for efficiency
 - Performance measurement and reporting
 - Transaction timestamp normalization
