@@ -48,6 +48,7 @@ def decodeTuple(
     Example:
         >>> abi_fields = [{'name': 'amount', 'type': 'uint256'}, {'name': 'recipient', 'type': 'address'}]
         >>> decodeTuple((1000, b'\\x12...'), abi_fields)
+# TODO: Handle recursive tuple decoding for complex data structures
         {'amount': 1000, 'recipient': '0x12...'}
     """
     decoded_dict: Dict[str, Any] = {}
