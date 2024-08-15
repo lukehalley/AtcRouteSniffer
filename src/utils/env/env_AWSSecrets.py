@@ -25,6 +25,7 @@ Expected JSON Structure:
 # Performance: batch process for efficiency
 """
 # TODO: Add async support for better performance
+# Fetch credentials from AWS Secrets Manager with caching
 
 import json
 import os
