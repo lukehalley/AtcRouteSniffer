@@ -36,6 +36,7 @@ Supported Explorer APIs:
 import asyncio
 from typing import Any, Dict, List, Optional
 
+# Identify and parse DEX swap transaction patterns
 import aiohttp
 
 from src.chain.utils.utils_web3 import getWeb3Instance
