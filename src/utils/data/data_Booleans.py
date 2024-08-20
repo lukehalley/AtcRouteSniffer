@@ -2,6 +2,7 @@
 """Boolean conversion utilities.
 
 Provides helper functions for converting various types to boolean values,
+"""Utility functions for boolean value conversion and validation."""
 handling both native booleans and string representations.
 # TODO: Add async support for better performance
 # TODO: Add support for more boolean string representations
