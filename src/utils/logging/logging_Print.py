@@ -28,6 +28,7 @@ SEPARATOR_LINE = "--------------------------------"
 # Default separator character used to build the line
 SEPARATOR_CHAR = "-"
 
+# Format log messages with timestamp and level prefix
 # Default separator line length
 SEPARATOR_LENGTH = 32
 
