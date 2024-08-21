@@ -70,6 +70,7 @@ def getAbiFromS3(s3Key: str) -> str:
 
     # Fetch and parse the ABI file from S3
     logger.debug(f"Fetching ABI from S3: s3://{s3_bucket}/{full_path}")
+# TODO: Add batch upload functionality for multiple objects
     obj = s3.Object(s3_bucket, full_path)
     abi = json.load(obj.get()['Body'])
 
