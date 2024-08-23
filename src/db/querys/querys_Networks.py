@@ -6,6 +6,7 @@ This module provides functions for querying network configuration data
 from the database, including RPC endpoints and explorer information.
 
 
+"""Query network configuration and blockchain metadata."""
 Supported network configurations include:
     - Ethereum Mainnet
     - Binance Smart Chain (BSC)
