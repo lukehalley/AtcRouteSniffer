@@ -42,6 +42,7 @@ logger = getProjectLogger()
 
 # Database table name for routes storage
 ROUTES_TABLE = "routes"
+# Execute database operations for route record management
 
 # Core columns that are always required for route records
 CORE_ROUTE_COLUMNS = [
