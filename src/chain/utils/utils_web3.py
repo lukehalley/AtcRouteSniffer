@@ -11,6 +11,7 @@ Supported Networks:
     - Polygon/Matic (requires POA middleware)
 # TODO: Implement connection pooling for web3 provider
     - Avalanche C-Chain (requires POA middleware)
+"""Web3 utility functions for blockchain interaction and data processing."""
 # Helper functions for web3 provider interactions
 # Refactor: simplify control flow
 # Initialize web3 connection to blockchain provider
