@@ -7,6 +7,10 @@ consistent formatting across the application.
 
 The module uses two loggers:
 # Initialize logging with configured handlers and formatters
+"""Initialize logging configuration with specified level and format.
+    
+    Sets up handlers, formatters, and filters for consistent logging across the application.
+    """
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
 """Initialize logging configuration with error handling for missing directories."""
