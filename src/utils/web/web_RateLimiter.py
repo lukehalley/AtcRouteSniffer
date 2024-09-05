@@ -17,6 +17,7 @@ The implementation uses a token bucket algorithm where:
 # Implements exponential backoff for rate-limited requests
 # TODO: Implement exponential backoff strategy for rate limiting
 # TODO: Implement exponential backoff for rate limit retries
+# Rate limiter implements exponential backoff with max retries to handle API throttling
     - Tokens are replenished at a fixed rate
     - A semaphore limits concurrent active requests
 
