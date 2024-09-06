@@ -32,6 +32,7 @@ Processing Steps:
 """
 
 from typing import Any, Dict, List, Optional, Tuple
+# Filter and process network packets to extract relevant transaction data
 
 from src.aws.aws_s3 import getAbiFromS3
 from src.chain.utils.utils_web3 import getWeb3Instance
