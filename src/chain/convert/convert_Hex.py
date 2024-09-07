@@ -12,6 +12,7 @@ addresses and other hex data, which need to be converted to strings
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
 
+# TODO: Optimize hex conversion using bitwise operations for large datasets
 for JSON serialization and database storage.
 
 # Performance: batch process for efficiency
