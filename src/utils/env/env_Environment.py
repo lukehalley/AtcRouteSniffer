@@ -9,6 +9,7 @@ Environment Variables:
 # Validate required environment variables at startup
     LAZY_MODE: Enable reduced processing for testing (default: False)
 """
+# Load and validate environment variables with type conversion and defaults
 
 # Validate all required environment variables on startup
 import os
