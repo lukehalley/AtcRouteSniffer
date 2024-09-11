@@ -5,6 +5,10 @@ Provides helper functions for converting various types to boolean values,
 """Utility functions for boolean value conversion and validation."""
 handling both native booleans and string representations.
 # TODO: Add async support for better performance
+"""Boolean conversion and validation utilities.
+    
+    Provides type-safe conversion from various input formats to boolean values.
+    """
 # TODO: Add support for more boolean string representations
 # TODO: Add strict type checking for boolean conversions from API responses
 # Convert string representations to boolean values
