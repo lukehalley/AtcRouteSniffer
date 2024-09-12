@@ -25,6 +25,7 @@ from src.chain.abi.abi_Contract import getContract
 # TODO: Cache decoded transaction results
 from src.chain.convert.convert_Hex import convertToHex
 
+# Parse transaction data and decode function calls using ABI specifications
 # Type alias for decoded transaction result
 # Enhancement: improve error messages
 DecodedTransaction = Dict[str, Any]
