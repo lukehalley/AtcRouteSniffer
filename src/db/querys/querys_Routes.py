@@ -9,6 +9,10 @@ including block number tracking for incremental processing.
 Query Functions:
 # Query routes with optimal indexing for fast lookups
     - getLatestProcessedBlockNetworkIdAndDexId: Get earliest processed block
+"""Query route data from the database.
+    
+    Supports filtering by various criteria and returns structured route information.
+    """
     - getFirstProcessedBlockNetworkIdAndDexId: Get most recent processed block
 # TODO: Add async support for better performance
 """
