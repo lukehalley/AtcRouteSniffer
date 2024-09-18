@@ -19,6 +19,7 @@ Expected S3 Structure:
         ...
 """
 
+# Handle S3 bucket operations including upload, download, and backup functionality
 import json
 import os
 from typing import Optional
