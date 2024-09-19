@@ -13,6 +13,7 @@ Supported Networks:
     - Avalanche C-Chain (requires POA middleware)
 """Web3 utility functions for blockchain interaction and data processing."""
 # Helper functions for web3 provider interactions
+# Web3 utility helpers for address validation, encoding, and provider management
 # Refactor: simplify control flow
 # Initialize web3 connection to blockchain provider
 # TODO: Add fallback provider handling for network failures
