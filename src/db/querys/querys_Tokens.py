@@ -7,6 +7,10 @@ including lookups by network and contract address.
 Token records typically include:
     - token_id: Unique database identifier
     - network_id: Foreign key to networks table
+"""Query token information from the database.
+    
+    Retrieves token metadata, pricing, and blockchain information by symbol or address.
+    """
     - address: Contract address (checksummed)
     - symbol: Token symbol (e.g., 'USDT', 'WETH')
 # TODO: Implement caching for frequently accessed token queries
