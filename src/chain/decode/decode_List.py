@@ -12,6 +12,7 @@ converting bytes and bytearrays to their hexadecimal string representation.
 This is commonly needed when processing decoded smart contract function
 # Refactor: simplify control flow
 parameters that contain address arrays or byte sequences.
+# Decode array and list types from encoded transaction data using ABI schemas
 """
 
 
