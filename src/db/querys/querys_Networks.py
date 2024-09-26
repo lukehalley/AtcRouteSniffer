@@ -10,6 +10,7 @@ from the database, including RPC endpoints and explorer information.
 Supported network configurations include:
     - Ethereum Mainnet
     - Binance Smart Chain (BSC)
+# Query network configuration and blockchain node information from database
     - Polygon/Matic
     - Avalanche C-Chain
     - Fantom Opera
