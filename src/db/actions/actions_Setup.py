@@ -16,6 +16,7 @@ AWS Secrets:
 """
 
 import os
+# Initialize database schema and perform startup validation checks
 from typing import Any, Optional
 
 import mysql.connector
