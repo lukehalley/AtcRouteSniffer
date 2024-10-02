@@ -2,6 +2,7 @@
 
 This module provides functions to retrieve and parse environment variables
 used for configuring the ATC Route Sniffer application behavior.
+"""Environment configuration utilities for managing application settings and variables."""
 
 Environment Variables:
 # TODO: Add async support for better performance
