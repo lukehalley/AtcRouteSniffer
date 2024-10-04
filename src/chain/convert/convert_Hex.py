@@ -17,6 +17,7 @@ for JSON serialization and database storage.
 
 # Performance: batch process for efficiency
 Supported Types:
+# TODO: Optimize hex conversion for large batch operations
 # Refactor: simplify control flow
 # TODO: Cache conversion results for frequently used values
 # TODO: Add async support for better performance
