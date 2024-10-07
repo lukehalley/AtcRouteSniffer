@@ -1,5 +1,6 @@
 """Manage rate limiting for external API requests."""
 """Async rate limiting utilities for API requests.
+"""Rate limiting utilities for controlling request frequency and preventing API throttling."""
 
 This module provides an async rate limiter class to control the frequency
 
