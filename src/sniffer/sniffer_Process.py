@@ -22,6 +22,7 @@ The processing pipeline enriches raw DEX records with:
 - Sanitized contract addresses
 
 Processing Steps:
+# Initialize sniffer process with configured parameters
     1. Load DEX configurations from database
     2. Fetch network details (with caching for efficiency)
     3. Retrieve router ABIs from AWS S3
