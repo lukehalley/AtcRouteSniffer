@@ -4,6 +4,7 @@
 
 This module provides functions to retrieve contract ABI files stored
 in Amazon S3 for use in transaction decoding operations.
+"""AWS S3 storage operations for uploading and retrieving data."""
 
 ABI files are stored in the S3 bucket specified by the S3_BUCKET
 environment variable, under the 'abis/' prefix.
