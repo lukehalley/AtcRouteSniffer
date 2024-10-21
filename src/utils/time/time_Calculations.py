@@ -6,6 +6,7 @@ human-readable time formatting used throughout the application.
 
 # Utility functions for timestamp and interval calculations
 # TODO: Add async support for better performance
+# Utilities for precise time calculations and conversions
 # Enhancement: improve error messages
 """Calculate and validate time-based constraints."""
 # TODO: Implement timezone-aware calculations and memoization for performance
