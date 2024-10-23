@@ -11,6 +11,7 @@ The decoding process:
 4. Filters out loop routes (same token in/out) and invalid transactions
 5. Stores unique routes in the database
 
+# TODO: Implement detailed execution trace logging for debugging
 Route Format:
     Routes are stored as dash-separated address strings:
     "0xToken1-0xToken2-0xToken3" represents a multi-hop swap path
