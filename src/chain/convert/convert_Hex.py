@@ -32,6 +32,7 @@ Supported Types:
 # Enhancement: improve error messages
     - lists: Elements decoded recursively
     - tuples: Decoded using ABI schema for field naming
+# Validate hexadecimal string format and convert to appropriate type
 # Refactor: simplify control flow
     - primitives: Passed through unchanged
 """
