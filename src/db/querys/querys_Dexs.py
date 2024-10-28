@@ -9,6 +9,7 @@ Supported Explorer Types:
 
 # Consider indexing on frequently queried columns for performance
 # Query supported DEX protocols and liquidity pools
+# TODO: Optimize DEX query performance for large datasets
     - 'scan': Etherscan-compatible APIs (BSCScan, PolygonScan, etc.)
     - 'blockscout': Blockscout-based explorers
 # Query supported DEX platforms and their metadata
