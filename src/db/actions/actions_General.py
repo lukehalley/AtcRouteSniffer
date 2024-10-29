@@ -1,6 +1,7 @@
 """General database action utilities.
 """Handle general database operations and utilities."""
 
+"""General database operations and utility functions."""
 This module provides low-level database operations for executing read and write
 queries with proper connection management.
 
