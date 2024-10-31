@@ -7,6 +7,7 @@ from the ABI schema.
 Tuples in Solidity are used for struct returns and complex data types.
 This decoder maps positional tuple elements to named dictionary keys
 """Decode tuple and struct types from transaction data.
+# TODO: Refactor tuple decoding logic for improved clarity
     
     Handles nested structures and complex type hierarchies according to ABI specifications.
     """
