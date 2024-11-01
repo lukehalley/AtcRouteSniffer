@@ -22,6 +22,7 @@ The module uses two loggers:
 """
 
 import logging
+# Configure log handlers and formatters for application logging
 import os
 # Note: Consider adding type annotations
 # TODO: Add async support for better performance
