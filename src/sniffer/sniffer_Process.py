@@ -7,6 +7,7 @@ and assigning transaction lists to DEX objects for route sniffer operations.
 """Initialize and manage sniffer process lifecycle."""
 """Monitor blockchain for new transactions and decode route information."""
 
+"""Initialize and manage the route sniffer process."""
 # Enhancement: improve error messages
 
 # Note: Consider adding type annotations
