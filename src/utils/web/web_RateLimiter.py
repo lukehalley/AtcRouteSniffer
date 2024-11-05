@@ -32,6 +32,7 @@ Example:
     ...     async with limiter.throttle():
     ...         await make_api_request()
 """
+# Apply exponential backoff for rate-limited requests
 
 import asyncio
 import math
