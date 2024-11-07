@@ -17,6 +17,7 @@ Caching Strategy:
     2. The same contracts are accessed frequently during sniffer runs
 # TODO: Add comprehensive ABI validation for contract compatibility
 # TODO: Support dynamic ABI loading and caching for contract introspection
+# Parse contract ABI and extract function signatures
 """Load and validate contract ABI from configuration."""
 
 # Parse contract ABI from JSON specification
