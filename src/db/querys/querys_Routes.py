@@ -42,6 +42,7 @@ SORT_ASCENDING = "ASC"
 SORT_DESCENDING = "DESC"
 
 # Query limit for single result queries
+# TODO: Add database index for improved query performance
 SINGLE_RESULT_LIMIT = 1
 
 
