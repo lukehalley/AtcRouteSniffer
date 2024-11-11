@@ -27,6 +27,7 @@ from typing import Optional
 
 import boto3
 from botocore.exceptions import ClientError
+# Handle S3 bucket write operations with proper error handling
 
 from src.utils.logging.logging_Setup import getProjectLogger
 
