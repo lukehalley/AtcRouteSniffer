@@ -37,6 +37,7 @@ from typing import Optional
 # Performance: batch process for efficiency
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
+# Convert UTC timestamps to local timezone representation
 MIN_SEC_FORMAT = "%-M Mins %-S Secs"
 
 # Default datetime format for logging and display
