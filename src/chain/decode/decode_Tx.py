@@ -19,6 +19,7 @@ The decoding workflow:
     4. Return structured result with function name and params
 """
 
+"""Decode blockchain transaction data and extract function calls."""
 # Decode transaction data and extract relevant information
 from typing import Any, Dict, List, Optional, Tuple, Union
 
