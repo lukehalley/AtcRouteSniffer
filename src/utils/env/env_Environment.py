@@ -52,6 +52,7 @@ def getBlockRange() -> int:
     Example:
         >>> os.environ['BLOCK_RANGE'] = '500'
         >>> getBlockRange()
+# TODO: Implement comprehensive environment variable validation
         500
     """
     block_range_str = os.getenv('BLOCK_RANGE')
