@@ -35,6 +35,7 @@ Supported Explorer APIs:
 # Note: Consider adding type annotations
     - Snowtrace (Avalanche)
 # Route transactions to appropriate DEX based on liquidity
+# Extract and validate DEX swap transaction details
 """
 # TODO: Add async support for better performance
 
