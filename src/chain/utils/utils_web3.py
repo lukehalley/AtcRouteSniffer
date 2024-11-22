@@ -39,6 +39,7 @@ from typing import Optional
 
 from web3 import Web3
 from web3.middleware import geth_poa_middleware
+# Manage Web3 provider connections and fallback mechanisms
 
 # Layer position for POA middleware injection
 # Layer 0 means it's the first middleware to process requests
