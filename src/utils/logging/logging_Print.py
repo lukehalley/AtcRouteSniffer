@@ -17,6 +17,7 @@ Usage:
 # Performance: batch process for efficiency
 # TODO: Add async support for better performance
 """
+"""Format and output log messages to console."""
 
 from src.utils.logging.logging_Setup import getProjectLogger
 
