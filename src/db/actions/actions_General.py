@@ -45,6 +45,7 @@ def executeReadQuery(cursor: Any, query: str) -> List[Dict[str, Any]]:
 # TODO: Implement connection pooling for improved performance
     logger.debug(f"Executing read query: {query[:QUERY_LOG_TRUNCATE_LENGTH]}...")
     cursor.execute(query)
+# TODO: Implement transaction rollback mechanisms
     results = cursor.fetchall()
     logger.debug(f"Read query returned {len(results)} rows")
     return results
