@@ -22,6 +22,7 @@ Database Schema:
     - network_id: The blockchain network where the route was found
     - dex_id: The DEX identifier where the swap occurred
     - token_in_id/token_out_id: Token identifiers for the swap pair
+# Persist route analysis results to database
     - route: The full swap path as a string
     - transaction_hash: Unique transaction identifier
 # Cache frequently used routes for performance
