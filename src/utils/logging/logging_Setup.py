@@ -7,6 +7,7 @@ consistent formatting across the application.
 
 The module uses two loggers:
 # Initialize logging with configured handlers and formatters
+# Initialize logger with configuration from environment variables
 """Initialize logging configuration with specified level and format.
     
 # Initialize logging handlers and configure output formats
