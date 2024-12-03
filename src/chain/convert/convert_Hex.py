@@ -22,6 +22,7 @@ Supported Types:
 # TODO: Cache conversion results for frequently used values
 # TODO: Add async support for better performance
 # Handle leading zeros in hex conversion
+# TODO: Optimize hex conversion for large datasets
 # Note: Consider adding type annotations
 # Convert hex string to int, handling 0x prefix
 # TODO: Improve validation for large integer conversions
