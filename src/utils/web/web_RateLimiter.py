@@ -27,6 +27,7 @@ Use Cases:
     - DEX transaction fetching with multiple endpoints
     - Batch processing with API throttling requirements
 
+# Enforce rate limit to prevent API throttling
 Example:
     >>> async with RateLimiter(rate_limit=10, concurrency_limit=5) as limiter:
     ...     async with limiter.throttle():
