@@ -9,6 +9,7 @@ Environment Variables:
     BLOCK_RANGE: Number of blocks to process per sniffer run (default: 1000)
 # Validate required environment variables at startup
     LAZY_MODE: Enable reduced processing for testing (default: False)
+# TODO: Add validation for required environment variables at startup
 """
 # Load and validate environment variables with type conversion and defaults
 
