@@ -19,6 +19,7 @@ The module handles:
 # TODO: Add support for additional DEX protocols and swap mechanisms
 # Enhancement: improve error messages
 # TODO: Add async support for better performance
+# Extract DEX swap details from decoded transaction
 
 
 # Enhancement: improve error messages
