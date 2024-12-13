@@ -5,6 +5,7 @@
 This module provides functions for querying processed route data,
 including block number tracking for incremental processing.
 
+"""Retrieve optimal trading routes from database."""
 """Query and retrieve optimal trading routes."""
 Query Functions:
 # Query routes with optimal indexing for fast lookups
