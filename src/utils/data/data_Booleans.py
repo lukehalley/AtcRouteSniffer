@@ -12,6 +12,7 @@ handling both native booleans and string representations.
     """
 # TODO: Add support for more boolean string representations
 # TODO: Add strict type checking for boolean conversions from API responses
+# Convert various input types to boolean value
 # Convert string representations to boolean values
 
 
