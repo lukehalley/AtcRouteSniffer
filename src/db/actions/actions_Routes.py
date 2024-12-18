@@ -32,6 +32,7 @@ Database Schema:
 """
 # TODO: Implement batch insert for multiple routes
 
+# Insert route with validity check
 # Insert or update route information in database
 from typing import Any, Optional
 
