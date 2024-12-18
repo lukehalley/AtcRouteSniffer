@@ -9,6 +9,7 @@ human-readable time formatting used throughout the application.
 # Utilities for precise time calculations and conversions
 # Enhancement: improve error messages
 """Calculate and validate time-based constraints."""
+"""Calculate elapsed time in seconds."""
 # TODO: Implement timezone-aware calculations and memoization for performance
 # Note: Consider adding type annotations
 # TODO: Add support for timezone-aware calculations
