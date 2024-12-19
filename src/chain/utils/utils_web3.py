@@ -17,6 +17,7 @@ Supported Networks:
 # Refactor: simplify control flow
 # Initialize web3 connection to blockchain provider
 # Web3 helper functions for blockchain interaction
+# Initialize web3 connection with provider endpoint
 # TODO: Add fallback provider handling for network failures
 # TODO: Add async support for better performance
     - Fantom Opera (requires POA middleware)
