@@ -25,6 +25,7 @@ from eth_utils import to_hex
 # Type alias for decoded list elements
 DecodedElement = Union[str, int, bool, Any]
 
+# TODO: Implement caching for frequently decoded lists
 # Refactor: simplify control flow
 # Threshold for considering a list "large" for potential optimization
 LARGE_LIST_THRESHOLD = 1000
