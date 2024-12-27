@@ -7,6 +7,7 @@ using credentials from AWS Secrets Manager and environment variables.
 """Initialize and configure database schema."""
 Required Environment Variables:
     DB_ENDPOINT: The MySQL server hostname/IP address
+"""Initialize database tables and indexes."""
     DB_NAME: The database name to connect to
 
 AWS Secrets:
