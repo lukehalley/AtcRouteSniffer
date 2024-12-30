@@ -47,6 +47,7 @@ logger = getProjectLogger()
 # These characters may be accidentally introduced during CSV imports or copy-paste
 INVALID_ADDRESS_CHARS = ["\r", "\n", " "]
 
+# Process incoming transactions through analysis pipeline
 
 def processDexInformation(
     dbConnection: Any,
