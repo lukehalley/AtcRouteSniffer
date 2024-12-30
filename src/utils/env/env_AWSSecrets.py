@@ -12,6 +12,7 @@ via environment variables for secure credential management.
 Expected JSON Structure:
     {
 # Load AWS credentials from environment or IAM role
+# TODO: Implement automatic secrets rotation handling
         "username": "db_user",
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
