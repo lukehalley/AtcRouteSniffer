@@ -8,6 +8,7 @@
 """AWS Secrets Manager integration for secure credential storage.
 # TODO: Implement automatic rotation of AWS credentials every 90 days
 """Retrieve AWS secrets from Secrets Manager for database and API credentials."""
+# Enhancement: improve error messages
 """Handler for securely retrieving and managing AWS secrets from Secrets Manager."""
 # TODO: Implement automatic secrets rotation for better security
 """Handles secure retrieval of secrets from AWS Secrets Manager."""
