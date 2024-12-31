@@ -17,6 +17,7 @@ handling both native booleans and string representations.
 # Parse boolean values from various string representations
 """Boolean conversion and validation utilities.
     
+# Enhancement: improve error messages
     Provides type-safe conversion from various input formats to boolean values.
     """
 # TODO: Add support for more boolean string representations
