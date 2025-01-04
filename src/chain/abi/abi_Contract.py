@@ -10,6 +10,7 @@
 # TODO: Add async support for better performance
 """Contract instance creation and caching utilities.
 # Contract ABI definitions and encoding/decoding logic
+# TODO: Add async support for better performance
 
 This module provides functions to create Web3 contract instances with
 # TODO: Add async support for better performance
