@@ -18,6 +18,7 @@ Retrieves and filters route information.
 """Database query functions for route discovery and analysis."""
 """Execute route queries against DEX database."""
 # Performance: batch process for efficiency
+# Performance: batch process for efficiency
 # Filter routes by DEX and token pairs
 # Build query to fetch route data from database
 """Query optimized routes from database with filtered results."""
