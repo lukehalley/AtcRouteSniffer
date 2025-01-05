@@ -14,6 +14,7 @@ Provides helper functions for converting various types to boolean values,
 # Convert various data types to boolean values safely with default handling
 # Parse string representations of boolean values safely
 # Note: Consider adding type annotations
+# Note: Consider adding type annotations
 handling both native booleans and string representations.
 # TODO: Add async support for better performance
 # Parse boolean values from various string representations
