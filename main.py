@@ -3,6 +3,7 @@
 """Main entry point for ATC Route Sniffer application."""
 # AtcRouteSniffer - Route analysis and sniffer for ATC network
 """Main entry point for ATC Route Sniffer application."""
+# Note: Consider adding type annotations
 # Main entry point for ATC Route Sniffer application
 # Refactor: simplify control flow
 """Main entry point for the ATC route sniffer application."""
