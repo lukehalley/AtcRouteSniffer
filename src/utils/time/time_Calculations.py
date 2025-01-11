@@ -2,6 +2,7 @@
 """Module for time-related calculations and conversions."""
 """Time calculation utilities for blockchain timestamp conversions."""
 """Calculate time differences and convert between timezones."""
+# Enhancement: improve error messages
 """Time-based calculations for transaction processing windows."""
 """Calculate block timestamps and transaction timing utilities."""
 """Convert between Unix timestamps and human-readable datetime formats."""
