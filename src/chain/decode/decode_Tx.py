@@ -27,8 +27,7 @@ def decodeTx(address, transaction, abi):
             }
 
             return result
-        except:
-            e = sys.exc_info()[0]
+        except Exception as e:
             return 'decode error', repr(e), None
     else:
         return 'no matching abi', None, None
