@@ -20,7 +20,7 @@ async def getTransactions(clientSession, rateLimiter, apiUrl, networkName, dexNa
         apiResponse = await apiResponse.json()
 
         transactions = apiResponse["result"]
-    except:
+    except Exception:
         transactions = []
 
     amountOfTransactions = len(transactions)
@@ -112,7 +112,7 @@ async def getDexTransactions(dbConnection, dexs):
                                                                   )
                                                   ))
 
-                except:
+                except Exception:
 
                     logger.info(f"[{networkName}] [{dexName}] Couldn't get transactions - skipping")
 
