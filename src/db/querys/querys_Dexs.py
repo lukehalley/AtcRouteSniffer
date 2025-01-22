@@ -60,8 +60,7 @@ def getAllDexsWithABIs(dbConnection):
 
             if lazyMode:
                 break
-        except:
-            x = 1
+        except Exception:
             continue
 
     printSeparator(True)
