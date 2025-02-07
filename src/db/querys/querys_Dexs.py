@@ -50,7 +50,7 @@ def getAllDexsWithABIs(dbConnection):
         dexs = dexs[0:9]
 
     dexCount = len(dexs)
-    logger.info(f"Retrieved {dexCount} Dexs From DB")
+    logger.info(f"[DB Query] Retrieved {dexCount} DEXs with valid ABIs from database")
     printSeparator()
 
     finalDexs = []
