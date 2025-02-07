@@ -10,6 +10,17 @@ from src.utils.logging.logging_Setup import getProjectLogger
 logger= getProjectLogger()
 
 def getAllDexsWithABIs(dbConnection):
+    """Retrieve all DEXs from database that have valid ABIs configured.
+    
+    Fetches DEXs with valid factory and router addresses, processes them
+    to include network details, and returns the complete DEX information.
+    
+    Args:
+        dbConnection: Active database connection object.
+    
+    Returns:
+        List of processed DEX dictionaries with network details.
+    """
 
     lazyMode = strToBool(os.getenv("LAZY_MODE"))
 
