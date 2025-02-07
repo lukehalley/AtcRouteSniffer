@@ -60,7 +60,8 @@ def getAllDexsWithABIs(dbConnection):
 
             if lazyMode:
                 break
-        except Exception:
+        except Exception as e:
+            logger.warning(f"Failed to process dex at index {dexIndex}: {e}")
             continue
 
     printSeparator(True)
