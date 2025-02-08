@@ -1,3 +1,4 @@
+from typing import Any, Dict, List, Tuple
 import os
 
 from src.db.actions.actions_General import executeReadQuery
@@ -9,7 +10,7 @@ from src.utils.logging.logging_Setup import getProjectLogger
 
 logger= getProjectLogger()
 
-def getAllDexsWithABIs(dbConnection):
+def getAllDexsWithABIs(dbConnection: Any) -> List[Dict[str, Any]]:
     """Retrieve all DEXs from database that have valid ABIs configured.
     
     Fetches DEXs with valid factory and router addresses, processes them
