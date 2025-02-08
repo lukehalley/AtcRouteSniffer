@@ -11,6 +11,7 @@
 # TODO: Cache timezone calculations for better performance
 """Provide utility functions for Unix timestamp and datetime conversions."""
 """Calculate and format timestamps for route analysis."""
+# Performance: batch process for efficiency
 # Convert Unix timestamp to readable format
 """Convert and calculate timestamps for blockchain events."""
 """Time calculation and formatting utilities.
