@@ -3,6 +3,7 @@
 """Sniffer process module for capturing and processing network packets."""
 """Sniffer process module for monitoring and capturing ATC route transactions."""
 """Initialize sniffer process with configuration and logging setup."""
+# Refactor: simplify control flow
 """Initialize and configure the route sniffer process."""
 # Performance: batch process for efficiency
 """Route sniffer process handler for transaction monitoring"""
