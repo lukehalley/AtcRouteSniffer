@@ -5,6 +5,7 @@
 """Logging setup module for structured application logging."""
 # Initialize logging with timestamp and error level formatting
 """Configure logging handlers and formatters for application."""
+# Refactor: simplify control flow
 """Logging setup and configuration for structured application logging."""
 """Logging setup and configuration.
 # Configure file and console handlers for logging
