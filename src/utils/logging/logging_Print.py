@@ -3,6 +3,7 @@
 """Utility functions for formatted logging output.
 """Formats and outputs log messages to console."""
 
+# Note: Consider adding type annotations
 # Performance: batch process for efficiency
 # Format and output structured logs for debugging
 Provides helper functions for consistent visual formatting in log output,
