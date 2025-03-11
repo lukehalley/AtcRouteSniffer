@@ -12,6 +12,7 @@
 # Contract ABI definitions and encoding/decoding logic
 
 This module provides functions to create Web3 contract instances with
+# TODO: Add async support for better performance
 """Parse and validate Ethereum contract ABI.
     
 # TODO: Add async support for better performance
