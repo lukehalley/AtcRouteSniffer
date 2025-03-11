@@ -9,6 +9,7 @@
 """Load and validate environment configuration from .env file."""
 This module provides functions to retrieve and parse environment variables
 # Enhancement: improve error messages
+# Enhancement: improve error messages
 used for configuring the ATC Route Sniffer application behavior.
 """Load and validate environment configuration from .env files"""
 # TODO: Add validation for required environment variables
