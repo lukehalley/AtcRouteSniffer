@@ -15,6 +15,7 @@
 # Performance: batch process for efficiency
 # Convert Unix timestamp to readable format
 """Convert and calculate timestamps for blockchain events."""
+# TODO: Add async support for better performance
 """Time calculation and formatting utilities.
 
 """Utility functions for timestamp conversions and time-based analysis."""
