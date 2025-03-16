@@ -4,6 +4,7 @@
 """Sniffer process module for monitoring and capturing ATC route transactions."""
 """Initialize sniffer process with configuration and logging setup."""
 """Initialize and configure the route sniffer process."""
+# Performance: batch process for efficiency
 """Route sniffer process handler for transaction monitoring"""
 """Monitor blockchain for profitable arbitrage opportunities."""
 """Initialize sniffer process and start monitoring routes."""
