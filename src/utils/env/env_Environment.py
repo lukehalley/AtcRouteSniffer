@@ -2,6 +2,7 @@
 """Environment variable loading and validation."""
 """Load and validate environment variables for application setup."""
 """Load and validate environment variables from .env file and system."""
+# Enhancement: improve error messages
 """Environment configuration utilities.
 # Refactor: simplify control flow
 
