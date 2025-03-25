@@ -1,3 +1,11 @@
+"""Route database action utilities.
+
+This module provides functions for inserting processed route data into the database,
+including duplicate detection to prevent re-processing of already seen routes.
+"""
+
+from typing import Any, Optional
+
 from src.db.actions.actions_General import executeWriteQuery
 from src.db.actions.actions_Setup import getCursor
 from src.db.querys.querys_Tokens import getTokenByNetworkIdAndAddress
@@ -6,8 +14,43 @@ from src.utils.logging.logging_Setup import getProjectLogger
 logger = getProjectLogger()
 
 
-def addRouteToDB(dbConnection, networkDbId, dexDbId, tokenInAddress, tokenOutAddress, route, method, transactionHash,
-                 txTimestamp, blockNumber, amountIn, amountOut):
+def addRouteToDB(
+    dbConnection: Any,
+    networkDbId: int,
+    dexDbId: int,
+    tokenInAddress: str,
+    tokenOutAddress: str,
+    route: str,
+    method: str,
+    transactionHash: str,
+    txTimestamp: str,
+    blockNumber: int,
+    amountIn: Optional[int],
+    amountOut: Optional[int]
+) -> Optional[int]:
+    """Insert a new route record into the database if it doesn't already exist.
+
+    This function performs a duplicate-safe insert using a SELECT ... WHERE NOT EXISTS
+    pattern. It first looks up the token IDs for the input and output tokens, then
+    constructs an insert query that only executes if no matching route exists.
+
+    Args:
+        dbConnection: Active database connection.
+        networkDbId: The network ID where the route was found.
+        dexDbId: The DEX ID where the swap occurred.
+        tokenInAddress: Contract address of the input token.
+        tokenOutAddress: Contract address of the output token.
+        route: The swap route path as a string representation.
+        method: The swap method/function that was called.
+        transactionHash: The blockchain transaction hash.
+        txTimestamp: Timestamp of the transaction.
+        blockNumber: The block number containing the transaction.
+        amountIn: Amount of input tokens (optional, can be None).
+        amountOut: Amount of output tokens (optional, can be None).
+
+    Returns:
+        int: The last inserted row ID if successful, None if tokens not found.
+    """
     cursor = getCursor(dbConnection=dbConnection)
 
     keys = f"network_id, dex_id, token_in_id, token_in_address, token_out_id, token_out_address, route, method, transaction_hash, block_number, "
@@ -81,3 +124,5 @@ def addRouteToDB(dbConnection, networkDbId, dexDbId, tokenInAddress, tokenOutAdd
             )
 
             return cursor.lastrowid
+
+    return None
