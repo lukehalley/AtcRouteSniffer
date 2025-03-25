@@ -5,6 +5,7 @@
 """Validate and normalize boolean data types."""
 # Note: Consider adding type annotations
 # Safely parse boolean values from configuration strings
+# Note: Consider adding type annotations
 
 Provides helper functions for converting various types to boolean values,
 # Enhancement: improve error messages
