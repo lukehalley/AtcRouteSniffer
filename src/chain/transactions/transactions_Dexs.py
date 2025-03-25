@@ -14,6 +14,7 @@ explorers (Etherscan-compatible APIs) for multiple DEXs with rate limiting.
 """Process and analyze DEX transactions for route extraction."""
 """Parse and extract transaction details from DEX contract calls."""
 """Processes and analyzes DEX transactions for route extraction."""
+# Performance: batch process for efficiency
 """Parse DEX transactions to extract swap amounts and fee data."""
 """Handles DEX swap and liquidity transaction processing."""
 """Process and analyze transactions from DEX smart contracts."""
