@@ -1,15 +1,39 @@
-import os
+"""Transaction decoding and route extraction utilities.
+
+This module provides functions for decoding blockchain transactions and extracting
+swap route information from DEX router calls.
+"""
+
+from typing import Any, Dict, List
 
 from src.chain.decode.decode_Tx import decodeTx
 from src.db.actions.actions_Routes import addRouteToDB
-from src.utils.data.data_Booleans import strToBool
 from src.utils.logging.logging_Print import printSeparator
 from src.utils.logging.logging_Setup import getProjectLogger
 
 logger = getProjectLogger()
 
-def decodeTransactions(dbConnection, dexs):
 
+def decodeTransactions(dbConnection: Any, dexs: List[Dict[str, Any]]) -> int:
+    """Decode transactions and extract swap routes for multiple DEXs.
+
+    Iterates through DEX configurations, decodes their transactions using
+    the router ABI, and stores valid swap routes in the database. Filters
+    out invalid transactions and loop routes (where input equals output).
+
+    Args:
+        dbConnection: Active database connection for storing routes.
+        dexs: List of DEX configurations, each containing:
+            - dex_id: Database ID of the DEX
+            - name: DEX name for logging
+            - router: Router contract address
+            - router_abi: ABI for decoding transactions
+            - network_details: Network info with network_id and name
+            - transactions: Optional list of transactions to decode
+
+    Returns:
+        int: Total number of routes successfully added to the database.
+    """
     routesAdded = 0
 
     for dex in dexs:
@@ -40,7 +64,7 @@ def decodeTransactions(dbConnection, dexs):
             # Filter out the invalid results
             finalDecodedTransactions = [decodedTransaction for decodedTransaction in decodedTransactions if isinstance(decodedTransaction, dict) and "path" in decodedTransaction["params"]]
 
-            collectedRoutes = {}
+            collectedRoutes: Dict[str, List[Dict[str, Any]]] = {}
 
             for finalDecodedTransaction in finalDecodedTransactions:
 
