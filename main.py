@@ -33,19 +33,23 @@ from src.db.actions.actions_Setup import initDBConnection
 from src.db.querys.querys_Dexs import getAllDexsWithABIs
 from src.sniffer.sniffer_Process import assignDexTransactionList
 from src.utils.env.env_Environment import getBlockRange
-
 from src.utils.time.time_Calculations import getMinSecString
 
+# Application version
+__version__ = "1.0.0"
+
+# Load environment variables from .env file
 load_dotenv()
 
 from src.utils.logging.logging_Setup import setupLogging
 from src.utils.logging.logging_Print import printSeparator
 
-# Set up logging
+# Initialize logging configuration
 logger = setupLogging()
 
-# Get our starting time
+# Record application start time for performance tracking
 startingTime = time.perf_counter()
+
 
 @retry()
 def runSniffer() -> None:
@@ -61,13 +65,14 @@ def runSniffer() -> None:
     Returns:
         None
     """
-    # Log init message
+    # Log initialization message
     printSeparator()
-    logger.info(f"ATC Route Sniffer")
+    logger.info(f"ATC Route Sniffer v{__version__}")
     printSeparator()
     logger.info(f"Blocks: {getBlockRange()}")
     printSeparator(newLine=True)
 
+    # Query database for DEX configurations
     printSeparator()
     logger.info(f"Querying DB For Dexs w/ Networks + ABIs ")
     printSeparator()
@@ -77,6 +82,7 @@ def runSniffer() -> None:
         dbConnection=dbConnection
     )
 
+    # Fetch transactions from blockchain explorers
     dexTransactions = asyncio.run(getDexTransactions(
         dbConnection=dbConnection,
         dexs=dexs
@@ -87,6 +93,7 @@ def runSniffer() -> None:
         dexTransactions=dexTransactions
     )
 
+    # Decode transactions and upload routes
     printSeparator()
     logger.info(f"Decoding + Uploading Routes")
     printSeparator()
@@ -96,15 +103,17 @@ def runSniffer() -> None:
         dexs=dexs
     )
 
-    # Get our ending time
+    # Calculate and log execution time
     timerString = getMinSecString(time.perf_counter() - startingTime)
 
-    # Log that out scraping is done
+    # Log completion summary
     printSeparator()
-    logger.info(f"Route Sniffer Complete ✅")
+    logger.info(f"Route Sniffer Complete")
     printSeparator()
     logger.info(f"Added {routesAdded} Routes")
     logger.info(f"Took: {timerString}")
     printSeparator()
 
-runSniffer()
+
+if __name__ == "__main__":
+    runSniffer()
