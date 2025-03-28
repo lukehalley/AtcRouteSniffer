@@ -1,5 +1,12 @@
-from typing import Any, Dict, List, Tuple
+"""DEX query utilities.
+
+This module provides functions for querying DEX (Decentralized Exchange)
+configurations from the database, including filtering for valid ABIs
+and supported network explorer types.
+"""
+
 import os
+from typing import Any, Dict, List
 
 from src.db.actions.actions_General import executeReadQuery
 from src.db.actions.actions_Setup import getCursor
@@ -8,19 +15,21 @@ from src.utils.data.data_Booleans import strToBool
 from src.utils.logging.logging_Print import printSeparator
 from src.utils.logging.logging_Setup import getProjectLogger
 
-logger= getProjectLogger()
+logger = getProjectLogger()
+
 
 def getAllDexsWithABIs(dbConnection: Any) -> List[Dict[str, Any]]:
     """Retrieve all DEXs from database that have valid ABIs configured.
-    
+
     Fetches DEXs with valid factory and router addresses, processes them
     to include network details, and returns the complete DEX information.
-    
+    Supports lazy mode via LAZY_MODE environment variable for testing.
+
     Args:
         dbConnection: Active database connection object.
-    
+
     Returns:
-        List of processed DEX dictionaries with network details.
+        List of processed DEX dictionaries with network details and ABIs.
     """
 
     lazyMode = strToBool(os.getenv("LAZY_MODE"))
@@ -54,8 +63,8 @@ def getAllDexsWithABIs(dbConnection: Any) -> List[Dict[str, Any]]:
     logger.info(f"[DB Query] Retrieved {dexCount} DEXs with valid ABIs from database")
     printSeparator()
 
-    finalDexs = []
-    cachedNetworkDetails = {}
+    finalDexs: List[Dict[str, Any]] = []
+    cachedNetworkDetails: Dict[int, Dict[str, Any]] = {}
     for dex in dexs:
         dexIndex = dexs.index(dex)
 
