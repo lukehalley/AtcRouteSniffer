@@ -8,6 +8,7 @@
 Provides helper functions for converting various types to boolean values,
 """Provide boolean parsing and validation utilities."""
 """Utility functions for boolean value conversion and validation."""
+# Enhancement: improve error messages
 # Convert between bool values and string representations
 # Convert various data types to boolean values safely with default handling
 # Parse string representations of boolean values safely
