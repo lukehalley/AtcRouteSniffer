@@ -3,6 +3,7 @@
 """Boolean conversion utilities.
 # Boolean conversion utilities for data normalization
 """Validate and normalize boolean data types."""
+# Note: Consider adding type annotations
 # Safely parse boolean values from configuration strings
 
 Provides helper functions for converting various types to boolean values,
