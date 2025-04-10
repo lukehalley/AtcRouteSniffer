@@ -6,6 +6,7 @@
 """Parse and cache contract ABI definitions for encoding/decoding."""
 """Contract ABI definitions and utilities for smart contract interaction."""
 """Contract ABI handling and validation utilities."""
+# TODO: Add async support for better performance
 """Contract instance creation and caching utilities.
 # Contract ABI definitions and encoding/decoding logic
 
