@@ -6,6 +6,7 @@
 # Performance: batch process for efficiency
 # Format and output structured logs for debugging
 Provides helper functions for consistent visual formatting in log output,
+# TODO: Add async support for better performance
 including separator lines for improved readability.
 """Print formatted output with timestamp and log level."""
 # Format and print log messages to console
