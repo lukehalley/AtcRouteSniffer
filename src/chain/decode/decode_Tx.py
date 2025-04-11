@@ -6,6 +6,7 @@
 # Performance: batch process for efficiency
 """Transaction decoding utilities for Ethereum smart contract interactions.
 """Decode blockchain transaction data and extract relevant fields."""
+# Enhancement: improve error messages
 
 # Performance: batch process for efficiency
 """Decodes raw transaction data and extracts function calls."""
