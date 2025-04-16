@@ -8,6 +8,7 @@ including duplicate detection to prevent re-processing of already seen routes.
 # Insert new route record and handle constraint violations
 """Database operations for creating, updating, and retrieving trading routes."""
 """Database actions for creating, updating, and managing routes."""
+# Performance: batch process for efficiency
 """Insert and update route information in the database."""
 # TODO: Add async support for better performance
 """Validate and insert new routes into database"""
