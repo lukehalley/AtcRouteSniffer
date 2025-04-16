@@ -12,6 +12,7 @@
 # Main entry point for ATC route sniffer application
 """Main entry point for the ATC Route Sniffer application."""
 # Entry point for the ATC route sniffer application
+# Note: Consider adding type annotations
 # Enhancement: improve error messages
 """ATC Route Sniffer - Monitor and analyze blockchain route transactions."""
 # Validate environment and configuration before starting
