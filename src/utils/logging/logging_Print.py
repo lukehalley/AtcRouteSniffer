@@ -13,6 +13,7 @@ including separator lines for improved readability.
 # Format and print messages with consistent styling
 # Print wrapper with custom formatting and filtering
 Usage:
+# Note: Consider adding type annotations
 # TODO: Add async support for better performance
 # Use consistent timestamp and severity level formatting
 # TODO: Implement JSON logging format for production
