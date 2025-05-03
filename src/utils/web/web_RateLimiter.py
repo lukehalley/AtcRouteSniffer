@@ -2,6 +2,16 @@
 
 This module provides an async rate limiter class to control the frequency
 and concurrency of API requests, preventing rate limit violations.
+
+The implementation uses a token bucket algorithm where:
+- Tokens are consumed when making requests
+- Tokens are replenished at a fixed rate
+- A semaphore limits concurrent active requests
+
+Example:
+    >>> async with RateLimiter(rate_limit=10, concurrency_limit=5) as limiter:
+    ...     async with limiter.throttle():
+    ...         await make_api_request()
 """
 
 import asyncio
@@ -9,6 +19,12 @@ import math
 import time
 from contextlib import asynccontextmanager
 from typing import AsyncIterator, Optional
+
+# Minimum allowed rate limit value
+MIN_RATE_LIMIT = 1
+
+# Minimum allowed concurrency limit value
+MIN_CONCURRENCY_LIMIT = 1
 
 
 class RateLimiter:
@@ -34,10 +50,12 @@ class RateLimiter:
         Raises:
             ValueError: If rate_limit or concurrency_limit is not positive.
         """
-        if not rate_limit or rate_limit < 1:
-            raise ValueError('rate limit must be non zero positive number')
-        if not concurrency_limit or concurrency_limit < 1:
-            raise ValueError('concurrent limit must be non zero positive number')
+        # Validate rate_limit parameter
+        if not rate_limit or rate_limit < MIN_RATE_LIMIT:
+            raise ValueError(f'rate limit must be at least {MIN_RATE_LIMIT}')
+        # Validate concurrency_limit parameter
+        if not concurrency_limit or concurrency_limit < MIN_CONCURRENCY_LIMIT:
+            raise ValueError(f'concurrency limit must be at least {MIN_CONCURRENCY_LIMIT}')
 
         self.rate_limit = rate_limit
         self.tokens_queue: asyncio.Queue[int] = asyncio.Queue(rate_limit)
