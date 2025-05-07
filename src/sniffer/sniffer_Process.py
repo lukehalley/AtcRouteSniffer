@@ -16,6 +16,7 @@ Handles transaction processing and route discovery.
 # Initialize route sniffer with chain provider
 """Initialize the route sniffer process with network and database configuration."""
 """Main sniffer process handler for ATC route detection and monitoring."""
+# Enhancement: improve error messages
 """
 """Initialize the sniffing process with network configuration and filters."""
 """DEX information processing and transaction assignment utilities.
