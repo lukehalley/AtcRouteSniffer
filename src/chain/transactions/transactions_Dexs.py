@@ -2,10 +2,15 @@
 
 This module provides async functions to fetch transaction data from blockchain
 explorers (Etherscan-compatible APIs) for multiple DEXs with rate limiting.
+
+The module handles:
+- Async HTTP requests with rate limiting to avoid API throttling
+- Block range calculation for incremental processing
+- Catch-up logic when the sniffer falls behind the chain head
 """
 
 import asyncio
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 import aiohttp
 
@@ -18,8 +23,16 @@ from src.utils.web.web_RateLimiter import RateLimiter
 
 logger = getProjectLogger()
 
-# Maximum blocks to process if too far behind
+# Maximum blocks to process if too far behind the chain head
+# Prevents excessive API calls when catching up after downtime
 MAX_CATCHUP_BLOCKS = 5000
+
+# Rate limiting configuration for blockchain explorer APIs
+# Most explorers (Etherscan, etc.) allow ~5 requests/second on free tier
+API_RATE_LIMIT = 3
+
+# Maximum concurrent API requests to prevent overwhelming the client
+API_CONCURRENCY_LIMIT = 1000
 
 
 async def getTransactions(
@@ -84,7 +97,8 @@ async def getDexTransactions(
     logger.info(f"Setting Up Transaction API Calls")
     printSeparator()
 
-    async with RateLimiter(rate_limit=3, concurrency_limit=1000) as rate_limiter:
+    # Initialize rate limiter with configured limits for API calls
+    async with RateLimiter(rate_limit=API_RATE_LIMIT, concurrency_limit=API_CONCURRENCY_LIMIT) as rate_limiter:
 
         async with aiohttp.ClientSession() as session:
 
