@@ -9,6 +9,8 @@ from typing import Any, Optional
 
 import mysql.connector
 from mysql.connector import errorcode
+from mysql.connector.connection import MySQLConnection
+from mysql.connector.cursor import MySQLCursor
 
 from src.utils.env.env_AWSSecrets import getAWSSecret
 from src.utils.logging.logging_Setup import getProjectLogger
@@ -16,7 +18,7 @@ from src.utils.logging.logging_Setup import getProjectLogger
 logger = getProjectLogger()
 
 
-def initDBConnection():
+def initDBConnection() -> Optional[MySQLConnection]:
     """Initialize a MySQL database connection using AWS credentials.
 
     Retrieves database credentials from AWS Secrets Manager and environment

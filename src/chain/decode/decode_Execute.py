@@ -2,9 +2,20 @@
 
 This module provides functions for decoding blockchain transactions and extracting
 swap route information from DEX router calls.
+
+The decoding process:
+1. Iterates through DEX configurations with their ABIs
+2. Decodes each transaction input using the router ABI
+3. Extracts the swap path from decoded parameters
+4. Filters out loop routes (same token in/out) and invalid transactions
+5. Stores unique routes in the database
+
+Route Format:
+    Routes are stored as dash-separated address strings:
+    "0xToken1-0xToken2-0xToken3" represents a multi-hop swap path
 """
 
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 
 from src.chain.decode.decode_Tx import decodeTx
 from src.db.actions.actions_Routes import addRouteToDB
@@ -12,6 +23,9 @@ from src.utils.logging.logging_Print import printSeparator
 from src.utils.logging.logging_Setup import getProjectLogger
 
 logger = getProjectLogger()
+
+# Separator used to join token addresses in route paths
+ROUTE_PATH_SEPARATOR = "-"
 
 
 def decodeTransactions(dbConnection: Any, dexs: List[Dict[str, Any]]) -> int:
@@ -75,18 +89,22 @@ def decodeTransactions(dbConnection: Any, dexs: List[Dict[str, Any]]) -> int:
                 tokenInAddress = routeUsed[0]
                 tokenOutAddress = routeUsed[-1]
 
-                routeName = f"{tokenInAddress}-{tokenOutAddress}"
+                # Create unique identifier for this token pair
+                routeName = f"{tokenInAddress}{ROUTE_PATH_SEPARATOR}{tokenOutAddress}"
 
+                # Skip loop routes where input and output are the same token
                 isLoopRoute = tokenInAddress == tokenOutAddress
 
                 if not isLoopRoute:
 
+                    # Initialize route collection for this token pair if needed
                     if routeName not in collectedRoutes:
                         collectedRoutes[routeName] = []
 
+                    # Build route object with transaction details
                     routeObject = {
                         "method": finalDecodedTransaction["name"],
-                        "route": "-".join(routeUsed),
+                        "route": ROUTE_PATH_SEPARATOR.join(routeUsed),
                         "blockNumber": finalDecodedTransaction["blockNumber"]
                     }
 
