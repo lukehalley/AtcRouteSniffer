@@ -3,51 +3,91 @@
 This module provides functions to recursively decode tuples from smart contract
 function calls, converting bytes to hex strings and preserving the field names
 from the ABI schema.
+
+Tuples in Solidity are used for struct returns and complex data types.
+This decoder maps positional tuple elements to named dictionary keys
+based on the ABI definition.
 """
 
 from typing import Any, Dict, List, Tuple, Union
 
 from eth_utils import to_hex
 
+# Type alias for ABI component definitions
+ABIComponent = Dict[str, Any]
+ABIComponentList = List[ABIComponent]
 
-def decodeTuple(tuple_data: Tuple, target_field: List[Dict[str, Any]]) -> Dict[str, Any]:
+
+def decodeTuple(
+    tuple_data: Tuple[Any, ...],
+    target_field: ABIComponentList
+) -> Dict[str, Any]:
     """Decode a tuple into a dictionary using ABI field names.
 
     Recursively processes tuple elements, converting bytes to hex strings
-    and nested tuples to nested dictionaries.
+    and nested tuples to nested dictionaries. This preserves the semantic
+    meaning of the data by mapping positions to named fields.
 
     Args:
         tuple_data: The tuple to decode from contract function output.
+                    Elements correspond positionally to ABI components.
         target_field: ABI components describing the field names and types.
+                      Each component should have 'name' and optionally 'components'.
 
     Returns:
         Dict with field names as keys and decoded values.
+
+    Example:
+        >>> abi_fields = [{'name': 'amount', 'type': 'uint256'}, {'name': 'recipient', 'type': 'address'}]
+        >>> decodeTuple((1000, b'\\x12...'), abi_fields)
+        {'amount': 1000, 'recipient': '0x12...'}
     """
     decoded_dict: Dict[str, Any] = {}
+
+    # Process each tuple element according to its ABI definition
     for i in range(len(tuple_data)):
+        # Extract field name from ABI component
         field_name = target_field[i]['name']
-        if isinstance(tuple_data[i], (bytes, bytearray)):
-            decoded_dict[field_name] = to_hex(tuple_data[i])
-        elif isinstance(tuple_data[i], tuple):
-            decoded_dict[field_name] = decodeTuple(tuple_data[i], target_field[i]['components'])
+        current_value = tuple_data[i]
+
+        # Handle bytes/bytearray by converting to hex representation
+        if isinstance(current_value, (bytes, bytearray)):
+            decoded_dict[field_name] = to_hex(current_value)
+
+        # Recursively decode nested tuples (struct within struct)
+        elif isinstance(current_value, tuple):
+            nested_components = target_field[i]['components']
+            decoded_dict[field_name] = decodeTuple(current_value, nested_components)
+
+        # Preserve primitive types as-is (int, str, bool, etc.)
         else:
-            decoded_dict[field_name] = tuple_data[i]
+            decoded_dict[field_name] = current_value
+
     return decoded_dict
 
 
-def decodeTuples(tuple_list: List[Tuple], target_field: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def decodeTuples(
+    tuple_list: List[Tuple[Any, ...]],
+    target_field: ABIComponentList
+) -> List[Dict[str, Any]]:
     """Decode a list of tuples into a list of dictionaries.
 
-    Applies decodeTuple to each element in the list.
+    Applies decodeTuple to each element in the list. This is used when
+    decoding array returns from smart contracts (e.g., tuple[] type).
 
     Args:
-        tuple_list: List of tuples to decode.
+        tuple_list: List of tuples to decode, each with the same structure.
         target_field: ABI components describing the field names and types.
 
     Returns:
-        List of decoded dictionaries.
+        List of decoded dictionaries, one per input tuple.
+
+    Note:
+        This function modifies the list in place for efficiency.
     """
+    # Process each tuple in the list
     decoded_list = tuple_list
     for i in range(len(tuple_list)):
         decoded_list[i] = decodeTuple(tuple_list[i], target_field)
+
     return decoded_list
