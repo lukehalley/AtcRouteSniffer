@@ -3,6 +3,16 @@
 This module provides functions to create Web3 contract instances with
 LRU caching for improved performance when interacting with the same
 contracts multiple times.
+
+Caching Strategy:
+    Contract instances are cached with no size limit because:
+    1. Contract objects are lightweight (just wrappers)
+    2. The same contracts are accessed frequently during sniffer runs
+    3. Memory usage is typically low even with many cached contracts
+
+Usage:
+    >>> contract, abi = getContract("0x...", '["..."]')
+    >>> result = contract.functions.someMethod().call()
 """
 
 import json
@@ -13,31 +23,48 @@ from web3 import Web3
 from web3.auto import w3
 from web3.contract import Contract
 
-# Type alias for ABI format
+# Type alias for ABI format - can be JSON string or parsed list
 ABIType = Union[str, List[Dict[str, Any]]]
 
+# Type alias for parsed ABI as a list of function/event definitions
+ParsedABIType = List[Dict[str, Any]]
 
-@lru_cache(maxsize=None)
-def getContract(address: str, abi: str) -> Tuple[Contract, List[Dict[str, Any]]]:
+# Cache configuration - None means unlimited caching
+# This is appropriate because contract instances are reused heavily
+CONTRACT_CACHE_SIZE = None
+
+
+@lru_cache(maxsize=CONTRACT_CACHE_SIZE)
+def getContract(address: str, abi: str) -> Tuple[Contract, ParsedABIType]:
     """Create or retrieve a cached Web3 contract instance.
 
     Uses LRU caching to avoid recreating contract instances for the same
     address/ABI combination, improving performance for repeated calls.
 
     Args:
-        address: The contract address (will be checksummed).
-        abi: The contract ABI, either as a JSON string or parsed list.
+        address: The contract address (will be checksummed automatically).
+        abi: The contract ABI as a JSON string. Parsing is handled internally.
 
     Returns:
         Tuple containing:
-            - Contract: The Web3 contract instance.
-            - List[Dict]: The parsed ABI as a list of dictionaries.
+            - Contract: The Web3 contract instance ready for function calls.
+            - ParsedABIType: The parsed ABI list for schema lookups.
+
+    Raises:
+        json.JSONDecodeError: If the ABI string is not valid JSON.
+        ValueError: If the address is not a valid Ethereum address.
 
     Note:
-        The cache has no size limit (maxsize=None) as contract instances
-        are reused frequently and memory usage is typically low.
+        Cache size is controlled by CONTRACT_CACHE_SIZE constant.
+        The function is thread-safe due to LRU cache implementation.
     """
-    parsed_abi = json.loads(abi) if isinstance(abi, str) else abi
+    # Parse ABI from JSON string to list of dictionaries
+    parsed_abi: ParsedABIType = json.loads(abi) if isinstance(abi, str) else abi
+
+    # Convert address to checksum format for Web3 compatibility
     checksum_address = Web3.toChecksumAddress(address)
+
+    # Create contract instance with parsed ABI
     contract = w3.eth.contract(address=checksum_address, abi=parsed_abi)
+
     return contract, parsed_abi
