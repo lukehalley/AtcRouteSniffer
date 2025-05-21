@@ -1,6 +1,18 @@
-web3~=6.0.0b5
-aio-eth~=0.0.1
-python-dotenv~=0.16.0
-mysql-connector-python~=8.0.30
-retry~=0.9.2
-boto3~=1.24.84
+# ATC Route Sniffer - Python Dependencies
+# ========================================
+
+# Blockchain interaction libraries
+web3~=6.0.0b5              # Ethereum Web3 library for contract interaction
+aio-eth~=0.0.1             # Async Ethereum utilities for concurrent requests
+
+# Configuration and environment
+python-dotenv~=0.16.0      # Load environment variables from .env files
+
+# Database connectivity
+mysql-connector-python~=8.0.30  # MySQL database adapter
+
+# Utilities
+retry~=0.9.2               # Automatic retry decorator for resilient operations
+
+# AWS integration
+boto3~=1.24.84             # AWS SDK for S3 ABI storage access
