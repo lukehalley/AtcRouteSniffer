@@ -1,7 +1,25 @@
+# ATC Route Sniffer - GitLab CI/CD Pipeline
+# ==========================================
+#
+# This pipeline handles Docker image building and deployment to AWS ECR.
+#
+# Stages:
+#   1. build        - Validates Dockerfile on non-master branches
+#   2. buildAndPush - Builds and pushes to ECR on master branch
+#
+# Required CI/CD Variables:
+#   - AWS_ACCOUNT: AWS account ID for ECR registry
+#   - ECR_REPO: ECR repository name (e.g., atc-route-sniffer)
+#   - AWS credentials configured for ECR access
+
 stages:
   - build
   - buildAndPush
 
+# Validation Build Job
+# --------------------
+# Runs on all branches except master to validate Dockerfile syntax
+# and ensure the image builds successfully without pushing.
 build:
   image:
     name: docker
@@ -15,6 +33,11 @@ build:
     variables:
       - $CI_COMMIT_BRANCH != "master"
 
+# Production Build and Push Job
+# -----------------------------
+# Runs only on master branch. Automatically increments version number
+# based on the latest image tag in ECR, builds the new image, and
+# pushes it to the AWS ECR registry.
 buildAndPush:
   image:
     name: amazon/aws-cli
@@ -23,13 +46,16 @@ buildAndPush:
   services:
     - docker:dind
   before_script:
+    # Install Docker in the AWS CLI container
     - amazon-linux-extras install docker
+    # Fetch the current highest version from ECR
     - CURRENT_IMAGE_VERSION=$(aws ecr describe-images --repository-name atc-route-sniffer --query 'sort_by(imageDetails,& imagePushedAt)[-1].imageTags[0]' | tr -d '"')
+    # Increment version by 0.01 for the new release
     - NEXT_VERSION=$(echo $CURRENT_IMAGE_VERSION 0.01 | awk '{print $1 + $2}')
   script:
+    # Build, authenticate, and push to ECR
     - docker build -t $AWS_ACCOUNT/$ECR_REPO:$NEXT_VERSION .
     - aws ecr get-login-password | docker login --username AWS --password-stdin $AWS_ACCOUNT
     - docker push $AWS_ACCOUNT/$ECR_REPO:$NEXT_VERSION
-
   only:
     - master
