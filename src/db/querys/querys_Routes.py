@@ -2,12 +2,26 @@
 
 This module provides functions for querying processed route data,
 including block number tracking for incremental processing.
+
+Query Functions:
+    - getLatestProcessedBlockNetworkIdAndDexId: Get earliest processed block
+    - getFirstProcessedBlockNetworkIdAndDexId: Get most recent processed block
 """
 
 from typing import Any, Dict, Optional
 
 from src.db.actions.actions_Setup import getCursor
 from src.db.actions.actions_General import executeReadQuery
+
+# Database table name for routes
+ROUTES_TABLE = "routes"
+
+# Sort order constants for block number queries
+SORT_ASCENDING = "ASC"
+SORT_DESCENDING = "DESC"
+
+# Query limit for single result queries
+SINGLE_RESULT_LIMIT = 1
 
 
 def getLatestProcessedBlockNetworkIdAndDexId(
@@ -28,18 +42,20 @@ def getLatestProcessedBlockNetworkIdAndDexId(
     Returns:
         int: The lowest block number processed, or None if no routes exist.
     """
+    # Build query to find the earliest (lowest) processed block
     query = (
         f"SELECT block_number "
-        f"FROM routes "
+        f"FROM {ROUTES_TABLE} "
         f"WHERE network_id='{networkDbId}' AND "
         f"dex_id='{dexDbId}' "
-        f"ORDER BY block_number ASC "
-        f"LIMIT 1"
+        f"ORDER BY block_number {SORT_ASCENDING} "
+        f"LIMIT {SINGLE_RESULT_LIMIT}"
     )
 
     cursor = getCursor(dbConnection=dbConnection)
     result = executeReadQuery(cursor=cursor, query=query)
 
+    # Extract block number from result if found
     if result:
         return int(result[0]["block_number"])
     return None
@@ -63,16 +79,18 @@ def getFirstProcessedBlockNetworkIdAndDexId(
     Returns:
         Dict containing block_number, or None if no routes exist.
     """
+    # Build query to find the most recent (highest) processed block
     query = (
         f"SELECT block_number "
-        f"FROM routes "
+        f"FROM {ROUTES_TABLE} "
         f"WHERE network_id='{networkDbId}' AND "
         f"dex_id='{dexDbId}' "
-        f"ORDER BY block_number DESC "
-        f"LIMIT 1"
+        f"ORDER BY block_number {SORT_DESCENDING} "
+        f"LIMIT {SINGLE_RESULT_LIMIT}"
     )
 
     cursor = getCursor(dbConnection=dbConnection)
     result = executeReadQuery(cursor=cursor, query=query)
 
+    # Return first result if found, otherwise None
     return result[0] if result else None
