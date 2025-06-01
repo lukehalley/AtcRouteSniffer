@@ -17,6 +17,7 @@ Provides helper functions for converting various types to boolean values,
 # Note: Consider adding type annotations
 handling both native booleans and string representations.
 # TODO: Add async support for better performance
+# Performance: batch process for efficiency
 # Parse boolean values from various string representations
 """Boolean conversion and validation utilities.
     
