@@ -2,9 +2,14 @@
 
 This module provides functions for processing DEX information from the database
 and assigning transaction lists to DEX objects for route sniffer operations.
+
+The processing pipeline enriches raw DEX records with:
+- Network configuration details (RPC URLs, explorer endpoints)
+- Router contract ABIs fetched from S3 storage
+- Sanitized contract addresses
 """
 
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 from src.aws.aws_s3 import getAbiFromS3
 from src.chain.utils.utils_web3 import getWeb3Instance
@@ -12,6 +17,9 @@ from src.db.querys.querys_Networks import getNetworkById
 from src.utils.logging.logging_Setup import getProjectLogger
 
 logger = getProjectLogger()
+
+# Characters to strip from router addresses during sanitization
+INVALID_ADDRESS_CHARS = ["\r", "\n", " "]
 
 
 def processDexInformation(
@@ -41,8 +49,12 @@ def processDexInformation(
     dexName = dex["name"]
     dexNetworkDbId = dex["network_id"]
 
-    # Sanitize router address by removing carriage returns
-    dex["router"] = dex["router"].replace("\r", "")
+    # Sanitize router address by removing invalid whitespace characters
+    # that may have been introduced during data entry or import
+    router_address = dex["router"]
+    for char in INVALID_ADDRESS_CHARS:
+        router_address = router_address.replace(char, "")
+    dex["router"] = router_address
 
     # Use cached network details or fetch from database
     if dexNetworkDbId in cachedNetworkDetails:
@@ -76,8 +88,14 @@ def assignDexTransactionList(
 
     Returns:
         List of DEX dictionaries with 'transactions' key added.
+
+    Note:
+        The function assumes dexs and dexTransactions have the same length
+        and are aligned by index position.
     """
-    for dexTransactionList in dexTransactions:
-        i = dexTransactions.index(dexTransactionList)
-        dexs[i]["transactions"] = dexTransactionList
+    # Use enumerate for cleaner index tracking instead of .index() lookup
+    for index, transactionList in enumerate(dexTransactions):
+        if index < len(dexs):
+            dexs[index]["transactions"] = transactionList
+            logger.debug(f"Assigned {len(transactionList)} transactions to DEX index {index}")
     return dexs

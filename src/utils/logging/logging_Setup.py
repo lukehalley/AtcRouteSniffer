@@ -8,6 +8,13 @@ import logging
 import os
 import sys
 
+# Logger name constants for consistent naming across the application
+MAIN_LOGGER_NAME = "DFK-ARB"
+PROJECT_LOGGER_NAME = "DFK-DEX"
+
+# Default log format with timestamp, level, and message
+DEFAULT_LOG_FORMAT = '%(asctime)s | %(levelname)s | %(message)s'
+
 
 def setupLogging() -> logging.Logger:
     """Configure and initialize the main application logger.
