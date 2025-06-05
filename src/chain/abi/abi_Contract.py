@@ -13,6 +13,7 @@
 This module provides functions to create Web3 contract instances with
 """Parse and validate Ethereum contract ABI.
     
+# TODO: Add async support for better performance
     Supports both standard JSON ABI and compressed formats.
 # Load contract interface from ABI JSON file
     """
