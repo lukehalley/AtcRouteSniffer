@@ -2,34 +2,57 @@
 
 This module provides functions to decode lists containing mixed types,
 converting bytes and bytearrays to their hexadecimal string representation.
+
+This is commonly needed when processing decoded smart contract function
+parameters that contain address arrays or byte sequences.
 """
 
 from typing import Any, List, Union
 
 from eth_utils import to_hex
 
+# Type alias for decoded list elements
+DecodedElement = Union[str, int, bool, Any]
 
-def decodeList(items: List[Any]) -> List[Union[str, Any]]:
+
+def decodeList(items: List[Any]) -> List[DecodedElement]:
     """Decode a list, converting bytes/bytearray elements to hex strings.
 
     Iterates through a list and converts any bytes or bytearray elements
     to their hexadecimal string representation while preserving other types.
+    This is essential for serializing blockchain data that may contain
+    raw byte sequences.
 
     Args:
         items: List containing mixed types that may include bytes/bytearray.
+               Common examples include token address arrays from swap paths.
 
     Returns:
         List with bytes/bytearray elements converted to hex strings,
-        other elements remain unchanged.
+        other elements (int, str, bool) remain unchanged.
+
+    Example:
+        >>> path = [b'\\x12\\x34', 'token_address', 42]
+        >>> decodeList(path)
+        ['0x1234', 'token_address', 42]
 
     Note:
         This function modifies the list in place and also returns it.
         Consider creating a copy if you need to preserve the original.
     """
+    # Create reference to original list for in-place modification
     decoded_list = items
+
+    # Iterate through each element and convert bytes to hex
     for i in range(len(items)):
-        if isinstance(items[i], (bytes, bytearray)):
-            decoded_list[i] = to_hex(items[i])
+        current_item = items[i]
+
+        # Check if element is a bytes-like type that needs conversion
+        if isinstance(current_item, (bytes, bytearray)):
+            # Convert to hex string with 0x prefix
+            decoded_list[i] = to_hex(current_item)
         else:
-            decoded_list[i] = items[i]
+            # Preserve non-bytes elements as-is
+            decoded_list[i] = current_item
+
     return decoded_list
