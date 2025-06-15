@@ -2,12 +2,21 @@
 
 This module provides functions for querying token information from the database,
 including lookups by network and contract address.
+
+Functions:
+    - getTokenByNetworkIdAndAddress: Retrieve token by network ID and address
 """
 
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional
 
 from src.db.actions.actions_General import executeReadQuery
 from src.db.actions.actions_Setup import getCursor
+
+# Database table name for tokens
+TOKENS_TABLE = "tokens"
+
+# Token result key for sorting duplicates
+TOKEN_ID_KEY = "token_id"
 
 
 def getTokenByNetworkIdAndAddress(
@@ -29,19 +38,24 @@ def getTokenByNetworkIdAndAddress(
         Dict containing token information (token_id, symbol, decimals, etc.),
         or None if no matching token is found.
     """
+    # Build query to find token by network and address
     query = (
         f"SELECT * "
-        f"FROM tokens "
+        f"FROM {TOKENS_TABLE} "
         f"WHERE network_id='{networkDbId}' AND address='{tokenAddress}'"
     )
 
     cursor = getCursor(dbConnection=dbConnection)
-    result = executeReadQuery(cursor=cursor, query=query)
+    result: List[Dict[str, Any]] = executeReadQuery(cursor=cursor, query=query)
 
+    # Handle different result scenarios
     if len(result) == 0:
+        # No matching token found
         return None
     elif len(result) == 1:
+        # Single match - return directly
         return result[0]
     else:
-        # Multiple matches - return the one with the lowest token_id
-        return sorted(result, key=lambda d: d['token_id'])[0]
+        # Multiple matches (edge case) - return the one with the lowest token_id
+        # This ensures consistent behavior when duplicates exist
+        return sorted(result, key=lambda d: d[TOKEN_ID_KEY])[0]

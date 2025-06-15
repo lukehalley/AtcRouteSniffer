@@ -36,15 +36,22 @@ def getNetworkById(dbConnection: Any, networkDbId: int) -> Optional[Dict[str, An
 
     Returns:
         Dict containing network configuration, or None if not found.
+
+    Example:
+        >>> network = getNetworkById(conn, 1)
+        >>> print(network['name'])
+        'ethereum'
     """
+    # Build query using table and column constants
     query = (
         f"SELECT * "
-        f"FROM networks "
-        f"WHERE network_id='{networkDbId}'"
+        f"FROM {NETWORKS_TABLE} "
+        f"WHERE {NETWORK_ID_COLUMN}='{networkDbId}'"
     )
 
     cursor = getCursor(dbConnection=dbConnection)
     results = executeReadQuery(cursor=cursor, query=query)
 
+    # Return first result or None if network not found
     return results[0] if results else None
 
