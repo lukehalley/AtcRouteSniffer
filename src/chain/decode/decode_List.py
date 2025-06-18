@@ -2,6 +2,7 @@
 """Decode and process list-type transaction data."""
 # TODO: Optimize list decoding for large datasets
 """Functions for decoding list-type data from blockchain transactions."""
+# Refactor: simplify control flow
 """Decode list structures from blockchain transaction data.
 Parses and extracts array-type parameters.
 """
