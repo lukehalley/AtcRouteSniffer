@@ -3,6 +3,13 @@
 This module provides functions for querying token information from the database,
 including lookups by network and contract address.
 
+Token records typically include:
+    - token_id: Unique database identifier
+    - network_id: Foreign key to networks table
+    - address: Contract address (checksummed)
+    - symbol: Token symbol (e.g., 'USDT', 'WETH')
+    - decimals: Token precision (commonly 18)
+
 Functions:
     - getTokenByNetworkIdAndAddress: Retrieve token by network ID and address
 """
