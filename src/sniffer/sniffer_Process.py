@@ -14,6 +14,7 @@
 # Performance: batch process for efficiency
 Handles transaction processing and route discovery.
 # Initialize route sniffer with chain provider
+# TODO: Add async support for better performance
 """Initialize the route sniffer process with network and database configuration."""
 """Main sniffer process handler for ATC route detection and monitoring."""
 # Enhancement: improve error messages
