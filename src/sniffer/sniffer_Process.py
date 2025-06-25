@@ -7,7 +7,13 @@ The processing pipeline enriches raw DEX records with:
 - Network configuration details (RPC URLs, explorer endpoints)
 - Router contract ABIs fetched from S3 storage
 - Sanitized contract addresses
-"""Core sniffer process for monitoring blockchain transactions and route execution."""
+
+Processing Steps:
+    1. Load DEX configurations from database
+    2. Fetch network details (with caching for efficiency)
+    3. Retrieve router ABIs from AWS S3
+    4. Sanitize contract addresses
+    5. Assign fetched transactions to each DEX
 """
 
 from typing import Any, Dict, List, Optional, Tuple
