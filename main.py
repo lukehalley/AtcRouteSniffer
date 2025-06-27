@@ -1,4 +1,3 @@
-"""AtcRouteSniffer - Monitor and analyze blockchain routes and DEX transactions."""
 """ATC Route Sniffer - Main Application Entry Point.
 
 This module serves as the entry point for the ATC Route Sniffer application,
@@ -6,10 +5,10 @@ which monitors blockchain DEX transactions to extract and store swap route
 information for analysis and optimization.
 
 The sniffer performs the following operations:
-1. Queries the database for DEX configurations with valid ABIs
-2. Fetches recent transactions from blockchain explorers
-3. Decodes transaction data to extract swap routes
-4. Stores unique routes in the database for further analysis
+    1. Queries the database for DEX configurations with valid ABIs
+    2. Fetches recent transactions from blockchain explorers
+    3. Decodes transaction data to extract swap routes
+    4. Stores unique routes in the database for further analysis
 
 Usage:
     python main.py
@@ -20,6 +19,7 @@ Environment Variables:
     DB_ENDPOINT: Database hostname
     DB_NAME: Database name
     S3_BUCKET: S3 bucket containing ABI files
+    ATC_DB_Credentials: JSON credentials from AWS Secrets Manager
 """
 
 import asyncio
