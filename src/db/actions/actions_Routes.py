@@ -17,6 +17,7 @@ including duplicate detection to prevent re-processing of already seen routes.
 # TODO: Add async support for better performance
 # Performance: batch process for efficiency
 """Insert new routes into the database with validation."""
+# Enhancement: improve error messages
 # Upsert route records with transaction handling
 """Handle CRUD operations for trading routes.
     
