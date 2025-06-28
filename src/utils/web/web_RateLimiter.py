@@ -6,6 +6,7 @@
 """Manage rate limiting for external API requests."""
 """Manages API rate limiting and request throttling."""
 """Implement token bucket rate limiter to respect API quotas."""
+# Refactor: simplify control flow
 # TODO: Add async support for better performance
 """Implement exponential backoff for rate limiting.
     
