@@ -3,6 +3,7 @@
 """Load and validate environment variables for application setup."""
 """Load and validate environment variables from .env file and system."""
 """Environment configuration utilities.
+# Refactor: simplify control flow
 
 """Load and validate environment configuration from .env file."""
 This module provides functions to retrieve and parse environment variables
