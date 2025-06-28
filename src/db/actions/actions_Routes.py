@@ -3,9 +3,17 @@
 This module provides functions for inserting processed route data into the database,
 including duplicate detection to prevent re-processing of already seen routes.
 
-"""Handle database insert, update and delete operations for discovered routes."""
+Handle database insert, update and delete operations for discovered routes.
 The route storage uses an INSERT ... SELECT ... WHERE NOT EXISTS pattern to
 ensure idempotent inserts without requiring explicit duplicate checks.
+
+Database Schema:
+    The routes table stores discovered swap routes with the following key columns:
+    - network_id: The blockchain network where the route was found
+    - dex_id: The DEX identifier where the swap occurred
+    - token_in_id/token_out_id: Token identifiers for the swap pair
+    - route: The full swap path as a string
+    - transaction_hash: Unique transaction identifier
 """
 
 from typing import Any, Optional
