@@ -2,6 +2,14 @@
 
 This module provides functions for initializing MySQL database connections
 using credentials from AWS Secrets Manager and environment variables.
+
+Required Environment Variables:
+    DB_ENDPOINT: The MySQL server hostname/IP address
+    DB_NAME: The database name to connect to
+
+AWS Secrets:
+    username: Database user credential from AWS Secrets Manager
+    password: Database password from AWS Secrets Manager
 """
 
 import os
@@ -17,6 +25,14 @@ from src.utils.logging.logging_Setup import getProjectLogger
 
 logger = getProjectLogger()
 
+# Environment variable names for database configuration
+DB_ENDPOINT_ENV_VAR = "DB_ENDPOINT"
+DB_NAME_ENV_VAR = "DB_NAME"
+
+# AWS Secrets Manager key names
+AWS_SECRET_USERNAME = "username"
+AWS_SECRET_PASSWORD = "password"
+
 
 def initDBConnection() -> Optional[MySQLConnection]:
     """Initialize a MySQL database connection using AWS credentials.
@@ -27,14 +43,16 @@ def initDBConnection() -> Optional[MySQLConnection]:
     Returns:
         MySQLConnection: Active database connection if successful, None on error.
 
-    Environment Variables:
-        DB_ENDPOINT: The MySQL server hostname/IP.
-        DB_NAME: The database name to connect to.
+    Raises:
+        mysql.connector.Error: If connection fails due to credentials or network.
     """
-    db_user = getAWSSecret("username")
-    db_password = getAWSSecret("password")
-    db_endpoint = os.getenv("DB_ENDPOINT")
-    db_name = os.getenv("DB_NAME")
+    # Retrieve credentials from AWS Secrets Manager
+    db_user = getAWSSecret(AWS_SECRET_USERNAME)
+    db_password = getAWSSecret(AWS_SECRET_PASSWORD)
+
+    # Get database endpoint and name from environment variables
+    db_endpoint = os.getenv(DB_ENDPOINT_ENV_VAR)
+    db_name = os.getenv(DB_NAME_ENV_VAR)
 
     try:
         db_connection = mysql.connector.connect(

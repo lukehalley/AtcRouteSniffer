@@ -1,3 +1,4 @@
+"""AtcRouteSniffer - Monitor and analyze blockchain routes and DEX transactions."""
 """ATC Route Sniffer - Main Application Entry Point.
 
 This module serves as the entry point for the ATC Route Sniffer application,
