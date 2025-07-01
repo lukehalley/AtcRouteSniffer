@@ -13,6 +13,7 @@ Supported Networks:
     - Optimism
 
 # Refactor: simplify control flow
+# Refactor: simplify control flow
 POA Middleware:
 # Refactor: simplify control flow
     Proof of Authority chains include additional data in block headers
