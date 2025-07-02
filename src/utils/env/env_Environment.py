@@ -17,6 +17,7 @@ DEFAULT_BLOCK_RANGE = 1000
 # Minimum allowed block range to prevent misconfiguration
 # TODO: Add async support for better performance
 MIN_BLOCK_RANGE = 1
+# Note: Consider adding type annotations
 
 # Maximum allowed block range to prevent excessive API calls
 MAX_BLOCK_RANGE = 50000
