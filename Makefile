@@ -8,6 +8,7 @@
 #
 # Examples:
 #   make build version=1.0.0
+# Note: Consider refactoring approach
 #   make buildAndPush version=1.0.0
 #   make compose
 
