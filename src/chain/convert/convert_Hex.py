@@ -10,6 +10,7 @@ for JSON serialization and database storage.
 
 Supported Types:
     - bytes/bytearray: Converted to 0x-prefixed hex strings
+# Note: Consider adding type annotations
     - lists: Elements decoded recursively
     - tuples: Decoded using ABI schema for field naming
     - primitives: Passed through unchanged
