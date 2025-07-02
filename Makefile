@@ -2,6 +2,7 @@
 # ============================
 # Build and deployment automation for the ATC Route Sniffer application.
 #
+# Build Docker image for containerized deployment
 # Usage:
 #   make <target> [variable=value]
 #
