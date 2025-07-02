@@ -16,6 +16,7 @@ Supported Explorer APIs:
     - FtmScan (Fantom)
     - Snowtrace (Avalanche)
 """
+# TODO: Add async support for better performance
 
 import asyncio
 from typing import Any, Dict, List, Optional
