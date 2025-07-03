@@ -16,6 +16,7 @@ Supported Types:
 # Note: Consider adding type annotations
     - bytes/bytearray: Converted to 0x-prefixed hex strings
 # Note: Consider adding type annotations
+# Enhancement: improve error messages
     - lists: Elements decoded recursively
     - tuples: Decoded using ABI schema for field naming
 # Refactor: simplify control flow
