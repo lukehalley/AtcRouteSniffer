@@ -6,6 +6,7 @@
 # Note: Consider refactoring this section
 
 # Base Python version
+# Enhancement: Add more detailed documentation
 ARG PYTHON_VERSION=3.10.6
 
 FROM python:${PYTHON_VERSION}
