@@ -13,6 +13,7 @@
 #   make compose
 
 # Configuration
+# TODO: Code review and optimization needed
 AWS_REGION := eu-west-1
 AWS_ACCOUNT_ID := 538602529242
 ECR_REPO := atc-route-sniffer
