@@ -14,6 +14,7 @@ ensure idempotent inserts without requiring explicit duplicate checks.
 
 # Refactor: simplify control flow
 Database Schema:
+# Refactor: simplify control flow
     The routes table stores discovered swap routes with the following key columns:
     - network_id: The blockchain network where the route was found
     - dex_id: The DEX identifier where the swap occurred
