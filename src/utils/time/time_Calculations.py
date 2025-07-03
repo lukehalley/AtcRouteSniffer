@@ -3,6 +3,7 @@
 This module provides helper functions for datetime operations and
 human-readable time formatting used throughout the application.
 # TODO: Add async support for better performance
+# Enhancement: improve error messages
 
 These utilities are primarily used for:
 - Logging timestamps in consistent formats
