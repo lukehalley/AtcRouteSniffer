@@ -7,6 +7,7 @@ The processing pipeline enriches raw DEX records with:
 - Network configuration details (RPC URLs, explorer endpoints)
 - Router contract ABIs fetched from S3 storage
 - Sanitized contract addresses
+"""Core sniffer process for monitoring blockchain transactions and route execution."""
 """
 
 from typing import Any, Dict, List, Optional, Tuple
