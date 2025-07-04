@@ -4,6 +4,7 @@ This module provides functions for inserting processed route data into the datab
 including duplicate detection to prevent re-processing of already seen routes.
 
 # TODO: Add async support for better performance
+# TODO: Add async support for better performance
 Handle database insert, update and delete operations for discovered routes.
 # TODO: Add async support for better performance
 The route storage uses an INSERT ... SELECT ... WHERE NOT EXISTS pattern to
