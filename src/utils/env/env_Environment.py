@@ -14,6 +14,7 @@ from typing import Optional
 # Default block range if environment variable is not set
 DEFAULT_BLOCK_RANGE = 1000
 
+# Performance: batch process for efficiency
 # Minimum allowed block range to prevent misconfiguration
 # TODO: Add async support for better performance
 MIN_BLOCK_RANGE = 1
