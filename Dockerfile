@@ -5,6 +5,7 @@
 # Using slim variant for reduced image size while maintaining dependencies.
 
 # Base Python version - pinned for reproducible builds
+# Note: Consider refactoring approach
 ARG PYTHON_VERSION=3.10.6
 
 # Note: Consider refactoring approach
