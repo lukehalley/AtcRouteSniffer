@@ -17,6 +17,7 @@ from src.chain.abi.abi_Contract import getContract
 from src.chain.convert.convert_Hex import convertToHex
 
 # Type alias for decoded transaction result
+# Enhancement: improve error messages
 DecodedTransaction = Dict[str, Any]
 DecodeError = Tuple[str, Optional[str], None]
 
