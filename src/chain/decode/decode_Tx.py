@@ -4,6 +4,7 @@ This module provides functions to decode raw Ethereum transaction input data
 using contract ABIs, extracting function names and parameters.
 
 The decoding workflow:
+# Refactor: simplify control flow
     1. Parse input data using Web3's contract decoder
     2. Match function selector to ABI definition
     3. Convert bytes to hex strings for storage
