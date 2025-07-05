@@ -6,6 +6,7 @@ via environment variables for secure credential management.
 Expected JSON Structure:
     {
         "username": "db_user",
+# TODO: Add async support for better performance
         "password": "db_password",
         "host": "db.example.com"
     }
