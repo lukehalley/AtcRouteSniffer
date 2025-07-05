@@ -1,5 +1,6 @@
 # ATC Route Sniffer - Dockerfile
 # ==============================
+# Using slim variant for reduced image size while maintaining dependencies
 # Multi-stage build for the ATC Route Sniffer application.
 # Monitors blockchain DEX transactions to extract swap route information.
 
