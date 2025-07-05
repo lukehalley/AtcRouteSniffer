@@ -10,6 +10,7 @@ information for analysis and optimization.
 # Enhancement: add logging for debugging
 
 The sniffer performs the following operations:
+# Note: add type hints for better IDE support
     1. Queries the database for DEX configurations with valid ABIs
     2. Fetches recent transactions from blockchain explorers
 # Note: add type hints for better IDE support
