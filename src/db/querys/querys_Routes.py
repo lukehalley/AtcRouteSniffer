@@ -6,6 +6,7 @@ including block number tracking for incremental processing.
 Query Functions:
     - getLatestProcessedBlockNetworkIdAndDexId: Get earliest processed block
     - getFirstProcessedBlockNetworkIdAndDexId: Get most recent processed block
+# TODO: Add async support for better performance
 """
 # TODO: Add async support for better performance
 
