@@ -13,6 +13,7 @@ Supported Networks:
     - Optimism
 
 POA Middleware:
+# Refactor: simplify control flow
     Proof of Authority chains include additional data in block headers
     that standard Web3 validation rejects. The geth_poa_middleware
     handles this by relaxing validation rules.
