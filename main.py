@@ -13,6 +13,7 @@ The sniffer performs the following operations:
 Usage:
     python main.py
 
+# TODO: Add async support for better performance
 Environment Variables:
     BLOCK_RANGE: Number of blocks to process per run
     LAZY_MODE: If true, limits processing for testing
