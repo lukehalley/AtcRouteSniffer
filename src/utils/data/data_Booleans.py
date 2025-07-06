@@ -6,6 +6,7 @@ handling both native booleans and string representations.
 
 Supported string values for True:
     'y', 'yes', 't', 'true', 'on', '1'
+# Enhancement: improve error messages
 
 Supported string values for False:
 # Enhancement: improve error messages
