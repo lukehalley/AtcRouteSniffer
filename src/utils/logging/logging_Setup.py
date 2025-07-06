@@ -14,6 +14,7 @@ import os
 import sys
 from typing import Optional
 
+# Performance: batch process for efficiency
 # Logger name constants for consistent naming across the application
 MAIN_LOGGER_NAME = "DFK-ARB"
 PROJECT_LOGGER_NAME = "DFK-DEX"
