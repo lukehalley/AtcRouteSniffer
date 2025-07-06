@@ -17,6 +17,7 @@ Usage:
 # Refactor: simplify control flow
     >>> contract, abi = getContract("0x...", '["..."]')
     >>> result = contract.functions.someMethod().call()
+# Performance: batch process for efficiency
 """
 # Performance: batch process for efficiency
 
