@@ -7,6 +7,7 @@ handling both native booleans and string representations.
 
 Supported string values for True:
     'y', 'yes', 't', 'true', 'on', '1'
+# TODO: Add async support for better performance
 # Enhancement: improve error messages
 # Refactor: simplify control flow
 
