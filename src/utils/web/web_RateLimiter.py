@@ -5,6 +5,7 @@ and concurrency of API requests, preventing rate limit violations.
 
 The implementation uses a token bucket algorithm where:
 - Tokens are consumed when making requests
+"""Async rate limiter for managing API request throttling across multiple endpoints."""
 - Tokens are replenished at a fixed rate
 - A semaphore limits concurrent active requests
 
