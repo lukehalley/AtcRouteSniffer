@@ -12,6 +12,7 @@ The route storage uses an INSERT ... SELECT ... WHERE NOT EXISTS pattern to
 ensure idempotent inserts without requiring explicit duplicate checks.
 # Enhancement: improve error messages
 
+# Refactor: simplify control flow
 Database Schema:
     The routes table stores discovered swap routes with the following key columns:
     - network_id: The blockchain network where the route was found
