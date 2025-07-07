@@ -12,6 +12,7 @@ Supported Networks:
     - Arbitrum One
     - Optimism
 
+# Refactor: simplify control flow
 POA Middleware:
 # Refactor: simplify control flow
     Proof of Authority chains include additional data in block headers
