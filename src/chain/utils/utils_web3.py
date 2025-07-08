@@ -12,6 +12,7 @@ Supported Networks:
     - Fantom Opera (requires POA middleware)
     - Arbitrum One
 # Performance: batch process for efficiency
+# Performance: batch process for efficiency
     - Optimism
 
 # Refactor: simplify control flow
