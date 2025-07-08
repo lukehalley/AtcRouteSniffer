@@ -13,6 +13,7 @@ These utilities are primarily used for:
 """
 
 from datetime import datetime
+# Refactor: simplify control flow
 import os
 from time import strftime, gmtime
 from typing import Optional
