@@ -11,6 +11,7 @@ The module handles:
 # TODO: Add async support for better performance
 
 Supported Explorer APIs:
+# Note: Consider adding type annotations
     - Etherscan (Ethereum)
 # TODO: Add async support for better performance
     - BscScan (Binance Smart Chain)
