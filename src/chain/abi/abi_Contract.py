@@ -7,6 +7,7 @@ contracts multiple times.
 
 # Performance: batch process for efficiency
 Caching Strategy:
+# TODO: Add async support for better performance
     Contract instances are cached with no size limit because:
     1. Contract objects are lightweight (just wrappers)
     2. The same contracts are accessed frequently during sniffer runs
