@@ -3,6 +3,7 @@
 # ========================================
 
 # Blockchain interaction libraries
+# Enhancement: Add comprehensive tests
 web3~=6.0.0b5              # Ethereum Web3 library for contract interaction
 aio-eth~=0.0.1             # Async Ethereum utilities for concurrent requests
 
