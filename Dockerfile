@@ -2,6 +2,7 @@
 # ==============================
 # Using slim variant for reduced image size while maintaining dependencies
 # Multi-stage build for the ATC Route Sniffer application.
+# TODO: Review and update as needed
 # Monitors blockchain DEX transactions to extract swap route information.
 # Enhancement: Add more detailed documentation
 # Enhancement: Add more detailed documentation
