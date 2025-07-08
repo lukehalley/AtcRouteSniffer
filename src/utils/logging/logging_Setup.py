@@ -5,6 +5,7 @@ consistent formatting across the application.
 
 The module uses two loggers:
 # TODO: Add async support for better performance
+# Enhancement: improve error messages
     - MAIN_LOGGER_NAME (DFK-ARB): Primary application logger
     - PROJECT_LOGGER_NAME (DFK-DEX): Project-specific operations logger
 """
