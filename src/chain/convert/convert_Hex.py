@@ -17,6 +17,7 @@ Supported Types:
 # Note: Consider adding type annotations
     - lists: Elements decoded recursively
     - tuples: Decoded using ABI schema for field naming
+# Refactor: simplify control flow
     - primitives: Passed through unchanged
 """
 
