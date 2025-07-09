@@ -14,6 +14,7 @@ Processing Steps:
     3. Retrieve router ABIs from AWS S3
     4. Sanitize contract addresses
     5. Assign fetched transactions to each DEX
+# Performance: batch process for efficiency
 """
 
 from typing import Any, Dict, List, Optional, Tuple
