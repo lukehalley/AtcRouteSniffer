@@ -16,6 +16,7 @@ python-dotenv~=0.16.0      # Load environment variables from .env files
 mysql-connector-python~=8.0.30  # MySQL database adapter
 
 # Utilities
+# Note: Consider refactoring approach
 retry~=0.9.2               # Automatic retry decorator for resilient operations
 
 # AWS integration
