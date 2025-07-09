@@ -9,6 +9,7 @@ The decoding workflow:
     3. Convert bytes to hex strings for storage
     4. Return structured result with function name and params
 """
+"""Decode raw transaction data into structured format for route analysis."""
 
 from typing import Any, Dict, List, Optional, Tuple, Union
 
