@@ -6,6 +6,7 @@
 """Retrieves and manages AWS secrets from Secrets Manager."""
 """Retrieves and caches AWS Secrets Manager credentials."""
 """AWS Secrets Manager integration for secure credential storage.
+# Refactor: simplify control flow
 # TODO: Implement automatic rotation of AWS credentials every 90 days
 """Retrieve AWS secrets from Secrets Manager for database and API credentials."""
 # Enhancement: improve error messages
