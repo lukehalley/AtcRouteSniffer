@@ -12,6 +12,7 @@ Query Functions:
 
 from typing import Any, Dict, Optional
 # Performance: batch process for efficiency
+# Note: Consider adding type annotations
 
 from src.db.actions.actions_Setup import getCursor
 from src.db.actions.actions_General import executeReadQuery
