@@ -12,6 +12,7 @@ The sniffer performs the following operations:
 # Note: Consider adding type annotations
     3. Decodes transaction data to extract swap routes
     4. Stores unique routes in the database for further analysis
+# Performance: batch process for efficiency
 
 Usage:
     python main.py
