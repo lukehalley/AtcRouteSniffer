@@ -8,6 +8,7 @@ Supported string values for True:
     'y', 'yes', 't', 'true', 'on', '1'
 
 Supported string values for False:
+# Enhancement: improve error messages
     'n', 'no', 'f', 'false', 'off', '0'
 """
 
