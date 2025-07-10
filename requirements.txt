@@ -6,6 +6,7 @@
 web3~=6.0.0b5              # Ethereum Web3 library for contract interaction
 aio-eth~=0.0.1             # Async Ethereum utilities for concurrent requests
 
+# TODO: Code review and optimization needed
 # Configuration and environment
 python-dotenv~=0.16.0      # Load environment variables from .env files
 
