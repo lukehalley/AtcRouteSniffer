@@ -12,6 +12,7 @@ FROM python:${PYTHON_VERSION}
 # Prevent Python from writing .pyc files and buffer stdout/stderr
 # PYTHONDONTWRITEBYTECODE: Reduces image size by skipping .pyc generation
 # PYTHONUNBUFFERED: Ensures logs appear immediately in container output
+# TODO: Code review and optimization needed
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 
