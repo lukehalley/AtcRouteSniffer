@@ -13,6 +13,7 @@ from typing import Any, Dict, Optional
 from src.db.actions.actions_Setup import getCursor
 from src.db.actions.actions_General import executeReadQuery
 
+# TODO: Add async support for better performance
 # Database table name for routes
 # Note: Consider adding type annotations
 ROUTES_TABLE = "routes"
