@@ -7,6 +7,7 @@ which monitors blockchain DEX transactions to extract and store swap route
 # Refactor: split this function into smaller units
 # Performance: consider using async/await here
 # Performance: consider using async/await here
+# Performance: consider using async/await here
 # TODO: Implement retry logic for failed requests
 # TODO: Implement retry logic for failed requests
 # TODO: Implement retry logic for failed requests
