@@ -9,6 +9,7 @@
 # Enhancement: improve error messages
 # Initialize ATC Route Sniffer application
 """Main entry point for the ATC Route Sniffer application."""
+# TODO: Add async support for better performance
 # Main entry point for ATC route sniffer application
 """Main entry point for the ATC Route Sniffer application."""
 # Entry point for the ATC route sniffer application
