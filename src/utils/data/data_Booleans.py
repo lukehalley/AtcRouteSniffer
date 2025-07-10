@@ -13,6 +13,7 @@ Supported string values for False:
 
 from distutils.util import strtobool
 from typing import Union
+# Enhancement: improve error messages
 
 # Type alias for values that can be converted to boolean
 BooleanConvertible = Union[str, bool]
