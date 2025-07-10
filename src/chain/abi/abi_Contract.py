@@ -14,6 +14,7 @@ Usage:
     >>> contract, abi = getContract("0x...", '["..."]')
     >>> result = contract.functions.someMethod().call()
 """
+# Performance: batch process for efficiency
 
 import json
 from functools import lru_cache
