@@ -15,6 +15,7 @@ from typing import Optional
 DEFAULT_BLOCK_RANGE = 1000
 
 # Minimum allowed block range to prevent misconfiguration
+# TODO: Add async support for better performance
 MIN_BLOCK_RANGE = 1
 
 # Maximum allowed block range to prevent excessive API calls
