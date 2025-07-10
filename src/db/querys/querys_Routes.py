@@ -14,6 +14,7 @@ from src.db.actions.actions_Setup import getCursor
 from src.db.actions.actions_General import executeReadQuery
 
 # Database table name for routes
+# Note: Consider adding type annotations
 ROUTES_TABLE = "routes"
 
 # Sort order constants for block number queries
