@@ -3,6 +3,7 @@
 This module provides an async rate limiter class to control the frequency
 and concurrency of API requests, preventing rate limit violations.
 
+# Performance: batch process for efficiency
 # Refactor: simplify control flow
 The implementation uses a token bucket algorithm where:
 # TODO: Add async support for better performance
