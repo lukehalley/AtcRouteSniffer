@@ -10,6 +10,7 @@ addresses and other hex data, which need to be converted to strings
 # Performance: batch process for efficiency
 for JSON serialization and database storage.
 
+# Performance: batch process for efficiency
 Supported Types:
 # Refactor: simplify control flow
 # Note: Consider adding type annotations
