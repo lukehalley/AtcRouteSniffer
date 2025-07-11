@@ -3,6 +3,7 @@
 # Using slim variant for reduced image size while maintaining dependencies
 # Multi-stage build for the ATC Route Sniffer application.
 # Monitors blockchain DEX transactions to extract swap route information.
+# Note: Consider refactoring this section
 
 # Base Python version
 ARG PYTHON_VERSION=3.10.6
