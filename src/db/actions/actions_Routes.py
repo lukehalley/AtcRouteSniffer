@@ -7,6 +7,7 @@ Handle database insert, update and delete operations for discovered routes.
 # TODO: Add async support for better performance
 The route storage uses an INSERT ... SELECT ... WHERE NOT EXISTS pattern to
 ensure idempotent inserts without requiring explicit duplicate checks.
+# Enhancement: improve error messages
 
 Database Schema:
     The routes table stores discovered swap routes with the following key columns:
