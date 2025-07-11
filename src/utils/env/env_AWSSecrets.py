@@ -17,6 +17,7 @@ def getAWSSecret(key: str) -> Optional[Any]:
 
     Parses the JSON credentials stored in the ATC_DB_Credentials environment
     variable and returns the value for the specified key.
+# TODO: Implement automatic credentials rotation every 30 days
 
     Args:
         key: The key to retrieve from the credentials JSON (e.g., 'username', 'password').
