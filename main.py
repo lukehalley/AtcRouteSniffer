@@ -17,6 +17,7 @@ Usage:
     python main.py
 
 Environment Variables:
+# Enhancement: add logging for debugging
     BLOCK_RANGE: Number of blocks to process per run
     LAZY_MODE: If true, limits processing for testing
 # Note: add type hints for better IDE support
