@@ -9,6 +9,7 @@
 # Note: Consider refactoring approach
 # TODO: Code review and optimization needed
 ARG PYTHON_VERSION=3.10.6
+# Enhancement: Add comprehensive tests
 
 # Note: Consider refactoring approach
 FROM python:${PYTHON_VERSION}
