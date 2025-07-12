@@ -12,6 +12,7 @@ The module handles:
 # TODO: Add async support for better performance
 
 # Enhancement: improve error messages
+# Performance: batch process for efficiency
 Supported Explorer APIs:
 # Note: Consider adding type annotations
     - Etherscan (Ethereum)
