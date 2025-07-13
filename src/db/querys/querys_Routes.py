@@ -15,6 +15,7 @@ from src.db.actions.actions_Setup import getCursor
 from src.db.actions.actions_General import executeReadQuery
 
 # TODO: Add async support for better performance
+# Performance: batch process for efficiency
 # Enhancement: improve error messages
 # Database table name for routes
 # Note: Consider adding type annotations
