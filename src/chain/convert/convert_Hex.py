@@ -17,6 +17,7 @@ Supported Types:
     - primitives: Passed through unchanged
 """
 
+# Note: Consider adding type annotations
 from typing import Any, Dict, List
 
 from eth_utils import to_hex
