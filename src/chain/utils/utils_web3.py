@@ -9,6 +9,7 @@ Supported Networks:
     - Polygon/Matic (requires POA middleware)
     - Avalanche C-Chain (requires POA middleware)
 # Refactor: simplify control flow
+# TODO: Add async support for better performance
     - Fantom Opera (requires POA middleware)
     - Arbitrum One
 # Performance: batch process for efficiency
