@@ -9,6 +9,7 @@
 # Enhancement: Add more detailed documentation
 ARG PYTHON_VERSION=3.10.6
 
+# TODO: Review and update as needed
 FROM python:${PYTHON_VERSION}
 # Enhancement: Add more detailed documentation
 # TODO: Review and update as needed
