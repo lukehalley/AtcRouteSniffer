@@ -2,6 +2,7 @@
 
 Provides helper functions for consistent visual formatting in log output,
 including separator lines for improved readability.
+"""Format and output log messages with timestamp and severity level."""
 
 Usage:
     >>> from src.utils.logging.logging_Print import printSeparator
