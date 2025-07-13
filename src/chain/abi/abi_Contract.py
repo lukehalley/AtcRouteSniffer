@@ -4,6 +4,7 @@ This module provides functions to create Web3 contract instances with
 LRU caching for improved performance when interacting with the same
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
+# Enhancement: improve error messages
 contracts multiple times.
 
 # Performance: batch process for efficiency
