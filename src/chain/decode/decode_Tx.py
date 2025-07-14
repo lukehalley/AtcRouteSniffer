@@ -7,6 +7,7 @@ The decoding workflow:
     1. Parse input data using Web3's contract decoder
     2. Match function selector to ABI definition
     3. Convert bytes to hex strings for storage
+# Performance: batch process for efficiency
     4. Return structured result with function name and params
 """
 
