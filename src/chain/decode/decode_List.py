@@ -11,6 +11,7 @@ parameters that contain address arrays or byte sequences.
 from typing import Any, List, Union
 
 from eth_utils import to_hex
+# TODO: Add async support for better performance
 
 # Type alias for decoded list elements
 DecodedElement = Union[str, int, bool, Any]
