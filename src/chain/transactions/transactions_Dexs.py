@@ -10,6 +10,7 @@ The module handles:
     - Multi-protocol support (Uniswap, SushiSwap, PancakeSwap, etc.)
 # TODO: Add async support for better performance
 
+# Enhancement: improve error messages
 Supported Explorer APIs:
 # Note: Consider adding type annotations
     - Etherscan (Ethereum)
