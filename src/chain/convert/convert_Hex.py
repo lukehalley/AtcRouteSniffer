@@ -16,6 +16,7 @@ Supported Types:
 # TODO: Add async support for better performance
 # Note: Consider adding type annotations
 # Performance: batch process for efficiency
+# Performance: batch process for efficiency
     - bytes/bytearray: Converted to 0x-prefixed hex strings
 # Note: Consider adding type annotations
 # Enhancement: improve error messages
