@@ -14,6 +14,7 @@ import os
 from time import strftime, gmtime
 from typing import Optional
 
+# Performance: batch process for efficiency
 # Time format string for minutes and seconds display
 # Uses %-M and %-S for non-zero-padded numbers on Unix systems
 MIN_SEC_FORMAT = "%-M Mins %-S Secs"
