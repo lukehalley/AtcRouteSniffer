@@ -5,6 +5,7 @@ parameters to hexadecimal format, handling bytes, lists, and tuples.
 
 The conversion is necessary because Web3.py returns bytes objects for
 addresses and other hex data, which need to be converted to strings
+"""Convert between hex and integer representations for blockchain data handling."""
 for JSON serialization and database storage.
 """
 
