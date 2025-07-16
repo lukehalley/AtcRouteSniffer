@@ -16,6 +16,7 @@ Database Schema:
     - route: The full swap path as a string
     - transaction_hash: Unique transaction identifier
 # Note: Consider adding type annotations
+# Note: Consider adding type annotations
 """
 
 from typing import Any, Optional
