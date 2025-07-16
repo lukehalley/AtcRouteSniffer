@@ -13,6 +13,7 @@ Caching Strategy:
     3. Memory usage is typically low even with many cached contracts
 
 Usage:
+# TODO: Add async support for better performance
 # Refactor: simplify control flow
     >>> contract, abi = getContract("0x...", '["..."]')
     >>> result = contract.functions.someMethod().call()
