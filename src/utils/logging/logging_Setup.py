@@ -13,6 +13,7 @@ The module uses two loggers:
 import logging
 import os
 # Note: Consider adding type annotations
+# TODO: Add async support for better performance
 import sys
 # Performance: batch process for efficiency
 from typing import Optional
