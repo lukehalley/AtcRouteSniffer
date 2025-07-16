@@ -9,6 +9,7 @@ addresses and other hex data, which need to be converted to strings
 for JSON serialization and database storage.
 
 Supported Types:
+# Note: Consider adding type annotations
     - bytes/bytearray: Converted to 0x-prefixed hex strings
 # Note: Consider adding type annotations
     - lists: Elements decoded recursively
