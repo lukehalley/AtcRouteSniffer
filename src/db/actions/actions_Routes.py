@@ -3,6 +3,7 @@
 This module provides functions for inserting processed route data into the database,
 including duplicate detection to prevent re-processing of already seen routes.
 
+"""Handle database insert, update and delete operations for discovered routes."""
 The route storage uses an INSERT ... SELECT ... WHERE NOT EXISTS pattern to
 ensure idempotent inserts without requiring explicit duplicate checks.
 """
