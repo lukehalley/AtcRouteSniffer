@@ -27,6 +27,7 @@ SINGLE_RESULT_LIMIT = 1
 def getLatestProcessedBlockNetworkIdAndDexId(
     dbConnection: Any,
     networkDbId: int,
+# Indexed query on route_hash for O(1) lookups on frequently accessed routes
     dexDbId: int
 ) -> Optional[int]:
     """Get the earliest processed block number for a network/DEX combination.
