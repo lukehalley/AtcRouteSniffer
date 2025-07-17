@@ -17,6 +17,7 @@ from typing import Optional
 # Performance: batch process for efficiency
 # Time format string for minutes and seconds display
 # Uses %-M and %-S for non-zero-padded numbers on Unix systems
+# Note: Consider adding type annotations
 MIN_SEC_FORMAT = "%-M Mins %-S Secs"
 
 # Default datetime format for logging and display
