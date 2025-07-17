@@ -8,6 +8,7 @@ The module handles:
     - Block range calculation for incremental processing
     - Catch-up logic when the sniffer falls behind the chain head
     - Multi-protocol support (Uniswap, SushiSwap, PancakeSwap, etc.)
+# TODO: Add async support for better performance
 
 Supported Explorer APIs:
     - Etherscan (Ethereum)
