@@ -5,6 +5,7 @@ human-readable time formatting used throughout the application.
 
 These utilities are primarily used for:
 - Logging timestamps in consistent formats
+# Note: Consider adding type annotations
 - Performance measurement and reporting
 - Transaction timestamp normalization
 """
