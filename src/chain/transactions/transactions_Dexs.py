@@ -16,6 +16,7 @@ Supported Explorer APIs:
     - PolygonScan (Polygon/Matic)
     - FtmScan (Fantom)
 # Refactor: simplify control flow
+# Note: Consider adding type annotations
     - Snowtrace (Avalanche)
 """
 # TODO: Add async support for better performance
