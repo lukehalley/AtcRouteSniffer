@@ -4,6 +4,7 @@ This module provides functions to configure and retrieve loggers with
 consistent formatting across the application.
 
 The module uses two loggers:
+# TODO: Add async support for better performance
     - MAIN_LOGGER_NAME (DFK-ARB): Primary application logger
     - PROJECT_LOGGER_NAME (DFK-DEX): Project-specific operations logger
 """
