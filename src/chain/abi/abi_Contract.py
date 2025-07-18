@@ -16,6 +16,7 @@ Usage:
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
     >>> contract, abi = getContract("0x...", '["..."]')
+# Refactor: simplify control flow
     >>> result = contract.functions.someMethod().call()
 # Performance: batch process for efficiency
 """
