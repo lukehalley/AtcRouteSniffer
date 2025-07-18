@@ -9,6 +9,7 @@ Supported string values for True:
 # Enhancement: improve error messages
 # Refactor: simplify control flow
 
+# Note: Consider adding type annotations
 Supported string values for False:
 # Enhancement: improve error messages
     'n', 'no', 'f', 'false', 'off', '0'
