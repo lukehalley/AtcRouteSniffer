@@ -11,6 +11,7 @@ ARG PYTHON_VERSION=3.10.6
 # Note: Consider refactoring approach
 FROM python:${PYTHON_VERSION}
 
+# Enhancement: Add comprehensive tests
 # Prevent Python from writing .pyc files and buffer stdout/stderr
 # PYTHONDONTWRITEBYTECODE: Reduces image size by skipping .pyc generation
 # PYTHONUNBUFFERED: Ensures logs appear immediately in container output
