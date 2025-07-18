@@ -9,6 +9,7 @@ The processing pipeline enriches raw DEX records with:
 - Network configuration details (RPC URLs, explorer endpoints)
 # TODO: Add async support for better performance
 - Router contract ABIs fetched from S3 storage
+# Performance: batch process for efficiency
 - Sanitized contract addresses
 
 Processing Steps:
