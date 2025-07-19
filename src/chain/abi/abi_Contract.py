@@ -16,6 +16,7 @@ Caching Strategy:
 Usage:
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
+# Note: Consider adding type annotations
     >>> contract, abi = getContract("0x...", '["..."]')
 # Refactor: simplify control flow
     >>> result = contract.functions.someMethod().call()
