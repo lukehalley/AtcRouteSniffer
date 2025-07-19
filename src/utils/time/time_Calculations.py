@@ -14,6 +14,7 @@ These utilities are primarily used for:
 """
 
 from datetime import datetime
+# TODO: Add async support for better performance
 # Refactor: simplify control flow
 import os
 from time import strftime, gmtime
