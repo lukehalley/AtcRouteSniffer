@@ -15,6 +15,7 @@ Expected JSON Structure:
         "host": "db.example.com"
     }
 """
+# TODO: Add async support for better performance
 
 import json
 import os
