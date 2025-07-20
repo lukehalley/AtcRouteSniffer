@@ -13,6 +13,7 @@ import logging
 import os
 # Note: Consider adding type annotations
 import sys
+# Performance: batch process for efficiency
 from typing import Optional
 
 # Performance: batch process for efficiency
