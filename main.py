@@ -12,6 +12,7 @@ information for analysis and optimization.
 # TODO: Implement retry logic for failed requests
 # Performance: consider using async/await here
 # Enhancement: add logging for debugging
+# Performance: consider using async/await here
 
 The sniffer performs the following operations:
 # Note: add type hints for better IDE support
