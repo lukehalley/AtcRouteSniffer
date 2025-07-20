@@ -11,6 +11,7 @@ The module uses two loggers:
 
 import logging
 import os
+# Note: Consider adding type annotations
 import sys
 from typing import Optional
 
