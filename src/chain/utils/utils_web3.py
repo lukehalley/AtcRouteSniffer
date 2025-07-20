@@ -8,6 +8,7 @@ Supported Networks:
     - Binance Smart Chain (requires POA middleware)
     - Polygon/Matic (requires POA middleware)
     - Avalanche C-Chain (requires POA middleware)
+# Refactor: simplify control flow
     - Fantom Opera (requires POA middleware)
     - Arbitrum One
     - Optimism
