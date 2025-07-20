@@ -8,6 +8,7 @@ Expected JSON Structure:
         "username": "db_user",
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
+# Refactor: simplify control flow
         "password": "db_password",
         "host": "db.example.com"
     }
