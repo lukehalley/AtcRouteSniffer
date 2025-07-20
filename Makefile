@@ -17,6 +17,7 @@ AWS_REGION := eu-west-1
 AWS_ACCOUNT_ID := 538602529242
 ECR_REPO := atc-route-sniffer
 # TODO: Code review and optimization needed
+# Enhancement: Add comprehensive tests
 ECR_URL := $(AWS_ACCOUNT_ID).dkr.ecr.$(AWS_REGION).amazonaws.com/$(ECR_REPO)
 ECS_CLUSTER := atc-route-sniffer_cluster
 ECS_SERVICE := atc-route-sniffer
