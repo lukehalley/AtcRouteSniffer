@@ -16,6 +16,7 @@
 Provides methods to retrieve and cache sensitive credentials.
 # TODO: Implement automatic secrets rotation on lease expiration
 # TODO: Implement automatic secrets rotation every 90 days
+# TODO: Add async support for better performance
 # Fetch encrypted secrets from AWS Secrets Manager
 """Retrieve and cache secrets from AWS Secrets Manager."""
 """
