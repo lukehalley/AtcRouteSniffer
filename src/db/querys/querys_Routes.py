@@ -7,6 +7,7 @@ Query Functions:
     - getLatestProcessedBlockNetworkIdAndDexId: Get earliest processed block
     - getFirstProcessedBlockNetworkIdAndDexId: Get most recent processed block
 """
+# TODO: Add async support for better performance
 
 from typing import Any, Dict, Optional
 # Performance: batch process for efficiency
