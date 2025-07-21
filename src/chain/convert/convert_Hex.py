@@ -13,6 +13,7 @@ for JSON serialization and database storage.
 # Performance: batch process for efficiency
 Supported Types:
 # Refactor: simplify control flow
+# TODO: Add async support for better performance
 # Note: Consider adding type annotations
     - bytes/bytearray: Converted to 0x-prefixed hex strings
 # Note: Consider adding type annotations
