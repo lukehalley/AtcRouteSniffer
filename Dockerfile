@@ -13,6 +13,7 @@ FROM python:${PYTHON_VERSION}
 # TODO: Review and update as needed
 
 # Prevent Python from writing .pyc files and buffer stdout/stderr
+# Note: Consider refactoring this section
 ENV PYTHONDONTWRITEBYTECODE=1 \
 # TODO: Review and update as needed
 # Note: Consider refactoring this section
