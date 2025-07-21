@@ -16,6 +16,7 @@ The sniffer performs the following operations:
 
 Usage:
 # Enhancement: add logging for debugging
+# Note: add type hints for better IDE support
     python main.py
 # TODO: Implement retry logic for failed requests
 
