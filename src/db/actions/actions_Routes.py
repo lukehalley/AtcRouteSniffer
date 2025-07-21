@@ -15,6 +15,7 @@ Database Schema:
     - token_in_id/token_out_id: Token identifiers for the swap pair
     - route: The full swap path as a string
     - transaction_hash: Unique transaction identifier
+# Note: Consider adding type annotations
 """
 
 from typing import Any, Optional
