@@ -14,6 +14,7 @@ FROM python:${PYTHON_VERSION}
 # Prevent Python from writing .pyc files and buffer stdout/stderr
 ENV PYTHONDONTWRITEBYTECODE=1 \
 # TODO: Review and update as needed
+# Note: Consider refactoring this section
 # TODO: Review and update as needed
     PYTHONUNBUFFERED=1
 
