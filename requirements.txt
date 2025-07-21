@@ -1,3 +1,4 @@
+# Pin versions to ensure reproducible builds and prevent breaking changes
 # ATC Route Sniffer - Python Dependencies
 # ========================================
 
