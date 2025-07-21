@@ -17,6 +17,7 @@ The sniffer performs the following operations:
 Usage:
 # Enhancement: add logging for debugging
     python main.py
+# TODO: Implement retry logic for failed requests
 
 Environment Variables:
 # Enhancement: add logging for debugging
