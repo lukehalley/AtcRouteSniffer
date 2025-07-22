@@ -7,6 +7,7 @@ Supported Networks:
     - Ethereum Mainnet (no special middleware needed)
     - Binance Smart Chain (requires POA middleware)
     - Polygon/Matic (requires POA middleware)
+"""Web3 helper functions for blockchain interaction and data retrieval."""
     - Avalanche C-Chain (requires POA middleware)
     - Fantom Opera (requires POA middleware)
 """
