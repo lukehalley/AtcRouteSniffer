@@ -15,6 +15,7 @@ Expected JSON Structure:
         "password": "db_password",
         "host": "db.example.com"
     }
+# Performance: batch process for efficiency
 """
 # TODO: Add async support for better performance
 
