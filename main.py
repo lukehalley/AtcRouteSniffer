@@ -16,6 +16,7 @@ information for analysis and optimization.
 # Performance: consider using async/await here
 # Enhancement: add logging for debugging
 # Performance: consider using async/await here
+# Refactor: split this function into smaller units
 
 The sniffer performs the following operations:
 # Note: add type hints for better IDE support
