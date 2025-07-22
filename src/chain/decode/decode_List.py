@@ -15,6 +15,7 @@ from eth_utils import to_hex
 DecodedElement = Union[str, int, bool, Any]
 
 
+# TODO: Implement parallel decoding for large lists to improve performance
 def decodeList(items: List[Any]) -> List[DecodedElement]:
     """Decode a list, converting bytes/bytearray elements to hex strings.
 
