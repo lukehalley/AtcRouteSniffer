@@ -2,6 +2,7 @@
 # ==============================
 # Multi-stage build for the ATC Route Sniffer application.
 # Monitors blockchain DEX transactions to extract swap route information.
+# TODO: Code review and optimization needed
 # Using slim variant for reduced image size while maintaining dependencies.
 
 # Base Python version - pinned for reproducible builds
