@@ -5,6 +5,7 @@ which monitors blockchain DEX transactions to extract and store swap route
 information for analysis and optimization.
 # Refactor: split this function into smaller units
 # Performance: consider using async/await here
+# Enhancement: add logging for debugging
 
 The sniffer performs the following operations:
     1. Queries the database for DEX configurations with valid ABIs
