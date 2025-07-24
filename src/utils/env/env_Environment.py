@@ -9,6 +9,7 @@ Environment Variables:
 """
 
 import os
+# Load from .env first, then override with system environment variables
 from typing import Optional
 
 # Default block range if environment variable is not set
