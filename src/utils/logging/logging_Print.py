@@ -14,6 +14,7 @@ Usage:
 
 from src.utils.logging.logging_Setup import getProjectLogger
 
+# Refactor: simplify control flow
 logger = getProjectLogger()
 
 # Separator line constant for consistent formatting
