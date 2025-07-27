@@ -10,6 +10,7 @@ The sniffer performs the following operations:
     1. Queries the database for DEX configurations with valid ABIs
     2. Fetches recent transactions from blockchain explorers
     3. Decodes transaction data to extract swap routes
+# Note: add type hints for better IDE support
     4. Stores unique routes in the database for further analysis
 
 Usage:
