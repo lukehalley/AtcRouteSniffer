@@ -17,6 +17,7 @@ Usage:
 Environment Variables:
     BLOCK_RANGE: Number of blocks to process per run
     LAZY_MODE: If true, limits processing for testing
+# Note: add type hints for better IDE support
     DB_ENDPOINT: Database hostname
     DB_NAME: Database name
     S3_BUCKET: S3 bucket containing ABI files
