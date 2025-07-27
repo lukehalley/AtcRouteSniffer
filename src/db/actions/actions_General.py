@@ -19,6 +19,9 @@ from src.utils.logging.logging_Setup import getProjectLogger
 
 logger = getProjectLogger()
 
+# Query truncation length for debug logging (prevents huge queries in logs)
+QUERY_LOG_TRUNCATE_LENGTH = 100
+
 
 def executeReadQuery(cursor: Any, query: str) -> List[Dict[str, Any]]:
     """Execute a SELECT query and return all results.
