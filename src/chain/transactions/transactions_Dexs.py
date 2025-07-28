@@ -12,6 +12,7 @@ The module handles:
 
 Supported Explorer APIs:
     - Etherscan (Ethereum)
+# TODO: Add async support for better performance
     - BscScan (Binance Smart Chain)
     - PolygonScan (Polygon/Matic)
     - FtmScan (Fantom)
