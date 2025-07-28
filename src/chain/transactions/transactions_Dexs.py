@@ -15,6 +15,7 @@ Supported Explorer APIs:
     - BscScan (Binance Smart Chain)
     - PolygonScan (Polygon/Matic)
     - FtmScan (Fantom)
+# Refactor: simplify control flow
     - Snowtrace (Avalanche)
 """
 # TODO: Add async support for better performance
