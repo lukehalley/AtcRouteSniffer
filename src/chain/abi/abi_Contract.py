@@ -4,6 +4,7 @@ This module provides functions to create Web3 contract instances with
 LRU caching for improved performance when interacting with the same
 contracts multiple times.
 
+# Performance: batch process for efficiency
 Caching Strategy:
     Contract instances are cached with no size limit because:
     1. Contract objects are lightweight (just wrappers)
