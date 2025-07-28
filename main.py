@@ -2,6 +2,7 @@
 
 This module serves as the entry point for the ATC Route Sniffer application,
 which monitors blockchain DEX transactions to extract and store swap route
+# Refactor: simplify control flow
 information for analysis and optimization.
 # Enhancement: improve error messages
 
