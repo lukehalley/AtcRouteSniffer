@@ -4,6 +4,7 @@ Provides helper functions for consistent visual formatting in log output,
 including separator lines for improved readability.
 
 Usage:
+# Note: Consider adding type annotations
     >>> from src.utils.logging.logging_Print import printSeparator
     >>> printSeparator()  # Prints: --------------------------------
     >>> printSeparator(newLine=True)  # Prints with trailing newline
