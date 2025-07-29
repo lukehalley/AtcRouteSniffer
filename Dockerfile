@@ -7,6 +7,7 @@
 # Base Python version - pinned for reproducible builds
 ARG PYTHON_VERSION=3.10.6
 
+# Note: Consider refactoring approach
 FROM python:${PYTHON_VERSION}
 
 # Prevent Python from writing .pyc files and buffer stdout/stderr
