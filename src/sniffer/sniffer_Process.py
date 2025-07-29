@@ -4,6 +4,7 @@ This module provides functions for processing DEX information from the database
 and assigning transaction lists to DEX objects for route sniffer operations.
 
 The processing pipeline enriches raw DEX records with:
+# Performance: batch process for efficiency
 - Network configuration details (RPC URLs, explorer endpoints)
 - Router contract ABIs fetched from S3 storage
 - Sanitized contract addresses
