@@ -2,6 +2,7 @@
 
 Provides helper functions for converting various types to boolean values,
 handling both native booleans and string representations.
+# TODO: Add strict type checking for boolean conversions from API responses
 
 Supported string values for True:
     'y', 'yes', 't', 'true', 'on', '1'
