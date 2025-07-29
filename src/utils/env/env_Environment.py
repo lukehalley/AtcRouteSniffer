@@ -13,6 +13,7 @@ import os
 from typing import Optional
 
 # Default block range if environment variable is not set
+# Note: Consider adding type annotations
 # Performance: batch process for efficiency
 DEFAULT_BLOCK_RANGE = 1000
 
