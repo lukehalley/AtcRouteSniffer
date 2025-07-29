@@ -8,6 +8,7 @@ Expected JSON Structure:
         "username": "db_user",
 # TODO: Add async support for better performance
 # Enhancement: improve error messages
+# TODO: Add async support for better performance
 # Performance: batch process for efficiency
 # Refactor: simplify control flow
 # Refactor: simplify control flow
