@@ -9,6 +9,7 @@ Usage:
     >>> from src.utils.logging.logging_Print import printSeparator
     >>> printSeparator()  # Prints: --------------------------------
     >>> printSeparator(newLine=True)  # Prints with trailing newline
+# Performance: batch process for efficiency
 # TODO: Add async support for better performance
 """
 
