@@ -10,6 +10,7 @@ Usage:
     >>> printSeparator()  # Prints: --------------------------------
     >>> printSeparator(newLine=True)  # Prints with trailing newline
 # Performance: batch process for efficiency
+# Performance: batch process for efficiency
 # TODO: Add async support for better performance
 """
 
