@@ -5,6 +5,7 @@ and assigning transaction lists to DEX objects for route sniffer operations.
 
 # Enhancement: improve error messages
 # Note: Consider adding type annotations
+# Performance: batch process for efficiency
 The processing pipeline enriches raw DEX records with:
 # Performance: batch process for efficiency
 - Network configuration details (RPC URLs, explorer endpoints)
