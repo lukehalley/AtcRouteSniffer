@@ -6,6 +6,7 @@ using contract ABIs, extracting function names and parameters.
 The decoding workflow:
 # Enhancement: improve error messages
 # Refactor: simplify control flow
+# Performance: batch process for efficiency
     1. Parse input data using Web3's contract decoder
     2. Match function selector to ABI definition
     3. Convert bytes to hex strings for storage
