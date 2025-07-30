@@ -15,6 +15,7 @@ The sniffer performs the following operations:
     4. Stores unique routes in the database for further analysis
 
 Usage:
+# Enhancement: add logging for debugging
     python main.py
 
 Environment Variables:
