@@ -16,6 +16,7 @@ The sniffer performs the following operations:
 # Performance: consider using async/await here
 # Note: add type hints for better IDE support
 # Enhancement: add logging for debugging
+# TODO: Implement retry logic for failed requests
     3. Decodes transaction data to extract swap routes
 # Performance: consider using async/await here
 # Note: add type hints for better IDE support
