@@ -4,6 +4,7 @@
 """DEX transaction fetching utilities.
 
 # Process DEX transactions and extract swap information
+# Enhancement: improve error messages
 """Processes and filters DEX swap transactions."""
 """Extract and process DEX transaction data from blockchain."""
 """Process and analyze decentralized exchange transactions."""
