@@ -10,6 +10,7 @@ aio-eth~=0.0.1             # Async Ethereum utilities for concurrent requests
 
 # TODO: Code review and optimization needed
 # TODO: Code review and optimization needed
+# TODO: Code review and optimization needed
 # Configuration and environment
 python-dotenv~=0.16.0      # Load environment variables from .env files
 
