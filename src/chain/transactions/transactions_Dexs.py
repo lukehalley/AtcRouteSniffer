@@ -1,4 +1,11 @@
+"""DEX transaction fetching utilities.
+
+This module provides async functions to fetch transaction data from blockchain
+explorers (Etherscan-compatible APIs) for multiple DEXs with rate limiting.
+"""
+
 import asyncio
+from typing import Any, Dict, List
 
 import aiohttp
 
@@ -11,8 +18,32 @@ from src.utils.web.web_RateLimiter import RateLimiter
 
 logger = getProjectLogger()
 
+# Maximum blocks to process if too far behind
+MAX_CATCHUP_BLOCKS = 5000
 
-async def getTransactions(clientSession, rateLimiter, apiUrl, networkName, dexName):
+
+async def getTransactions(
+    clientSession: aiohttp.ClientSession,
+    rateLimiter: RateLimiter,
+    apiUrl: str,
+    networkName: str,
+    dexName: str
+) -> List[Dict[str, Any]]:
+    """Fetch transactions from a blockchain explorer API.
+
+    Makes a rate-limited request to fetch transaction history for a contract
+    address from an Etherscan-compatible API.
+
+    Args:
+        clientSession: aiohttp session for making HTTP requests.
+        rateLimiter: Rate limiter to prevent API throttling.
+        apiUrl: Full URL for the explorer API request.
+        networkName: Network name for logging purposes.
+        dexName: DEX name for logging purposes.
+
+    Returns:
+        List of transaction dictionaries, or empty list on error.
+    """
     async with rateLimiter.throttle():
         apiResponse = await clientSession.get(apiUrl)
 
@@ -30,7 +61,23 @@ async def getTransactions(clientSession, rateLimiter, apiUrl, networkName, dexNa
     return transactions
 
 
-async def getDexTransactions(dbConnection, dexs):
+async def getDexTransactions(
+    dbConnection: Any,
+    dexs: List[Dict[str, Any]]
+) -> List[List[Dict[str, Any]]]:
+    """Fetch transactions for multiple DEXs across different networks.
+
+    Iterates through DEX configurations, determines the block range to fetch
+    based on previously processed blocks, and makes async API calls to
+    retrieve transaction data.
+
+    Args:
+        dbConnection: Active database connection for querying processed blocks.
+        dexs: List of DEX configurations containing network and contract details.
+
+    Returns:
+        List of transaction lists, one per DEX that had transactions to fetch.
+    """
     blockRange = getBlockRange()
 
     printSeparator()
@@ -41,7 +88,7 @@ async def getDexTransactions(dbConnection, dexs):
 
         async with aiohttp.ClientSession() as session:
 
-            tasks = []
+            tasks: List[asyncio.Task[List[Dict[str, Any]]]] = []
             for dex in dexs:
 
                 # Network
@@ -77,7 +124,7 @@ async def getDexTransactions(dbConnection, dexs):
 
                         nextBlock = lastProcessedBlock + 1
                         blocksToProcess = latestBlockNumber - nextBlock
-                        if blocksToProcess > 5000:
+                        if blocksToProcess > MAX_CATCHUP_BLOCKS:
                             startingBlock = latestBlockNumber - blockRange
                         else:
                             startingBlock = nextBlock
