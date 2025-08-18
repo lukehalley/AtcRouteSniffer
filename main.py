@@ -48,8 +48,19 @@ logger = setupLogging()
 startingTime = time.perf_counter()
 
 @retry()
-def runSniffer():
+def runSniffer() -> None:
+    """Execute the main route sniffer workflow.
 
+    Orchestrates the complete sniffer pipeline:
+    1. Initialize database connection
+    2. Fetch DEX configurations with ABIs
+    3. Retrieve transactions from blockchain explorers
+    4. Decode and store swap routes
+    5. Report results and timing
+
+    Returns:
+        None
+    """
     # Log init message
     printSeparator()
     logger.info(f"ATC Route Sniffer")
