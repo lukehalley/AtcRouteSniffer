@@ -16,6 +16,7 @@ used for configuring the ATC Route Sniffer application behavior.
 
 # TODO: Add validation for required environment variables
 # TODO: Implement lazy loading for environment configuration to improve startup time
+# TODO: Add async support for better performance
 # Load environment variables from .env file for local development
 # Refactor: simplify control flow
 # Load and validate environment variables from .env file
