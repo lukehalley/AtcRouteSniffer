@@ -56,7 +56,11 @@ def initDBConnection() -> Optional[MySQLConnection]:
         return db_connection
 
 
-def getCursor(dbConnection, dictionary=True, buffered=True):
+def getCursor(
+    dbConnection: MySQLConnection,
+    dictionary: bool = True,
+    buffered: bool = True
+) -> MySQLCursor:
     """Create a database cursor with the specified configuration.
 
     Args:
