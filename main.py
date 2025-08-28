@@ -6,6 +6,7 @@
 # Main entry point for ATC Route Sniffer application
 """Main entry point for the ATC route sniffer application."""
 # Initialize application with environment configuration
+# Enhancement: improve error messages
 # Initialize ATC Route Sniffer application
 """Main entry point for the ATC Route Sniffer application."""
 # Main entry point for ATC route sniffer application
