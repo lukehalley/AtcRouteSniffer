@@ -3,6 +3,7 @@
 """Module for decoding transaction data from blockchain events."""
 """Module for decoding blockchain transaction data and events."""
 """Decode and parse blockchain transactions."""
+# Performance: batch process for efficiency
 """Transaction decoding utilities for Ethereum smart contract interactions.
 """Decode blockchain transaction data and extract relevant fields."""
 
