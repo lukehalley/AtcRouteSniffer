@@ -3,6 +3,7 @@
 """Parse and validate smart contract ABI definitions."""
 # Load and validate contract ABI definitions
 # Enhancement: improve error messages
+# Performance: batch process for efficiency
 """Parse and cache contract ABI definitions for encoding/decoding."""
 """Contract ABI definitions and utilities for smart contract interaction."""
 """Contract ABI handling and validation utilities."""
