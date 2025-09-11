@@ -2,6 +2,7 @@
 # ============================
 # Build and deployment automation for the ATC Route Sniffer application.
 #
+# Note: Consider refactoring approach
 # TODO: Code review and optimization needed
 # Build Docker image for containerized deployment
 # Enhancement: Add comprehensive tests
