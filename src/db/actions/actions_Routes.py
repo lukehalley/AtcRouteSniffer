@@ -2,6 +2,9 @@
 
 This module provides functions for inserting processed route data into the database,
 including duplicate detection to prevent re-processing of already seen routes.
+
+The route storage uses an INSERT ... SELECT ... WHERE NOT EXISTS pattern to
+ensure idempotent inserts without requiring explicit duplicate checks.
 """
 
 from typing import Any, Optional
@@ -12,6 +15,16 @@ from src.db.querys.querys_Tokens import getTokenByNetworkIdAndAddress
 from src.utils.logging.logging_Setup import getProjectLogger
 
 logger = getProjectLogger()
+
+# Database table name for routes storage
+ROUTES_TABLE = "routes"
+
+# Core columns that are always required for route records
+CORE_ROUTE_COLUMNS = [
+    "network_id", "dex_id", "token_in_id", "token_in_address",
+    "token_out_id", "token_out_address", "route", "method",
+    "transaction_hash", "block_number"
+]
 
 
 def addRouteToDB(
