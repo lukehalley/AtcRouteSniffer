@@ -3,6 +3,10 @@
 This module provides functions for querying DEX (Decentralized Exchange)
 configurations from the database, including filtering for valid ABIs
 and supported network explorer types.
+
+Supported Explorer Types:
+    - 'scan': Etherscan-compatible APIs (BSCScan, PolygonScan, etc.)
+    - 'blockscout': Blockscout-based explorers
 """
 
 import os
@@ -16,6 +20,12 @@ from src.utils.logging.logging_Print import printSeparator
 from src.utils.logging.logging_Setup import getProjectLogger
 
 logger = getProjectLogger()
+
+# Supported blockchain explorer types for transaction fetching
+SUPPORTED_EXPLORER_TYPES = ("scan", "blockscout")
+
+# Maximum number of DEXs to process in lazy mode (for testing)
+LAZY_MODE_DEX_LIMIT = 9
 
 
 def getAllDexsWithABIs(dbConnection: Any) -> List[Dict[str, Any]]:
@@ -56,8 +66,9 @@ def getAllDexsWithABIs(dbConnection: Any) -> List[Dict[str, Any]]:
         query=query
     )
 
+    # In lazy mode, limit DEX count for faster testing cycles
     if lazyMode:
-        dexs = dexs[0:9]
+        dexs = dexs[0:LAZY_MODE_DEX_LIMIT]
 
     dexCount = len(dexs)
     logger.info(f"[DB Query] Retrieved {dexCount} DEXs with valid ABIs from database")
