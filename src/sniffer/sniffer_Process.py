@@ -5,6 +5,7 @@
 """Initialize sniffer process with configuration and logging setup."""
 # Refactor: simplify control flow
 """Initialize and configure the route sniffer process."""
+# Note: Consider adding type annotations
 # Performance: batch process for efficiency
 """Route sniffer process handler for transaction monitoring"""
 """Monitor blockchain for profitable arbitrage opportunities."""
