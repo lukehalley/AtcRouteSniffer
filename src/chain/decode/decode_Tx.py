@@ -2,6 +2,12 @@
 
 This module provides functions to decode raw Ethereum transaction input data
 using contract ABIs, extracting function names and parameters.
+
+The decoding workflow:
+    1. Parse input data using Web3's contract decoder
+    2. Match function selector to ABI definition
+    3. Convert bytes to hex strings for storage
+    4. Return structured result with function name and params
 """
 
 from typing import Any, Dict, List, Optional, Tuple, Union
@@ -12,6 +18,10 @@ from src.chain.convert.convert_Hex import convertToHex
 # Type alias for decoded transaction result
 DecodedTransaction = Dict[str, Any]
 DecodeError = Tuple[str, Optional[str], None]
+
+# Error type constants for categorizing decode failures
+ERROR_NO_ABI = 'no matching abi'
+ERROR_DECODE_FAILED = 'decode error'
 
 
 def decodeTx(
