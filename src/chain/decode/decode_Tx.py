@@ -53,8 +53,9 @@ def decodeTx(
     inputData = transaction["input"]
     blockNumber = int(transaction["blockNumber"])
 
+    # Early return if no ABI available for decoding
     if abi is None:
-        return ('no matching abi', None, None)
+        return (ERROR_NO_ABI, None, None)
 
     try:
         contract, parsed_abi = getContract(address, abi)
@@ -80,4 +81,5 @@ def decodeTx(
         return result
 
     except Exception as e:
-        return ('decode error', repr(e), None)
+        # Return error tuple with exception details for debugging
+        return (ERROR_DECODE_FAILED, repr(e), None)
