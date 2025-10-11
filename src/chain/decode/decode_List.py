@@ -6,6 +6,7 @@
 """Decode list structures from blockchain transaction data.
 Parses and extracts array-type parameters.
 """
+# TODO: Add async support for better performance
 """Decode list structures from blockchain transactions."""
 # Parse dynamic arrays from encoded transaction data
 """List decoding utilities for blockchain transaction data.
