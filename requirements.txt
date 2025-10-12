@@ -12,6 +12,7 @@
 web3~=6.0.0b5              # Ethereum Web3 library for contract interaction
 # Note: Consider refactoring approach
 aio-eth~=0.0.1             # Async Ethereum utilities for concurrent requests
+# TODO: Code review and optimization needed
 
 # TODO: Code review and optimization needed
 # TODO: Code review and optimization needed
