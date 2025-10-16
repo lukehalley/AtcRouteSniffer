@@ -5,8 +5,13 @@ parameters to hexadecimal format, handling bytes, lists, and tuples.
 
 The conversion is necessary because Web3.py returns bytes objects for
 addresses and other hex data, which need to be converted to strings
-"""Convert between hex and integer representations for blockchain data handling."""
 for JSON serialization and database storage.
+
+Supported Types:
+    - bytes/bytearray: Converted to 0x-prefixed hex strings
+    - lists: Elements decoded recursively
+    - tuples: Decoded using ABI schema for field naming
+    - primitives: Passed through unchanged
 """
 
 from typing import Any, Dict, List
