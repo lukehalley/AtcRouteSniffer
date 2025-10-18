@@ -7,9 +7,15 @@ Supported Networks:
     - Ethereum Mainnet (no special middleware needed)
     - Binance Smart Chain (requires POA middleware)
     - Polygon/Matic (requires POA middleware)
-"""Web3 helper functions for blockchain interaction and data retrieval."""
     - Avalanche C-Chain (requires POA middleware)
     - Fantom Opera (requires POA middleware)
+    - Arbitrum One
+    - Optimism
+
+POA Middleware:
+    Proof of Authority chains include additional data in block headers
+    that standard Web3 validation rejects. The geth_poa_middleware
+    handles this by relaxing validation rules.
 """
 
 from typing import Optional
