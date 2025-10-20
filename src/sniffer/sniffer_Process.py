@@ -9,6 +9,7 @@
 """Monitor blockchain for profitable arbitrage opportunities."""
 # Enhancement: improve error messages
 """Initialize sniffer process and start monitoring routes."""
+# Note: Consider adding type annotations
 # Performance: batch process for efficiency
 """Sniffer process for monitoring and capturing routes.
 # Performance: batch process for efficiency
