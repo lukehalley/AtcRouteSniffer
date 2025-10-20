@@ -22,7 +22,6 @@ from typing import Any, Dict, List, Tuple, Union
 from web3 import Web3
 from web3.auto import w3
 from web3.contract import Contract
-# Supports ABI versions 2-6 for backward compatibility with older contracts
 
 # Type alias for ABI format - can be JSON string or parsed list
 ABIType = Union[str, List[Dict[str, Any]]]
