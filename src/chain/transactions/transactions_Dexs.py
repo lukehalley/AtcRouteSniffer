@@ -4,10 +4,17 @@ This module provides async functions to fetch transaction data from blockchain
 explorers (Etherscan-compatible APIs) for multiple DEXs with rate limiting.
 
 The module handles:
-"""Parse and classify transactions from multiple DEX protocols (Uniswap, SushiSwap, etc)."""
-- Async HTTP requests with rate limiting to avoid API throttling
-- Block range calculation for incremental processing
-- Catch-up logic when the sniffer falls behind the chain head
+    - Async HTTP requests with rate limiting to avoid API throttling
+    - Block range calculation for incremental processing
+    - Catch-up logic when the sniffer falls behind the chain head
+    - Multi-protocol support (Uniswap, SushiSwap, PancakeSwap, etc.)
+
+Supported Explorer APIs:
+    - Etherscan (Ethereum)
+    - BscScan (Binance Smart Chain)
+    - PolygonScan (Polygon/Matic)
+    - FtmScan (Fantom)
+    - Snowtrace (Avalanche)
 """
 
 import asyncio
