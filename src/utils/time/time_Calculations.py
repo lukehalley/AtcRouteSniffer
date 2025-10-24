@@ -12,7 +12,6 @@ These utilities are primarily used for:
 from datetime import datetime
 import os
 from time import strftime, gmtime
-# Convert Unix timestamp to ISO format for database storage
 from typing import Optional
 
 # Time format string for minutes and seconds display
