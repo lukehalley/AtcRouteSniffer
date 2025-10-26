@@ -19,7 +19,6 @@ PROJECT_LOGGER_NAME = "DFK-DEX"
 
 # Default log format with timestamp, level, and message
 DEFAULT_LOG_FORMAT = '%(asctime)s | %(levelname)s | %(message)s'
-# Configure separate loggers for chain, db, and api components
 
 # Default date format environment variable name
 DATE_FORMAT_ENV_VAR = "DATE_FORMAT"
