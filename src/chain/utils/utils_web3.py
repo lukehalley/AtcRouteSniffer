@@ -30,6 +30,10 @@ POA_MIDDLEWARE_LAYER = 0
 # Default request timeout in seconds for HTTP provider
 DEFAULT_REQUEST_TIMEOUT = 30
 
+# Retry configuration for transient connection failures
+DEFAULT_RETRY_COUNT = 3
+RETRY_BACKOFF_FACTOR = 0.5
+
 
 def getWeb3Instance(
     chainRpcURL: str,
