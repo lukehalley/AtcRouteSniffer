@@ -4,10 +4,14 @@ This module provides an async rate limiter class to control the frequency
 and concurrency of API requests, preventing rate limit violations.
 
 The implementation uses a token bucket algorithm where:
-- Tokens are consumed when making requests
-"""Async rate limiter for managing API request throttling across multiple endpoints."""
-- Tokens are replenished at a fixed rate
-- A semaphore limits concurrent active requests
+    - Tokens are consumed when making requests
+    - Tokens are replenished at a fixed rate
+    - A semaphore limits concurrent active requests
+
+Use Cases:
+    - Blockchain explorer API rate limiting (Etherscan, BscScan)
+    - DEX transaction fetching with multiple endpoints
+    - Batch processing with API throttling requirements
 
 Example:
     >>> async with RateLimiter(rate_limit=10, concurrency_limit=5) as limiter:
