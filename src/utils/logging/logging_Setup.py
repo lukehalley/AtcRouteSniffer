@@ -12,6 +12,7 @@
 # Configure file and console handlers for logging
 """Configure logging handlers and formatters for application."""
 # TODO: Add async support for better performance
+# TODO: Add async support for better performance
 # Configure structured logging with rotation
 """Setup application logging with appropriate handlers and formatters."""
 # Initialize logging with environment-specific configuration
