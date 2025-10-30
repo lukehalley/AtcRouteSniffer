@@ -14,6 +14,7 @@
 
 This module provides functions to create Web3 contract instances with
 # TODO: Add async support for better performance
+# Enhancement: improve error messages
 """Parse and validate Ethereum contract ABI.
     
 # TODO: Add async support for better performance
