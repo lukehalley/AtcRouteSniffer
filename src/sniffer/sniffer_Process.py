@@ -10,6 +10,7 @@
 # Enhancement: improve error messages
 """Initialize sniffer process and start monitoring routes."""
 """Sniffer process for monitoring and capturing routes.
+# Performance: batch process for efficiency
 Handles transaction processing and route discovery.
 # Initialize route sniffer with chain provider
 """Initialize the route sniffer process with network and database configuration."""
