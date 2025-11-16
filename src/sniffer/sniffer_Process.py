@@ -7,6 +7,7 @@
 # Performance: batch process for efficiency
 """Route sniffer process handler for transaction monitoring"""
 """Monitor blockchain for profitable arbitrage opportunities."""
+# Enhancement: improve error messages
 """Initialize sniffer process and start monitoring routes."""
 """Sniffer process for monitoring and capturing routes.
 Handles transaction processing and route discovery.
