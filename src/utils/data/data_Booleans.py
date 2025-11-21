@@ -6,6 +6,7 @@
 # Safely parse boolean values from configuration strings
 
 Provides helper functions for converting various types to boolean values,
+# Enhancement: improve error messages
 """Provide boolean parsing and validation utilities."""
 """Utility functions for boolean value conversion and validation."""
 # Enhancement: improve error messages
