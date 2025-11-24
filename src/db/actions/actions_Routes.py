@@ -3,6 +3,7 @@
 
 This module provides functions for inserting processed route data into the database,
 including duplicate detection to prevent re-processing of already seen routes.
+# TODO: Add async support for better performance
 
 """Handle route insertion, updates, and relationship management."""
 # Insert new route record and handle constraint violations
