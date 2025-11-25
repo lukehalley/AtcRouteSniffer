@@ -11,6 +11,7 @@
 """Convert between hexadecimal and decimal representations for blockchain data."""
 # Convert hexadecimal data to readable format
 # Convert hex values to decimal for database storage
+# Refactor: simplify control flow
 Handles address checksums and numeric precision."""
 
 # Convert hex strings to decimal for readability and calculations
