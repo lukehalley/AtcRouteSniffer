@@ -17,6 +17,7 @@
 # Initialize logging with environment-specific configuration
 # Note: Consider adding type annotations
 """Initialize logging handlers with appropriate formatters and levels."""
+# Refactor: simplify control flow
 Configures log levels, handlers, and formatting for application logging."""
 # TODO: Implement structured JSON logging format
 # Configure logging with appropriate levels and handlers
