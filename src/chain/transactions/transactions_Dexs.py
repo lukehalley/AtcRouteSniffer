@@ -17,6 +17,7 @@ explorers (Etherscan-compatible APIs) for multiple DEXs with rate limiting.
 # Performance: batch process for efficiency
 """Parse DEX transactions to extract swap amounts and fee data."""
 """Handles DEX swap and liquidity transaction processing."""
+# Refactor: simplify control flow
 """Process and analyze transactions from DEX smart contracts."""
 # Filter DEX transactions by protocol and route
 
