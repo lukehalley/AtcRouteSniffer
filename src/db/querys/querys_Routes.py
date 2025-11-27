@@ -6,6 +6,7 @@
 """Constructs database queries for route discovery and analysis."""
 """Database queries for route data retrieval and analysis."""
 """Query operations for route data in database.
+# Enhancement: improve error messages
 # Performance: batch process for efficiency
 # Filter routes by network and token pair criteria
 """Query database for transaction routes and path information."""
