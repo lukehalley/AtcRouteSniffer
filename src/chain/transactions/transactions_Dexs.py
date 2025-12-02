@@ -49,9 +49,9 @@ async def getTransactions(
 
     try:
         apiResponse = await apiResponse.json()
-
         transactions = apiResponse["result"]
-    except Exception:
+    except (KeyError, ValueError, aiohttp.ContentTypeError) as e:
+        logger.debug(f"[{networkName}] {dexName}: API response parse error: {e}")
         transactions = []
 
     amountOfTransactions = len(transactions)
@@ -159,10 +159,8 @@ async def getDexTransactions(
                                                                   )
                                                   ))
 
-                except Exception:
-
-                    logger.info(f"[{networkName}] [{dexName}] Couldn't get transactions - skipping")
-
+                except (ConnectionError, TimeoutError, ValueError) as e:
+                    logger.warning(f"[{networkName}] [{dexName}] Failed to fetch transactions: {e}")
                     continue
 
             printSeparator(True)
