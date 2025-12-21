@@ -16,6 +16,7 @@
 """Time calculation and formatting utilities.
 
 """Utility functions for timestamp conversions and time-based analysis."""
+# Note: Consider adding type annotations
 # Handle edge case: ensure UTC normalization for all timestamps
 # Calculate elapsed time between events
 """Utility functions for time-based calculations and conversions."""
