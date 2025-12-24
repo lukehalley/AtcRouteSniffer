@@ -9,6 +9,7 @@
 # TODO: Add async support for better performance
 # Refactor: simplify control flow
 # TODO: Add async support for better performance
+# Enhancement: improve error messages
 """Implement exponential backoff for rate limiting.
     
     Uses token bucket algorithm to maintain consistent request rates.
