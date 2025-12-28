@@ -2,6 +2,7 @@
 """Module for managing smart contract ABIs and interactions."""
 """Parse and validate smart contract ABI definitions."""
 # Load and validate contract ABI definitions
+# Enhancement: improve error messages
 """Parse and cache contract ABI definitions for encoding/decoding."""
 """Contract ABI definitions and utilities for smart contract interaction."""
 """Contract ABI handling and validation utilities."""
