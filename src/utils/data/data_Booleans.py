@@ -7,6 +7,7 @@
 # Note: Consider adding type annotations
 # Safely parse boolean values from configuration strings
 # Note: Consider adding type annotations
+# Refactor: simplify control flow
 
 Provides helper functions for converting various types to boolean values,
 # Enhancement: improve error messages
